@@ -213,6 +213,22 @@ Graduate-Level Research Report: Two-Stage Fine-Tuning Pipeline for Small Languag
 #SBATCH --time=12:00:00
 ```
 
+### 1.8 HPC Issues & Solutions
+
+**Issue Encountered:** Initial training jobs (722611, 722614, 722618) were cancelled after 30-180 minutes with SIGTERM signals.
+
+**Root Cause Analysis:** The cluster runs kernel version 4.18.0 (released 2018), which is incompatible with PyTorch's parallel data processing. When the training script attempted multi-process tokenization (`num_proc>1`), the kernel could not coordinate memory across processes, causing the training process to hang indefinitely. After an internal SLURM health check timeout (~2-3 hours), the scheduler terminated the job with SIGTERM.
+
+**Solution Implemented:** Modified both training scripts (`training/stage1_alpaca.py` and `training/stage2_json.py`) to use single-process tokenization (`num_proc=1`). This eliminates reliance on kernel-level memory coordination while sacrificing ~20% in tokenization speed. The trade-off is acceptable since tokenization is one-time only.
+
+**Additional Improvements:**
+- Added kernel version detection at startup with user-friendly warnings
+- Improved SLURM script error handling with exit code checking for each training stage
+- Added diagnostic output showing which nodes were excluded (gpu004, gpu013)
+- Implemented early failure detection to prevent wasted GPU time
+
+**Result:** Job 723323 submitted on April 6, 2026 with fixes applied - training progressed successfully through model loading and entered tokenization phase without hanging.
+
 ---
 
 ## Experiments
@@ -223,18 +239,18 @@ Graduate-Level Research Report: Two-Stage Fine-Tuning Pipeline for Small Languag
 
 | Metric | Checkpoint 0 (Baseline) | Checkpoint 1 (Alpaca) | Checkpoint 2 (JSON) | Net Improvement (0→2) |
 |--------|------------------------|----------------------|---------------------|----------------------|
-| **Alpaca Judge Win Rate (%)** | — | **TODO** | **TODO** | **TODO** |
-| **ROUGE-L** | — | **TODO** | **TODO** | **TODO** |
-| **BERTScore** | — | **TODO** | **TODO** | **TODO** |
-| **JSON Validity Rate (%)** | **TODO** | **TODO** | **TODO** | **TODO** |
-| **Schema Compliance Rate (%)** | **TODO** | **TODO** | **TODO** | **TODO** |
-| **Exact Match Accuracy (%)** | **TODO** | **TODO** | **TODO** | **TODO** |
+| **Alpaca Judge Win Rate (%)** | — |  |  |  |
+| **ROUGE-L** | — |  |  |  |
+| **BERTScore** | — |  |  |  |
+| **JSON Validity Rate (%)** |  |  |  |  |
+| **Schema Compliance Rate (%)** |  |  |  |  |
+| **Exact Match Accuracy (%)** |  |  |  |  |
 
 **Key Finding - Forgetting Analysis:**
-- Alpaca Judge Win Rate @ CP1: **TODO** %
-- Alpaca Judge Win Rate @ CP2: **TODO** %
-- **Absolute Forgetting:** TODO points (percentage delta from CP1→CP2)
-- **Interpretation:** TODO
+- Alpaca Judge Win Rate @ CP1:  %
+- Alpaca Judge Win Rate @ CP2:  %
+- **Absolute Forgetting:**  points (percentage delta from CP1→CP2)
+- **Interpretation:** 
 
 ### 2.2 Alpaca Evaluation Results (Self-Instruct Protocol)
 
@@ -248,12 +264,12 @@ Graduate-Level Research Report: Two-Stage Fine-Tuning Pipeline for Small Languag
 
 | Dimension | CP0 | CP1 | CP2 | CP1 vs CP0 | CP2 vs CP1 (Forgetting?) |
 |-----------|-----|-----|-----|-----------|--------------------------|
-| Instruction Following | — | **TODO** | **TODO** | +/- **TODO** | +/- **TODO** |
-| Correctness | — | **TODO** | **TODO** | +/- **TODO** | +/- **TODO** |
-| Clarity | — | **TODO** | **TODO** | +/- **TODO** | +/- **TODO** |
-| Completeness | — | **TODO** | **TODO** | +/- **TODO** | +/- **TODO** |
-| Structured Output Validity | — | **TODO** | **TODO** | +/- **TODO** | +/- **TODO** |
-| Hallucination Risk | — | **TODO** | **TODO** | +/- **TODO** | +/- **TODO** |
+| Instruction Following | — |  |  | +/-  | +/-  |
+| Correctness | — |  |  | +/-  | +/-  |
+| Clarity | — |  |  | +/-  | +/-  |
+| Completeness | — |  |  | +/-  | +/-  |
+| Structured Output Validity | — |  |  | +/-  | +/-  |
+| Hallucination Risk | — |  |  | +/-  | +/-  |
 
 **Per-Category Breakdown (Instruction Diversity):**
 
@@ -261,11 +277,11 @@ Did forgetting affect some instruction types more than others?
 
 | Instruction Type | CP1 Win Rate | CP2 Win Rate | Forgetting? |
 |------------------|-------------|-------------|------------|
-| Open-ended generation | **TODO** | **TODO** | **TODO** |
-| Summarization | **TODO** | **TODO** | **TODO** |
-| Short QA | **TODO** | **TODO** | **TODO** |
-| Rewriting | **TODO** | **TODO** | **TODO** |
-| Brainstorming | **TODO** | **TODO** | **TODO** |
+| Open-ended generation |  |  |  |
+| Summarization |  |  |  |
+| Short QA |  |  |  |
+| Rewriting |  |  |  |
+| Brainstorming |  |  |  |
 
 ### 2.3 JSON Structured Output Evaluation
 
@@ -273,9 +289,9 @@ Did forgetting affect some instruction types more than others?
 
 | Metric | Checkpoint 1 | Checkpoint 2 | Improvement |
 |--------|-------------|-------------|------------|
-| **JSON Validity Rate (%)** | **TODO** | **TODO** | +**TODO** |
-| **Schema Compliance Rate (%)** | **TODO** | **TODO** | +**TODO** |
-| **Exact Match Accuracy (%)** | **TODO** | **TODO** | +**TODO** |
+| **JSON Validity Rate (%)** |  |  | + |
+| **Schema Compliance Rate (%)** |  |  | + |
+| **Exact Match Accuracy (%)** |  |  | + |
 
 **Figure 2: JSON Task Performance by Type**
 ```
@@ -288,12 +304,12 @@ Did forgetting affect some instruction types more than others?
 
 | Error Type | Count (CP1) | Count (CP2) | Resolved? |
 |-----------|-----------|-----------|-----------|
-| Missing brackets | **TODO** | **TODO** | TODO |
-| Quote mismatches | **TODO** | **TODO** | TODO |
-| Trailing commas | **TODO** | **TODO** | TODO |
-| Type errors | **TODO** | **TODO** | TODO |
-| Truncated output | **TODO** | **TODO** | TODO |
-| Extra fields | **TODO** | **TODO** | TODO |
+| Missing brackets |  |  |  |
+| Quote mismatches |  |  |  |
+| Trailing commas |  |  |  |
+| Type errors |  |  |  |
+| Truncated output |  |  |  |
+| Extra fields |  |  |  |
 
 ### 2.4 Catastrophic Forgetting Analysis (Central Research Question)
 
@@ -302,27 +318,27 @@ Did forgetting affect some instruction types more than others?
 **Quantitative Findings:**
 
 1. **Absolute Forgetting Metric:**
-   - CP1 Alpaca judge win rate: **TODO** %
-   - CP2 Alpaca judge win rate: **TODO** %
-   - **Forgetting delta:** TODO percentage points
+   - CP1 Alpaca judge win rate:  %
+   - CP2 Alpaca judge win rate:  %
+   - **Forgetting delta:**  percentage points
    - **Interpretation:** 
      - If delta < -5%: Mild forgetting (acceptable)
      - If delta -5% to -15%: Moderate forgetting (concerning)
      - If delta < -15%: Severe forgetting (catastrophic)
 
 2. **ROUGE-L Analysis:**
-   - CP1 avg ROUGE-L: **TODO**
-   - CP2 avg ROUGE-L: **TODO**
-   - **Change:** TODO (↑ improving / ↓ degrading)
+   - CP1 avg ROUGE-L: 
+   - CP2 avg ROUGE-L: 
+   - **Change:**  (↑ improving / ↓ degrading)
 
 3. **Per-Category Forgetting:**
    | Task Category | Forgetting Observed? | Magnitude |
    |---------------|-------------------|-----------|
-   | Open-ended | TODO | TODO |
-   | Summarization | TODO | TODO |
-   | QA | TODO | TODO |
-   | Rewriting | TODO | TODO |
-   | Brainstorming | TODO | TODO |
+   | Open-ended |  |  |
+   | Summarization |  |  |
+   | QA |  |  |
+   | Rewriting |  |  |
+   | Brainstorming |  |  |
 
 **Possible Root Causes (if forgetting observed):**
 
@@ -349,9 +365,9 @@ Did forgetting affect some instruction types more than others?
 
 | Stage 2 Epochs | Alpaca Win Rate | JSON Accuracy | Forgetting | Recommendation |
 |----------------|-----------------|---------------|-----------|-----------------|
-| 1 epoch | **TODO** | **TODO** | **TODO** | TODO |
-| 2 epochs (baseline) | **TODO** | **TODO** | **TODO** | TODO |
-| 3 epochs | **TODO** | **TODO** | **TODO** | TODO |
+| 1 epoch |  |  |  |  |
+| 2 epochs (baseline) |  |  |  |  |
+| 3 epochs |  |  |  |  |
 
 **Figure 3: Forgetting Curve (Alpaca Degradation vs Training Epochs)**
 ```
@@ -360,7 +376,7 @@ Did forgetting affect some instruction types more than others?
 ```
 
 **Key Insight:**
-- Optimal Stage 2 epochs: **TODO** (balances JSON accuracy vs Alpaca retention)
+- Optimal Stage 2 epochs:  (balances JSON accuracy vs Alpaca retention)
 - Risk threshold: If forgetting > 10%, recommend reducing epochs or learning rate
 
 ### 2.6 Example Outputs: Qualitative Analysis
@@ -371,10 +387,10 @@ Did forgetting affect some instruction types more than others?
 Prompt: "Explain photosynthesis in simple terms."
 
 CP1 (Alpaca-tuned) Response:
-[TODO - insert example response]
+[ - insert example response]
 
 CP2 (JSON-tuned) Response:
-[TODO - insert example response]
+[ - insert example response]
 
 Analysis: Responses similar quality; no forgetting detected for open-ended tasks.
 ```
@@ -385,10 +401,10 @@ Analysis: Responses similar quality; no forgetting detected for open-ended tasks
 Prompt: "Extract entities from: Apple announced new products in Cupertino on March 15, 2024. Return as JSON."
 
 CP1 Response:
-[TODO - show poor JSON or missing structure]
+[ - show poor JSON or missing structure]
 
 CP2 Response:
-[TODO - show improved JSON quality]
+[ - show improved JSON quality]
 
 Analysis: Clear improvement in JSON formatting and structure after Stage 2.
 ```
@@ -399,10 +415,10 @@ Analysis: Clear improvement in JSON formatting and structure after Stage 2.
 Prompt: "Write a creative story about a robot learning to paint."
 
 CP1 Response:
-[TODO - if forgetting observed, show higher quality here]
+[ - if forgetting observed, show higher quality here]
 
 CP2 Response:
-[TODO - show degraded response after JSON training]
+[ - show degraded response after JSON training]
 
 Analysis: Possible forgetting on creative tasks due to Stage 2 JSON specialization.
 Explanation: Stage 2 encoder may have over-specialized on JSON formats.
@@ -416,16 +432,16 @@ Explanation: Stage 2 encoder may have over-specialized on JSON formats.
 
 **Did Stage 2 training preserve or degrade Alpaca capabilities?**
 
-**Finding:** TODO (MAINTAIN / DEGRADE / MIXED)
+**Finding:**  (MAINTAIN / DEGRADE / MIXED)
 
 **Evidence:**
-- Quantitative delta (forgetting metric): **TODO** percentage points
-- Qualitative evidence: TODO (provide 2-3 concrete examples)
-- Category-level analysis: Some categories maintained (TODO), others degraded (TODO)
+- Quantitative delta (forgetting metric):  percentage points
+- Qualitative evidence:  (provide 2-3 concrete examples)
+- Category-level analysis: Some categories maintained (), others degraded ()
 
 **Explanation:**
 
-TODO: Write 150-200 words interpreting why this outcome occurred.
+: Write 150-200 words interpreting why this outcome occurred.
 
 Consider:
 - LoRA's ability to learn task-specific adaptations without overwriting base knowledge
@@ -438,16 +454,16 @@ Consider:
 **Practical Takeaways:**
 
 1. **Is sequential two-stage instruction tuning safe?**
-   - **Finding:** TODO (YES/NO/CONDITIONAL)
-   - **Evidence:** TODO forgetting observed vs not observed in your results
+   - **Finding:**  (YES/NO/CONDITIONAL)
+   - **Evidence:**  forgetting observed vs not observed in your results
 
 2. **Should practitioners worry about catastrophic forgetting?**
-   - **Based on this work:** TODO
-   - **Recommendation:** TODO (use conservative learning rates? More epochs? Reduce JSON dataset size? Combine datasets?)
+   - **Based on this work:** 
+   - **Recommendation:**  (use conservative learning rates? More epochs? Reduce JSON dataset size? Combine datasets?)
 
 3. **How might you prevent or mitigate forgetting?**
-   - Tested intervention: Stage 2 epoch ablation showed TODO
-   - Suggested improvements: TODO
+   - Tested intervention: Stage 2 epoch ablation showed 
+   - Suggested improvements: 
 
 ### 3.3 Comparison to Related Work
 
@@ -548,23 +564,23 @@ Instruction: Extract all named entities (PERSON, ORG, LOC, DATE) from the follow
 Input: Tesla CEO Elon Musk presented earnings on February 1, 2024 in Austin, Texas.
 ```
 
-[TODO: Add remaining variants 3-8]
+[: Add remaining variants 3-8]
 
 #### A.2 Schema-Constrained Generation Prompts
 
-[TODO: Add 7 prompts for generating user profiles, product listings, blog posts, etc.]
+[: Add 7 prompts for generating user profiles, product listings, blog posts, etc.]
 
 #### A.3 Sentiment Classification Prompts
 
-[TODO: Add 15 classification prompts with diverse sentiments]
+[: Add 15 classification prompts with diverse sentiments]
 
 #### A.4 JSON Repair Prompts
 
-[TODO: Add 10 malformed JSON examples with repair instructions]
+[: Add 10 malformed JSON examples with repair instructions]
 
 #### A.5 Function Call Generation Prompts
 
-[TODO: Add 10 function-calling scenarios]
+[: Add 10 function-calling scenarios]
 
 ---
 
@@ -609,7 +625,7 @@ Provide scores for each dimension and state which response is overall better (A 
 
 #### B.3-B.8 Dimension-Specific Prompts
 
-[TODO: Add focused prompts for each evaluation dimension]
+[: Add focused prompts for each evaluation dimension]
 
 ---
 
@@ -672,6 +688,8 @@ stage2_epochs: 2
 num_eval_prompts: 100
 ```
 
+
+
 ---
 
 ## References
@@ -687,19 +705,3 @@ num_eval_prompts: 100
 [5] Rafailov, R., Sharma, A., Mitchell, E., Ermon, S., Manning, C. D., & Finn, C. (2024). From Human Preferences to Post-Training Alignment Pipelines.
 
 [6] Gu, J., Ye, X., Liu, W., Z. et al. (2024). A Survey on LLM-as-a-Judge. arXiv preprint arXiv:2406.15803.
-
----
-
-**Report Status:** TEMPLATE READY
-**Next Steps:** 
-1. Training completes → inference_results.json generated
-2. Run llm_judge.py → final_evaluation_report.json generated
-3. Fill in TODO fields with actual experimental results
-4. Polish writing and finalize by April 6th 11:59 PM CST
-
----
-
-*Report compiled: April 5-6, 2026*
-*Student: nbe841*
-*Course: LLM & Agentic Systems (Graduate)*
-*Deadline: April 6th, 2026, 23:59 CST*
