@@ -290,12 +290,12 @@ Edit `config.yaml` and set your API credentials:
 # Teacher Model Configuration (for data generation)
 teacher_api_url: "http://10.246.100.230/v1"
 teacher_api_key: "gpustack_50e00c9281422bc5_0c0696dfcb1696d7635e58a2e56d6282"
-teacher_model: "Llama-3.1-70B-Instruct-custom"
+teacher_model: "llama-3.3-70b-instruct-awq"
 
 # Judge Model Configuration (for evaluation)
 judge_api_url: "http://10.246.100.230/v1"
 judge_api_key: "gpustack_50e00c9281422bc5_0c0696dfcb1696d7635e58a2e56d6282"
-judge_model: "Llama-3.1-70B-Instruct-custom"
+judge_model: "llama-3.3-70b-instruct-awq"
 ```
 
 **Note**: These keys are provided in the assignment. Keep them secure!
@@ -474,12 +474,12 @@ stage2_learning_rate: 0.00002   # Same as Stage 1
 stage2_epochs: 2                # Can vary for ablation study
 
 # Teacher Model (for data generation)
-teacher_model: "Llama-3.1-70B-Instruct-custom"
+teacher_model: "llama-3.3-70b-instruct-awq"
 teacher_api_url: "http://10.246.100.230/v1"
 teacher_api_key: "<YOUR_KEY>"
 
 # Judge Model (for evaluation)
-judge_model: "Llama-3.1-70B-Instruct-custom"
+judge_model: "llama-3.3-70b-instruct-awq"
 judge_api_url: "http://10.246.100.230/v1"
 judge_api_key: "<YOUR_KEY>"
 
@@ -670,7 +670,7 @@ grep "api_key" config.yaml
 curl -X POST http://10.246.100.230/v1/chat/completions \
   -H "Authorization: Bearer gpustack_50e00c9281422bc5_0c0696dfcb1696d7635e58a2e56d6282" \
   -H "Content-Type: application/json" \
-  -d '{"model": "Llama-3.1-70B-Instruct-custom", "messages": [{"role": "user", "content": "Hello"}]}'
+  -d '{"model": "llama-3.3-70b-instruct-awq", "messages": [{"role": "user", "content": "Hello"}]}'
 ```
 
 ### Issue: Results Table Empty

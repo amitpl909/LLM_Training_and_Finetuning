@@ -660,8 +660,8 @@ Provide scores for each dimension and state which response is overall better (A 
 ```yaml
 # Model Configuration
 student_model: "microsoft/Phi-3.5-mini-instruct"
-teacher_model: "Llama-3.1-70B-Instruct-custom"
-judge_model: "Llama-3.1-70B-Instruct-custom"
+teacher_model: "llama-3.3-70b-instruct-awq"
+judge_model: "llama-3.3-70b-instruct-awq"
 
 # API Configuration
 teacher_api_url: "http://10.246.100.230/v1"

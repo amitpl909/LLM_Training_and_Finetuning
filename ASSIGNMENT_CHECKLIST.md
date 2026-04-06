@@ -48,7 +48,7 @@ This is the core of the assignment. You need to:
 
 3. Call teacher model (Llama 3.1 70B) for each prompt:
    Teacher API: http://10.246.100.230/v1
-   Model: Llama-3.1-70B-Instruct-custom
+   Model: llama-3.3-70b-instruct-awq
    Key: gpustack_50e00c9281422bc5_0c0696dfcb1696d7635e58a2e56d6282
 
 4. Validate JSON correctness - CRITICAL:
