@@ -55,9 +55,8 @@ def main():
         model_id,
         quantization_config=bnb_config,
         trust_remote_code=True,
-        device_map=None  # Don't use auto - let trainer handle device placement
+        device_map="auto"  # Use auto for 4-bit - it handles placement correctly
     )
-    base_model = base_model.to("cuda:0")  # Explicitly move to GPU
     
     model = PeftModel.from_pretrained(base_model, stage1_adapter_path, is_trainable=True)
 
@@ -96,7 +95,8 @@ def main():
         tf32=True,  # Enable TF32 for better performance
         report_to="none",
         logging_first_step=True,  # Log first step to verify training starts
-        remove_unused_columns=False  # Important for LoRA
+        remove_unused_columns=False,  # Important for LoRA
+        dataloader_pin_memory=False,  # Disable pin_memory for 4-bit quantized models
     )
 
     trainer = Trainer(
