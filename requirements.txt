@@ -1,0 +1,12 @@
+torch
+transformers
+peft
+trl
+datasets
+bitsandbytes
+accelerate
+openai
+evaluate
+rouge_score
+bert_score
+pyyaml

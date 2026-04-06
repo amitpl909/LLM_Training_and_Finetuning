@@ -1,0 +1,27 @@
+[
+    {
+        "task_type": "extraction",
+        "instruction": "Extract all entities (persons, organizations, locations) and dates from the provided text. Return the result strictly as a JSON object with keys 'persons', 'organizations', 'locations', and 'dates' containing lists of strings.",
+        "input": "On October 24, 2023, Satya Nadella announced new AI features at the Microsoft headquarters in Redmond."
+    },
+    {
+        "task_type": "schema_constrained",
+        "instruction": "Generate a fictitious user profile that strictly conforms to the following JSON schema: {\"username\": \"string\", \"age\": \"integer\", \"is_premium_subscriber\": \"boolean\", \"interests\": [\"string\"]}. Return ONLY valid JSON.",
+        "input": ""
+    },
+    {
+        "task_type": "exact_label_classification",
+        "instruction": "Classify the sentiment of the provided customer review. You must return a JSON object with exactly one key, 'sentiment', and the value must be exactly one of: 'positive', 'neutral', or 'negative'.",
+        "input": "The battery life on this device is okay, but the screen scratches way too easily."
+    },
+    {
+        "task_type": "json_repair",
+        "instruction": "The following JSON string is malformed. Fix the syntax errors and return the corrected, perfectly valid JSON object.",
+        "input": "{ 'name': 'John Doe', \"age\": 34, \"city\": \"New York\", } "
+    },
+    {
+        "task_type": "tool_call",
+        "instruction": "You are an AI assistant with access to a function called `get_flight_status(flight_number, date)`. Generate the JSON arguments required to call this tool based on the user's query.",
+        "input": "Can you check if Delta flight DL405 is on time for tomorrow?"
+    }
+]

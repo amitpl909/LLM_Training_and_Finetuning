@@ -1,0 +1,29 @@
+# Model Configuration
+student_model: "microsoft/Phi-3.5-mini-instruct"
+# Teacher Model Configuration (Phase 1b)
+teacher_model: "Llama-3.1-70B-Instruct-custom"
+teacher_api_url: "http://10.246.100.230/v1"
+teacher_api_key: "gpustack_50e00c9281422bc5_0c0696dfcb1696d7635e58a2e56d6282"
+
+# Judge Model Configuration (Phase 4)
+judge_model: "Llama-3.1-70B-Instruct-custom"
+judge_api_url: "http://10.246.100.230/v1"
+judge_api_key: "gpustack_50e00c9281422bc5_0c0696dfcb1696d7635e58a2e56d6282"
+
+# UTSA HPC Training Parameters (QLoRA)
+max_sequence_length: 1024  
+batch_size: 4
+lora_rank: 16
+lora_alpha: 32
+lora_dropout: 0.05
+
+# Stage 1: Alpaca Fine-Tuning
+stage1_learning_rate: 0.00002
+stage1_epochs: 2
+
+# Stage 2: Teacher-Generated JSON Instruct Fine-Tuning
+stage2_learning_rate: 0.00002
+stage2_epochs: 2
+
+# Evaluation Settings
+num_eval_prompts: 100
