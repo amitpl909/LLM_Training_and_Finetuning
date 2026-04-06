@@ -7,10 +7,11 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
 #SBATCH --gres=gpu:1
-#SBATCH --exclude=gpu004,gpu013
+#SBATCH --exclude=gpu004,gpu013,gpu014
 #SBATCH --time=12:00:00
-#SLURM note: Using explicit exclude list instead of nodelist for flexibility.
-#            If scheduling fails, try: --nodelist=gpu001,gpu002,gpu003,gpu005,gpu006,gpu007,gpu008,gpu009,gpu010,gpu011,gpu012,gpu014,gpu015,gpu016,gpu017,gpu018,gpu019,gpu020,gpu021,gpu022
+
+# Note: Using explicit exclude list instead of nodelist for flexibility.
+#       If scheduling fails, try: --nodelist=gpu001,gpu002,gpu003,gpu005,gpu006,gpu007,gpu008,gpu009,gpu010,gpu011,gpu012,gpu014,gpu015,gpu016,gpu017,gpu018,gpu019,gpu020,gpu021,gpu022
 
 module load anaconda3
 source activate llm_env

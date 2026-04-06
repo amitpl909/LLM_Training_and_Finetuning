@@ -53,10 +53,11 @@ def main():
 
     base_model = AutoModelForCausalLM.from_pretrained(
         model_id,
-        device_map="auto",
         quantization_config=bnb_config,
-        trust_remote_code=True
+        trust_remote_code=True,
+        device_map=None  # Don't use auto - let trainer handle device placement
     )
+    base_model = base_model.to("cuda:0")  # Explicitly move to GPU
     
     model = PeftModel.from_pretrained(base_model, stage1_adapter_path, is_trainable=True)
 
@@ -91,9 +92,11 @@ def main():
         save_steps=500,
         save_total_limit=3,
         optim="paged_adamw_32bit",
-        bf16=False,
-        fp16=True,
-        report_to="none"
+        bf16=True,  # Use bfloat16 instead of fp16 with 4-bit quantization
+        tf32=True,  # Enable TF32 for better performance
+        report_to="none",
+        logging_first_step=True,  # Log first step to verify training starts
+        remove_unused_columns=False  # Important for LoRA
     )
 
     trainer = Trainer(
@@ -102,8 +105,14 @@ def main():
         args=training_args,
         data_collator=data_collator
     )
-
-    trainer.train()
+    
+    print("Stage 2 Trainer created. Starting training...", flush=True)
+    try:
+        trainer.train()
+        print("Stage 2 training completed successfully!", flush=True)
+    except Exception as e:
+        print(f"Stage 2 training error: {e}", flush=True)
+        raise
     
     os.makedirs("checkpoints/stage2_json_final", exist_ok=True)
     trainer.model.save_pretrained("checkpoints/stage2_json_final")

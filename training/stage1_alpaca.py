@@ -49,12 +49,18 @@ def main():
         bnb_4bit_use_double_quant=True,
     )
 
+    print("Loading model with 4-bit quantization...", flush=True)
     model = AutoModelForCausalLM.from_pretrained(
         model_id,
-        device_map="auto",
         quantization_config=bnb_config,
-        trust_remote_code=True
+        trust_remote_code=True,
+        device_map=None  # Don't use auto - let trainer handle device placement
     )
+    print(f"Model device after loading: {model.device}", flush=True)
+    
+    # Move model to GPU before kbit training prep
+    model = model.to("cuda:0")
+    print(f"Model device after moving to CUDA: {model.device}", flush=True)
     
     model = prepare_model_for_kbit_training(model)
 
@@ -68,6 +74,11 @@ def main():
     )
     model = get_peft_model(model, peft_config)
     model.print_trainable_parameters()
+    
+    print(f"GPU available: {torch.cuda.is_available()}", flush=True)
+    print(f"GPU device: {torch.cuda.current_device()}", flush=True)
+    print(f"GPU name: {torch.cuda.get_device_name(0)}", flush=True)
+    print(f"GPU memory: {torch.cuda.get_device_properties(0).total_memory / 1e9:.1f} GB", flush=True)
     
     dataset = load_dataset("json", data_files="data_prep/alpaca_train.json")["train"]
     
@@ -100,20 +111,29 @@ def main():
         save_steps=500,
         save_total_limit=3,
         optim="paged_adamw_32bit",
-        bf16=False,
-        fp16=True,
-        report_to="none"
+        bf16=True,  # Use bfloat16 instead of fp16 with 4-bit quantization
+        tf32=True,  # Enable TF32 for better performance
+        report_to="none",
+        logging_first_step=True,  # Log first step to verify training starts
+        remove_unused_columns=False  # Important for LoRA
     )
 
     # Core HF Trainer
+    print("Creating Trainer object...", flush=True)
     trainer = Trainer(
         model=model,
         train_dataset=tokenized_dataset,
         args=training_args,
         data_collator=data_collator
     )
+    print("Trainer created successfully. Starting training...", flush=True)
 
-    trainer.train()
+    try:
+        trainer.train()
+        print("Training completed successfully!", flush=True)
+    except Exception as e:
+        print(f"Training error: {e}", flush=True)
+        raise
     
     os.makedirs("checkpoints/stage1_alpaca_final", exist_ok=True)
     trainer.model.save_pretrained("checkpoints/stage1_alpaca_final")
