@@ -6,7 +6,7 @@ from peft import PeftModel
 from tqdm import tqdm
 import os
 import sys
-sys.path.insert(0, '../src')  # Add src directory to path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))  # Add src directory to path
 from data_utils import format_instruction_for_inference, print_template_info
 
 # Load central configuration

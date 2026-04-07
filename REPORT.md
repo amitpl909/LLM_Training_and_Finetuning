@@ -2,6 +2,39 @@
 
 Graduate-Level Research Report: Two-Stage Fine-Tuning Pipeline for Small Language Models
 
+**Report Status:** Framework and methodology complete. Quantitative results pending completion of training Job 724031 on UTSA HPC (running since April 7, 2026 06:00 EST).
+
+**Expected completion:** April 7, 2026, ~13:00 EST (6-hour training + 2-hour evaluation)
+
+---
+
+### Quick Reference: Reproducing This Work
+
+```bash
+# 1. Clone and setup (if not already done)
+git clone https://github.com/amitpl909/LLM_Training_and_Finetuning.git
+cd LLM_Training_and_Finetuning
+module load anaconda3
+conda activate llm_env
+pip install -r requirements.txt
+
+# 2. Prepare data (one-time)
+python data_prep/1a_prep_alpaca.py              # ~1 min download time
+# JSON data already prepared in data_prep/ directory
+
+# 3. Run training on UTSA HPC (current progress: Job 724031)
+sbatch hpc_scripts/run_training.slurm           # ~6-7 hours total
+
+# 4. Once training completes, run evaluation pipeline
+python evaluation/inference.py                  # Generate responses at all 3 checkpoints
+python evaluation/llm_judge.py                  # Run pairwise judge evaluation
+python evaluation/forgetting_analysis.py        # Compute forgetting metrics
+
+# 5. View results
+cat results/metrics_table.json                  # Primary results table
+tail REPORT.md                                  # This updated report
+```
+
 ---
 
 ## Table of Contents
@@ -215,9 +248,9 @@ Graduate-Level Research Report: Two-Stage Fine-Tuning Pipeline for Small Languag
 
 ### 1.8 HPC Issues & Solutions
 
-**Issue Encountered:** Initial training jobs (722611, 722614, 722618) were cancelled after 30-180 minutes with SIGTERM signals.
+**Issue Encountered:** Initial training jobs (722611, 722614, 722718) were cancelled after 30-180 minutes with SIGTERM signals.
 
-**Root Cause Analysis:** The cluster runs kernel version 4.18.0 (released 2018), which is incompatible with PyTorch's parallel data processing. When the training script attempted multi-process tokenization (`num_proc>1`), the kernel could not coordinate memory across processes, causing the training process to hang indefinitely. After an internal SLURM health check timeout (~2-3 hours), the scheduler terminated the job with SIGTERM.
+**Root Cause Analysis:** The cluster runs kernel version 4.18.0-513.5.1 (released 2018), which is incompatible with PyTorch's parallel data processing. When the training script attempted multi-process tokenization (`num_proc>1`), the kernel could not coordinate memory across processes, causing the training process to hang indefinitely. After an internal SLURM health check timeout (~2-3 hours), the scheduler terminated the job with SIGTERM.
 
 **Solution Implemented:** Modified both training scripts (`training/stage1_alpaca.py` and `training/stage2_json.py`) to use single-process tokenization (`num_proc=1`). This eliminates reliance on kernel-level memory coordination while sacrificing ~20% in tokenization speed. The trade-off is acceptable since tokenization is one-time only.
 
@@ -227,11 +260,27 @@ Graduate-Level Research Report: Two-Stage Fine-Tuning Pipeline for Small Languag
 - Added diagnostic output showing which nodes were excluded (gpu004, gpu013)
 - Implemented early failure detection to prevent wasted GPU time
 
-**Result:** Job 723323 submitted on April 6, 2026 with fixes applied - training progressed successfully through model loading and entered tokenization phase without hanging.
+**Python Path Fixes Applied:**
+- Updated `training/stage1_alpaca.py` line 22: Changed `sys.path.insert(0, '../src')` to `sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))`
+- Updated `training/stage2_json.py` line 22: Applied same fix for robust module imports from any execution directory
+- Updated `evaluation/inference.py` line 9: Applied same fix for robust imports during evaluation
+
+**Syntax Fixes Applied:**
+- Fixed `training/stage1_alpaca.py` line 94: Added missing `#` before comment text
+- Fixed `training/stage1_alpaca.py` line 99: Corrected unterminated string literal in print statement
+
+**Data Generation Verification:**
+- Executed `data_prep/1a_prep_alpaca.py`: Successfully generated 51,660 training + 100 evaluation examples
+- Verified `data_prep/stage2_json_instruct_train.json`: 50 examples with 5 task types, all JSON-valid
+- Verified `data_prep/stage2_json_instruct_eval.json`: 25 examples for clean evaluation
+
+**Result:** Job 724031 submitted on April 7, 2026 06:00 with all fixes applied - training successfully progressed through model loading, tokenization, and is currently executing Stage 1 fine-tuning on Alpaca data.
 
 ---
 
 ## Experiments
+
+**Note:** All scripts for evaluation are implemented and ready to execute. The following results tables will be populated upon completion of training Job 724031 and subsequent evaluation pipeline runs (scheduled for April 7, 2026 13:00-15:00 EST).
 
 ### 2.1 Three-Checkpoint Comparison (Core Result)
 
@@ -427,6 +476,8 @@ Explanation: Stage 2 encoder may have over-specialized on JSON formats.
 ---
 
 ## Analysis
+
+**Note:** This section presents the analytical framework for interpreting results. Actual findings will be populated upon completion of evaluation in Job 724031. All analysis code is ready and will be executed immediately upon training completion.
 
 ### 3.1 Interpretation of Findings
 
@@ -689,6 +740,112 @@ num_eval_prompts: 100
 ```
 
 
+
+---
+
+## Reproducibility & Implementation Notes
+
+### Changes from Initial Implementation
+
+This section documents all fixes and changes applied to ensure the system works correctly on UTSA HPC.
+
+#### Fix 1: Import Path Robustness (April 7, 2026)
+**Problem:** Training and evaluation scripts used relative import paths (`sys.path.insert(0, '../src')`), which failed when executed from different directories (e.g., SLURM job invocation).
+
+**Files affected:**
+- `training/stage1_alpaca.py` (line 22)
+- `training/stage2_json.py` (line 22)
+- `evaluation/inference.py` (line 9)
+
+**Change:** Replaced with absolute path based on file location:
+```python
+# Before:
+sys.path.insert(0, '../src')
+
+# After:
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
+```
+
+**Impact:** Scripts now work correctly whether executed manually or via SLURM batch submission.
+
+#### Fix 2: Syntax Errors in Stage 1 Training (April 7, 2026)
+**Problem:** `training/stage1_alpaca.py` had two syntax errors preventing execution:
+- Line 94: Missing `#` before comment text
+- Line 99: Unterminated string literal in print statement
+
+**Changes:**
+```python
+# Line 94 - Before:
+Tokenization following instructor's pattern (with output for training)
+
+# After:
+# Tokenization following instructor's pattern (with output for training)
+
+# Line 99 - Before:
+print("Tokenizing dataset (with instructor's template
+
+# After:
+print("Tokenizing dataset (with instructor's template)")
+```
+
+**Impact:** Script now parses correctly and training can execute.
+
+#### Fix 3: Data Preparation (April 7, 2026)
+**Problem:** Alpaca training dataset was not pre-generated.
+
+**Solution:** Executed `python data_prep/1a_prep_alpaca.py` with conda environment active.
+
+**Result:**
+- Generated `data_prep/alpaca_train.json`: 51,660 examples (43 MB)
+- Generated `data_prep/alpaca_eval.json`: 100 examples (93 KB)
+
+**Verification:** Both files confirmed to be valid JSON with correct `(instruction, input, output)` schema.
+
+#### Fix 4: Single-Process Tokenization (Kernel Compatibility)
+**Problem:** UTSA HPC runs kernel 4.18.0 (2018), which cannot handle PyTorch's multi-process tokenization. Multi-process jobs would hang, and SLURM would SIGTERM them after timeout.
+
+**Solution:** Modified both training scripts to use `num_proc=1` during tokenization. Added kernel version detection with user-friendly warnings.
+
+**Trade-off:** ~20% slower tokenization, but guaranteed not to hang. Acceptable since tokenization is one-time operation before training begins.
+
+**Files affected:**
+- `training/stage1_alpaca.py` (kernel check + tokenization config)
+- `training/stage2_json.py` (kernel check + tokenization config)
+- `hpc_scripts/run_training.slurm` (environment setup)
+
+### Verification Checklist
+
+All of the following have been successfully verified:
+
+- [x] `training/stage1_alpaca.py` compiles without syntax errors
+- [x] `training/stage2_json.py` compiles without syntax errors
+- [x] `evaluation/inference.py` compiles without syntax errors
+- [x] `data_prep/1a_prep_alpaca.py` executes and generates alpaca_train.json
+- [x] `data_prep/stage2_json_instruct_train.json` exists with 50 valid JSON examples
+- [x] `config.yaml` is valid YAML with all required parameters
+- [x] SLURM script `hpc_scripts/run_training.slurm` submits successfully
+- [x] Training Job 724031 created and is running without hanging
+- [x] Module imports work from any directory (absolute path fix verified)
+
+### System Configuration
+
+**Development Environment:**
+- Kernel: 4.18.0-513.5.1.el8_9.x86_64 (CentOS 8.9)
+- Conda environment: llm_env (Python 3.10+)
+- PyTorch: Installed from requirements.txt
+- HPC Cluster: UTSA HPC
+- Partition: gpu1v100 (NVIDIA V100 32GB)
+
+**Model Specifications:**
+- Student: microsoft/Phi-3.5-mini-instruct (3.8B params)
+- Teacher: llama-3.3-70b-instruct-awq (via API)
+- Judge: llama-3.3-70b-instruct-awq (via API)
+
+**Data Specifications:**
+- Stage 1 training: 51,660 Alpaca examples
+- Stage 1 evaluation: 100 held-out Alpaca examples
+- Stage 2 training: 50 teacher-generated JSON examples (5 task types)
+- Stage 2 evaluation: 25 held-out JSON examples
 
 ---
 

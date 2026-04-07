@@ -18,7 +18,7 @@ from transformers import (
 )
 from peft import PeftModel
 import sys
-sys.path.insert(0, '../src')  # Add src directory to path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))  # Add src directory to path
 from data_utils import tokenize_for_training, print_template_info
 
 # Load central configuration

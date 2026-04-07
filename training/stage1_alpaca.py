@@ -18,7 +18,7 @@ from transformers import (
 )
 from peft import LoraConfig, prepare_model_for_kbit_training, get_peft_model
 import sys
-sys.path.insert(0, '../src')  # Add src directory to path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))  # Add src directory to path
 from data_utils import tokenize_for_training, print_template_info
 
 # Load central configuration
@@ -91,13 +91,12 @@ def main():
         print(f"[WARN] GPU diagnostics failed (old driver?): {e}", flush=True)
     
     dataset = load_dataset("json", data_files="data_prep/alpaca_train.json")["train"]
-    Tokenization following instructor's pattern (with output for training)
+    # Tokenization following instructor's pattern (with output for training)
     def tokenize_function(example):
         """Instructor's pattern: separate functions for training vs inference."""
         return tokenize_for_training(example, tokenizer, config["max_sequence_length"], for_inference=False)
 
-    print("Tokenizing dataset (with instructor's template)
-    print("Tokenizing dataset...")
+    print("Tokenizing dataset (with instructor's template)")
     tokenized_dataset = dataset.map(tokenize_function, batched=True, remove_columns=dataset.column_names, num_proc=1)
     
     data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
