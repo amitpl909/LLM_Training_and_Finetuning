@@ -5,16 +5,31 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from peft import PeftModel
 from tqdm import tqdm
 import os
+import sys
+sys.path.insert(0, '../src')  # Add src directory to path
+from data_utils import format_instruction_for_inference, print_template_info
 
 # Load central configuration
 with open("config.yaml", "r") as f:
     config = yaml.safe_load(f)
 
-def generate_responses(model, tokenizer, prompts, max_new_tokens=150):
+def generate_responses(model, tokenizer, prompts_with_context, max_new_tokens=150):
+    """
+    Generate responses using the instructor's template pattern.
+    
+    Args:
+        model: The model to use for generation
+        tokenizer: The tokenizer
+        prompts_with_context: List of tuples (instruction, input_text)
+        max_new_tokens: Maximum tokens to generate
+    
+    Returns:
+        List of generated responses
+    """
     responses = []
-    for prompt in tqdm(prompts, desc="Generating"):
-        # Format for Phi-3.5 (standard User/Assistant template)
-        formatted_prompt = f"User: {prompt}\nAssistant:"
+    for instruction, input_text in tqdm(prompts_with_context, desc="Generating"):
+        # Use the instructor's template for consistent formatting
+        formatted_prompt = format_instruction_for_inference(instruction, input_text)
         inputs = tokenizer(formatted_prompt, return_tensors="pt").to("cuda")
         
         with torch.no_grad():
@@ -26,7 +41,7 @@ def generate_responses(model, tokenizer, prompts, max_new_tokens=150):
                 pad_token_id=tokenizer.eos_token_id
             )
         
-        # Decode and extract only the new assistant text
+        # Decode and extract only the new generated text
         full_output = tokenizer.decode(outputs[0], skip_special_tokens=True)
         response_only = full_output.replace(formatted_prompt, "").strip()
         responses.append(response_only)
@@ -35,28 +50,34 @@ def generate_responses(model, tokenizer, prompts, max_new_tokens=150):
 def main():
     # Ensure results directory exists
     os.makedirs("results", exist_ok=True)
+    
+    print_template_info()
 
     print("Loading evaluation datasets...")
     # 1. Load the Alpaca Eval Prompts (held-out evaluation set)
     with open("data_prep/alpaca_eval.json", "r") as f:
         alpaca_data = json.load(f)
-        alpaca_prompts = [ex["instruction"] for ex in alpaca_data]
+        # Format as (instruction, input) tuples for template
+        alpaca_prompts = [(ex["instruction"], ex.get("input", "")) for ex in alpaca_data]
 
     # 2. Load the JSON Instruct Eval Set (held-out, not training data!)
     with open("data_prep/stage2_json_instruct_eval.json", "r") as f:
         json_eval_data = json.load(f)
         json_prompts = []
         for ex in json_eval_data:
-            prompt = f"{ex['instruction']}\nInput: {ex['input']}" if ex['input'] else ex['instruction']
-            json_prompts.append({
-                "prompt": prompt,
-                "expected_output": ex["output"]
-            })
+            # Format as (instruction, input) tuples for template
+            json_prompts.append((ex["instruction"], ex.get("input", "")))
 
     all_prompts = {
-        "alpaca": [(p, None) for p in alpaca_prompts],  # (prompt, expected_output)
-        "json": [(p["prompt"], p["expected_output"]) for p in json_prompts]
+        "alpaca": alpaca_prompts,
+        "json": json_prompts
     }
+    
+    eval_data = {
+        "alpaca": alpaca_data,
+        "json": json_eval_data
+    }
+    
     # Initialize results as list of dicts, one per prompt
     results = {
         "alpaca": [{} for _ in alpaca_prompts],
@@ -66,6 +87,7 @@ def main():
     print("Loading Base Model (Phi-3.5-mini)...")
     model_id = config["student_model"]
     tokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
+    tokenizer.pad_token = tokenizer.eos_token
     
     # Load base model in 4-bit to save memory during inference
     base_model = AutoModelForCausalLM.from_pretrained(
@@ -98,16 +120,17 @@ def main():
         model.eval()
 
         for dataset_name, prompt_pairs in all_prompts.items():
-            prompts = [p[0] for p in prompt_pairs]  # Extract just the prompt text
-            print(f"Processing {len(prompts)} {dataset_name} samples...")
-            responses = generate_responses(model, tokenizer, prompts)
+            print(f"Processing {len(prompt_pairs)} {dataset_name} samples...")
+            responses = generate_responses(model, tokenizer, prompt_pairs)
             
             # Organize results for the LLM Judge to read later
-            for i, (prompt, expected_output) in enumerate(prompt_pairs):
+            for i, (instruction, input_text) in enumerate(prompt_pairs):
+                expected_output = eval_data[dataset_name][i].get("output", "")
                 if model_name == "baseline":
                     # Initialize new entry on first model
                     results[dataset_name][i] = {
-                        "prompt": prompt,
+                        "instruction": instruction,
+                        "input": input_text,
                         "expected_output": expected_output,
                         "baseline_response": responses[i]
                     }

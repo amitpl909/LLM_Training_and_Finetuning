@@ -17,6 +17,9 @@ from transformers import (
     DataCollatorForLanguageModeling
 )
 from peft import LoraConfig, prepare_model_for_kbit_training, get_peft_model
+import sys
+sys.path.insert(0, '../src')  # Add src directory to path
+from data_utils import tokenize_for_training, print_template_info
 
 # Load central configuration
 with open("config.yaml", "r") as f:
@@ -38,7 +41,8 @@ def check_kernel_compatibility():
         return True  # Skip check if parsing fails
 
 def main():
-    print("Starting Stage 1: Alpaca Fine-Tuning (Native Trainer)...")
+    print("Starting Stage 1: Alpaca Fine-Tuning (Following Instructor's Pattern)...")
+    print_template_info()
     check_kernel_compatibility()
     
     model_id = config["student_model"]
@@ -87,20 +91,12 @@ def main():
         print(f"[WARN] GPU diagnostics failed (old driver?): {e}", flush=True)
     
     dataset = load_dataset("json", data_files="data_prep/alpaca_train.json")["train"]
-    
-    # Native tokenization (Bypassing TRL completely)
+    Tokenization following instructor's pattern (with output for training)
     def tokenize_function(example):
-        texts = []
-        # Use .get() to safely handle missing 'input' columns if they don't exist
-        instructions = example.get('instruction', example.get('prompt', []))
-        inputs = example.get('input', [''] * len(instructions))
-        outputs = example['output']
-        
-        for inst, inp, out in zip(instructions, inputs, outputs):
-            p = f"{inst}\n\nInput: {inp}" if inp and str(inp).strip() != "" else inst
-            texts.append(f"User: {p}\nAssistant: {out}{tokenizer.eos_token}")
-        return tokenizer(texts, truncation=True, max_length=config["max_sequence_length"])
+        """Instructor's pattern: separate functions for training vs inference."""
+        return tokenize_for_training(example, tokenizer, config["max_sequence_length"], for_inference=False)
 
+    print("Tokenizing dataset (with instructor's template)
     print("Tokenizing dataset...")
     tokenized_dataset = dataset.map(tokenize_function, batched=True, remove_columns=dataset.column_names, num_proc=1)
     

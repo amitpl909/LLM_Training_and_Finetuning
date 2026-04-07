@@ -17,6 +17,9 @@ from transformers import (
     DataCollatorForLanguageModeling
 )
 from peft import PeftModel
+import sys
+sys.path.insert(0, '../src')  # Add src directory to path
+from data_utils import tokenize_for_training, print_template_info
 
 # Load central configuration
 with open("config.yaml", "r") as f:
@@ -38,7 +41,8 @@ def check_kernel_compatibility():
         return True  # Skip check if parsing fails
 
 def main():
-    print("Starting Stage 2: JSON Instruct Fine-Tuning (Native Trainer)...")
+    print("Starting Stage 2: JSON Instruct Fine-Tuning (Following Instructor's Pattern)...")
+    print_template_info()
     check_kernel_compatibility()
     
     model_id = config["student_model"]
@@ -76,20 +80,12 @@ def main():
 
     dataset = load_dataset("json", data_files="data_prep/stage2_json_instruct_train.json")["train"]
     
-    # Native tokenization
+    # Tokenization following instructor's pattern (with output for training)
     def tokenize_function(example):
-        texts = []
-        # Use .get() to safely handle missing 'input' columns to prevent KeyErrors
-        instructions = example.get('instruction', example.get('prompt', []))
-        inputs = example.get('input', [''] * len(instructions))
-        outputs = example['output']
-        
-        for inst, inp, out in zip(instructions, inputs, outputs):
-            p = f"{inst}\n\nInput: {inp}" if inp and str(inp).strip() != "" else inst
-            texts.append(f"User: {p}\nAssistant: {out}{tokenizer.eos_token}")
-        return tokenizer(texts, truncation=True, max_length=config["max_sequence_length"])
+        """Instructor's pattern: separate functions for training vs inference."""
+        return tokenize_for_training(example, tokenizer, config["max_sequence_length"], for_inference=False)
 
-    print("Tokenizing dataset...")
+    print("Tokenizing dataset (with instructor's template)...")
     tokenized_dataset = dataset.map(tokenize_function, batched=True, remove_columns=dataset.column_names, num_proc=1)
     
     data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
