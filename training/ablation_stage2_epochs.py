@@ -174,9 +174,9 @@ def train_ablation_variant(
         train_dataset=train_dataset,
         eval_dataset=eval_dataset,
         data_collator=lambda batch: {
-            'input_ids': torch.stack([b['input_ids'] for b in batch]),
-            'attention_mask': torch.stack([b['attention_mask'] for b in batch]),
-            'labels': torch.stack([b['labels'] for b in batch]),
+            'input_ids': torch.stack([torch.tensor(b['input_ids']) if isinstance(b['input_ids'], list) else b['input_ids'] for b in batch]),
+            'attention_mask': torch.stack([torch.tensor(b['attention_mask']) if isinstance(b['attention_mask'], list) else b['attention_mask'] for b in batch]),
+            'labels': torch.stack([torch.tensor(b['labels']) if isinstance(b['labels'], list) else b['labels'] for b in batch]),
         },
     )
     

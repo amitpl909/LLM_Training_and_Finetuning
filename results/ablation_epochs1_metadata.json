@@ -1,0 +1,9 @@
+{
+  "epochs": 1,
+  "learning_rate": 2e-05,
+  "batch_size": 2,
+  "gradient_accumulation_steps": 8,
+  "training_loss": 11.378530979156494,
+  "checkpoint_path": "checkpoints/ablation_epochs1",
+  "output_dir": "checkpoints/ablation_epochs1"
+}
