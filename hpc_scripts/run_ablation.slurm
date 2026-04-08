@@ -36,11 +36,7 @@ for EPOCHS in "${VARIANTS[@]}"; do
     echo "============================================"
     echo "Start time: $(date)"
     
-    python training/ablation_stage2_epochs.py \
-        --epochs "$EPOCHS" \
-        --learning_rate 2e-4 \
-        --dataset_fraction 1.0 \
-        --output_suffix ""
+    python training/ablation_stage2_epochs_v2.py --epochs "$EPOCHS"
     
     if [ $? -eq 0 ]; then
         echo "✅ Completed: epochs=$EPOCHS"
