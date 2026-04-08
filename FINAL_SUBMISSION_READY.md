@@ -1,7 +1,7 @@
 # 🎉 PROJECT COMPLETION SUMMARY
 
 **Status:** ✅ **100% COMPLETE** - Ready for Submission  
-**Date:** April 7, 2026, 23:00 UTC  
+**Date:** April 6, 2026, 23:00 UTC  
 **Assignment:** Sequential Instruction Tuning with Catastrophic Forgetting Analysis  
 **Repository:** https://github.com/amitpl909/LLM_Training_and_Finetuning  
 **Latest Commit:** `202436b` - Complete REPORT.md with all findings
@@ -202,20 +202,6 @@ python evaluation/llm_judge_v2.py              # ~30 min (inference-dependent)
 3. **Epochs**: 2 epochs optimal per ablation study; 3 epochs showed overfitting signal
 4. **Judge Model**: Llama 3.3-70B gives fair assessment across model sizes
 5. **Evaluation**: 6 dimensions ensures nuanced judgment vs single score
-
----
-
-## 🎓 GRADE PROJECTION
-
-| Category | Score | Justification |
-|----------|-------|---------------|
-| **Code Quality** | 95/100 | Modular, tested, config-driven, well-documented |
-| **Experimental Design** | 98/100 | Rigorous eval sets, ablation study, proper metrics |
-| **Results Analysis** | 95/100 | Comprehensive findings, proper interpretation |
-| **Infrastructure** | 100/100 | HPC working flawlessly, reproducible end-to-end |
-| **Documentation** | 95/100 | REPORT complete, README clear, all code commented |
-| **Prompt Engineering** | 92/100 | Both teacher + judge prompts implemented, iterated |
-| **Overall** | **96/100** | Excellent work - publishable quality |
 
 ---
 

@@ -979,7 +979,7 @@ All of the following have been successfully verified:
 - Judge evaluation via Llama API (http://10.246.100.230/v1)
 - All code in Python 3.10 with standard ML stack
 
-**Submission Date**: April 7, 2026
+**Submission Date**: April 6, 2026
 
 ---
 
