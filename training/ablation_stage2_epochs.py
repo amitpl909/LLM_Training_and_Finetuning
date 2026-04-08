@@ -52,7 +52,8 @@ def prepare_ablation_dataset(
     
     def format_prompt(example):
         # Format: "User: <input>\n\nAssistant: <output>"
-        prompt = f"User: {example['instruction']}\n\nAssistant: {example['response']}"
+        # Note: JSON data has 'output' field, not 'response'
+        prompt = f"User: {example['instruction']}\n\nAssistant: {example['output']}"
         tokens = tokenizer(
             prompt,
             truncation=True,
