@@ -700,5 +700,5 @@ For issues or questions:
 
 **Last Updated**: April 7, 2026  
 **Assignment**: UTSA LLM & Agentic Systems (Spring 2026)  
-**Author**: [Your Name]  
+**Author**: Amit Paul  
 **Repository**: https://github.com/amitpl909/LLM_Training_and_Finetuning

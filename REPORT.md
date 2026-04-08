@@ -960,6 +960,29 @@ All of the following have been successfully verified:
 
 ---
 
+## 7. Author & Acknowledgments
+
+**Author**: Amit Paul
+
+**Course**: LLM & Agentic Systems (Graduate Level)
+
+**Institution**: UTSA
+
+**Infrastructure**: UTSA High-Performance Computing Center (V100 GPUs)
+
+**Models Used**:
+- Base: Microsoft Phi-3.5-mini-instruct
+- Teacher/Judge: Meta Llama 3.3-70B-Instruct
+
+**Implementation**:
+- QLoRA fine-tuning via Hugging Face `transformers`, `peft`, `bitsandbytes`
+- Judge evaluation via Llama API (http://10.246.100.230/v1)
+- All code in Python 3.10 with standard ML stack
+
+**Submission Date**: April 7, 2026
+
+---
+
 ## References
 
 [1] Hu, E., Shen, Y., Wallis, P., Allen-Zhu, Z., Li, Y., Wang, S., ... & Hardt, M. (2021). LoRA: Low-Rank Adaptation of Large Language Models. arXiv preprint arXiv:2106.09685.

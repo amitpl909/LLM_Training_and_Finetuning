@@ -63,8 +63,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a valid answer.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -107,8 +107,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide any relevant information.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -151,8 +151,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a method for selecting features for supervised learning.",
-            "checkpoint_a": "Base",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "Base"
         },
         {
             "response_a_scores": {
@@ -195,94 +195,6 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a valid explanation of the difference between a volcano and an earthquake.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
-        },
-        {
-            "response_a_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "response_b_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "winner": "TIE",
-            "justification": "Both responses contain errors and do not provide a valid explanation of the difference between a volcano and an earthquake.",
-            "checkpoint_a": "CP2",
-            "checkpoint_b": "CP1"
-        },
-        {
-            "response_a_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "response_b_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "winner": "TIE",
-            "justification": "Both responses contain errors and do not provide a 3-word phrase.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
-        },
-        {
-            "response_a_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "response_b_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "winner": "TIE",
-            "justification": "Both responses contain errors and do not provide a 3-word phrase.",
-            "checkpoint_a": "CP2",
-            "checkpoint_b": "CP1"
-        },
-        {
-            "response_a_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "response_b_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "winner": "TIE",
-            "justification": "Both responses contain errors and do not provide any questions about Animal Farm.",
             "checkpoint_a": "Base",
             "checkpoint_b": "CP1"
         },
@@ -304,9 +216,97 @@
                 "hallucination_risk": 1
             },
             "winner": "TIE",
-            "justification": "Both responses contain errors and do not provide any questions about Animal Farm.",
-            "checkpoint_a": "CP2",
+            "justification": "Both responses contain errors and do not provide a valid explanation of the difference between a volcano and an earthquake.",
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "CP2"
+        },
+        {
+            "response_a_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "response_b_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "winner": "TIE",
+            "justification": "Both responses contain errors and do not provide a 3-word phrase.",
+            "checkpoint_a": "Base",
             "checkpoint_b": "CP1"
+        },
+        {
+            "response_a_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "response_b_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "winner": "TIE",
+            "justification": "Both responses contain errors and do not provide a 3-word phrase.",
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "CP2"
+        },
+        {
+            "response_a_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "response_b_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "winner": "TIE",
+            "justification": "Both responses contain errors and do not provide any questions about Animal Farm.",
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "Base"
+        },
+        {
+            "response_a_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "response_b_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "winner": "TIE",
+            "justification": "Both responses contain errors and do not provide any questions about Animal Farm.",
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "CP2"
         },
         {
             "response_a_scores": {
@@ -415,8 +415,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a valid explanation of the similarities between left-wing and right-wing political ideologies.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -437,8 +437,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a valid explanation of the similarities between left-wing and right-wing political ideologies.",
-            "checkpoint_a": "CP2",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "CP2"
         },
         {
             "response_a_scores": {
@@ -503,8 +503,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a correct data model for a customer relationship management system.",
-            "checkpoint_a": "Base",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "Base"
         },
         {
             "response_a_scores": {
@@ -547,8 +547,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not follow the instruction.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -635,8 +635,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a story.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -679,8 +679,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide any information about the rules of chess.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -745,8 +745,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a meaningful answer to the question.",
-            "checkpoint_a": "CP2",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "CP2"
         },
         {
             "response_a_scores": {
@@ -811,8 +811,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a valid outline for a research paper about AI in healthcare.",
-            "checkpoint_a": "Base",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "Base"
         },
         {
             "response_a_scores": {
@@ -855,8 +855,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain an error message and do not provide a context for the given vocabulary.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -899,8 +899,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a valid answer.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -921,8 +921,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a valid answer.",
-            "checkpoint_a": "CP2",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "CP2"
         },
         {
             "response_a_scores": {
@@ -943,8 +943,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide any disadvantages of using machine learning algorithms.",
-            "checkpoint_a": "Base",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "Base"
         },
         {
             "response_a_scores": {
@@ -965,8 +965,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide any disadvantages of using machine learning algorithms.",
-            "checkpoint_a": "CP2",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "CP2"
         },
         {
             "response_a_scores": {
@@ -1009,8 +1009,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a descriptive title.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "CP2"
+            "checkpoint_a": "CP2",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -1031,8 +1031,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a command in imperative form.",
-            "checkpoint_a": "Base",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "Base"
         },
         {
             "response_a_scores": {
@@ -1075,8 +1075,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses failed to provide a report outlining the benefits of solar energy due to an error message.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -1119,8 +1119,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide any techniques.",
-            "checkpoint_a": "Base",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "Base"
         },
         {
             "response_a_scores": {
@@ -1141,29 +1141,7 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide any techniques.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "CP2"
-        },
-        {
-            "response_a_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "response_b_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "winner": "TIE",
-            "justification": "Both responses contain errors and do not address the instruction.",
-            "checkpoint_a": "Base",
+            "checkpoint_a": "CP2",
             "checkpoint_b": "CP1"
         },
         {
@@ -1186,7 +1164,29 @@
             "winner": "TIE",
             "justification": "Both responses contain errors and do not address the instruction.",
             "checkpoint_a": "CP1",
-            "checkpoint_b": "CP2"
+            "checkpoint_b": "Base"
+        },
+        {
+            "response_a_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "response_b_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "winner": "TIE",
+            "justification": "Both responses contain errors and do not address the instruction.",
+            "checkpoint_a": "CP2",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -1229,29 +1229,7 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a description of the importance of a healthy lifestyle.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "CP2"
-        },
-        {
-            "response_a_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "response_b_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "winner": "TIE",
-            "justification": "Both responses contain errors and do not provide a list of considerations for starting a business.",
-            "checkpoint_a": "Base",
+            "checkpoint_a": "CP2",
             "checkpoint_b": "CP1"
         },
         {
@@ -1274,28 +1252,6 @@
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a list of considerations for starting a business.",
             "checkpoint_a": "CP1",
-            "checkpoint_b": "CP2"
-        },
-        {
-            "response_a_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "response_b_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "winner": "TIE",
-            "justification": "Both responses contain errors and do not provide a password.",
-            "checkpoint_a": "CP1",
             "checkpoint_b": "Base"
         },
         {
@@ -1316,7 +1272,7 @@
                 "hallucination_risk": 1
             },
             "winner": "TIE",
-            "justification": "Both responses contain errors and do not provide a password.",
+            "justification": "Both responses contain errors and do not provide a list of considerations for starting a business.",
             "checkpoint_a": "CP2",
             "checkpoint_b": "CP1"
         },
@@ -1338,51 +1294,7 @@
                 "hallucination_risk": 1
             },
             "winner": "TIE",
-            "justification": "Both responses contain errors and do not provide a model to predict stock prices.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
-        },
-        {
-            "response_a_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "response_b_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "winner": "TIE",
-            "justification": "Both responses contain errors and do not provide a model to predict stock prices.",
-            "checkpoint_a": "CP2",
-            "checkpoint_b": "CP1"
-        },
-        {
-            "response_a_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "response_b_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "winner": "TIE",
-            "justification": "Both responses contain errors and do not provide a general overview of the topic.",
+            "justification": "Both responses contain errors and do not provide a password.",
             "checkpoint_a": "Base",
             "checkpoint_b": "CP1"
         },
@@ -1404,9 +1316,97 @@
                 "hallucination_risk": 1
             },
             "winner": "TIE",
-            "justification": "Both responses contain errors and do not provide a general overview of the topic.",
-            "checkpoint_a": "CP2",
+            "justification": "Both responses contain errors and do not provide a password.",
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "CP2"
+        },
+        {
+            "response_a_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "response_b_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "winner": "TIE",
+            "justification": "Both responses contain errors and do not provide a model to predict stock prices.",
+            "checkpoint_a": "Base",
             "checkpoint_b": "CP1"
+        },
+        {
+            "response_a_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "response_b_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "winner": "TIE",
+            "justification": "Both responses contain errors and do not provide a model to predict stock prices.",
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "CP2"
+        },
+        {
+            "response_a_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "response_b_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "winner": "TIE",
+            "justification": "Both responses contain errors and do not provide a general overview of the topic.",
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "Base"
+        },
+        {
+            "response_a_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "response_b_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "winner": "TIE",
+            "justification": "Both responses contain errors and do not provide a general overview of the topic.",
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "CP2"
         },
         {
             "response_a_scores": {
@@ -1471,50 +1471,6 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a restaurant menu for a burger joint.",
-            "checkpoint_a": "Base",
-            "checkpoint_b": "CP1"
-        },
-        {
-            "response_a_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "response_b_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "winner": "TIE",
-            "justification": "Both responses contain errors and do not provide a restaurant menu for a burger joint.",
-            "checkpoint_a": "CP2",
-            "checkpoint_b": "CP1"
-        },
-        {
-            "response_a_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "response_b_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "winner": "TIE",
-            "justification": "Both responses contain errors and do not address the instruction.",
             "checkpoint_a": "CP1",
             "checkpoint_b": "Base"
         },
@@ -1536,6 +1492,50 @@
                 "hallucination_risk": 1
             },
             "winner": "TIE",
+            "justification": "Both responses contain errors and do not provide a restaurant menu for a burger joint.",
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "CP2"
+        },
+        {
+            "response_a_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "response_b_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "winner": "TIE",
+            "justification": "Both responses contain errors and do not address the instruction.",
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
+        },
+        {
+            "response_a_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "response_b_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "winner": "TIE",
             "justification": "Both responses contain errors and do not address the instruction.",
             "checkpoint_a": "CP1",
             "checkpoint_b": "CP2"
@@ -1581,8 +1581,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a valid solution to the given math problem.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "CP2"
+            "checkpoint_a": "CP2",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -1669,8 +1669,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a budget plan.",
-            "checkpoint_a": "CP2",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "CP2"
         },
         {
             "response_a_scores": {
@@ -1713,8 +1713,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a five-word sentence using the given words.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "CP2"
+            "checkpoint_a": "CP2",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -1735,8 +1735,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide instructions for brushing teeth.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -1779,8 +1779,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a valid description of a human-machine interface in 5 words.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -1823,8 +1823,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a one-sentence summary.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -1845,8 +1845,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a one-sentence summary.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "CP2"
+            "checkpoint_a": "CP2",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -1911,8 +1911,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a valid comparison between a microwave and an oven.",
-            "checkpoint_a": "Base",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "Base"
         },
         {
             "response_a_scores": {
@@ -1933,8 +1933,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a valid comparison between a microwave and an oven.",
-            "checkpoint_a": "CP2",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "CP2"
         },
         {
             "response_a_scores": {
@@ -1955,8 +1955,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a theme for the event.",
-            "checkpoint_a": "Base",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "Base"
         },
         {
             "response_a_scores": {
@@ -2043,8 +2043,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a rearranged sentence.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -2087,8 +2087,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a shopping list of ingredients for a vegan GF brownie recipe.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -2131,8 +2131,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not address the instruction.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -2153,8 +2153,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not address the instruction.",
-            "checkpoint_a": "CP2",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "CP2"
         },
         {
             "response_a_scores": {
@@ -2241,7 +2241,29 @@
             },
             "winner": "TIE",
             "justification": "Both responses contained errors and did not provide a poem about Lucas.",
-            "checkpoint_a": "CP2",
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "CP2"
+        },
+        {
+            "response_a_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "response_b_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "winner": "TIE",
+            "justification": "Both responses contain errors and do not provide any potential biases.",
+            "checkpoint_a": "Base",
             "checkpoint_b": "CP1"
         },
         {
@@ -2264,29 +2286,7 @@
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide any potential biases.",
             "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
-        },
-        {
-            "response_a_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "response_b_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "winner": "TIE",
-            "justification": "Both responses contain errors and do not provide any potential biases.",
-            "checkpoint_a": "CP2",
-            "checkpoint_b": "CP1"
+            "checkpoint_b": "CP2"
         },
         {
             "response_a_scores": {
@@ -2329,8 +2329,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a solution to the problem.",
-            "checkpoint_a": "CP2",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "CP2"
         },
         {
             "response_a_scores": {
@@ -2351,8 +2351,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a description of Amazon's shipping process.",
-            "checkpoint_a": "Base",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "Base"
         },
         {
             "response_a_scores": {
@@ -2395,8 +2395,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a speech to inspire people to help the environment.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -2461,8 +2461,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a valid example of a company that uses artificial intelligence.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "CP2"
+            "checkpoint_a": "CP2",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -2505,8 +2505,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses failed to identify the grammatical error in the phrase.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "CP2"
+            "checkpoint_a": "CP2",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -2593,8 +2593,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain the same error message and do not address the instruction.",
-            "checkpoint_a": "CP2",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "CP2"
         },
         {
             "response_a_scores": {
@@ -2615,8 +2615,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not address the instruction.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -2703,8 +2703,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a short children's story.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -2879,8 +2879,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide any facts about black holes.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -2967,8 +2967,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a valid analogy for explaining the concept of a quantum computer.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -3011,8 +3011,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a new name for a local ecommerce shop.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -3033,50 +3033,6 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a new name for a local ecommerce shop.",
-            "checkpoint_a": "CP2",
-            "checkpoint_b": "CP1"
-        },
-        {
-            "response_a_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "response_b_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "winner": "TIE",
-            "justification": "Both responses contain errors and do not provide a letter of recommendation for John Doe.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
-        },
-        {
-            "response_a_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "response_b_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "winner": "TIE",
-            "justification": "Both responses contain errors and do not provide a letter of recommendation for John Doe.",
             "checkpoint_a": "CP1",
             "checkpoint_b": "CP2"
         },
@@ -3098,9 +3054,53 @@
                 "hallucination_risk": 1
             },
             "winner": "TIE",
+            "justification": "Both responses contain errors and do not provide a letter of recommendation for John Doe.",
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
+        },
+        {
+            "response_a_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "response_b_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "winner": "TIE",
+            "justification": "Both responses contain errors and do not provide a letter of recommendation for John Doe.",
+            "checkpoint_a": "CP2",
+            "checkpoint_b": "CP1"
+        },
+        {
+            "response_a_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "response_b_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a keyword for the given text snippets.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -3165,52 +3165,52 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a simulation of basic computer logic using boolean conditions.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "CP2"
-        },
-        {
-            "response_a_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "response_b_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "winner": "TIE",
-            "justification": "Both responses contain errors and do not provide a scenario.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
-        },
-        {
-            "response_a_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "response_b_scores": {
-                "instruction_following": 1,
-                "correctness": 1,
-                "clarity": 1,
-                "completeness": 1,
-                "structured_output_validity": 1,
-                "hallucination_risk": 1
-            },
-            "winner": "TIE",
-            "justification": "Both responses contain errors and do not provide a scenario.",
             "checkpoint_a": "CP2",
             "checkpoint_b": "CP1"
+        },
+        {
+            "response_a_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "response_b_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "winner": "TIE",
+            "justification": "Both responses contain errors and do not provide a scenario.",
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
+        },
+        {
+            "response_a_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "response_b_scores": {
+                "instruction_following": 1,
+                "correctness": 1,
+                "clarity": 1,
+                "completeness": 1,
+                "structured_output_validity": 1,
+                "hallucination_risk": 1
+            },
+            "winner": "TIE",
+            "justification": "Both responses contain errors and do not provide a scenario.",
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "CP2"
         },
         {
             "response_a_scores": {
@@ -3231,8 +3231,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a classification of the product type.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -3341,8 +3341,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a classic novel recommendation.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "CP2"
+            "checkpoint_a": "CP2",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -3429,8 +3429,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a categorization of the superhero movie.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "CP2"
+            "checkpoint_a": "CP2",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -3495,8 +3495,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a valid answer.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -3583,8 +3583,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a character description for Trina.",
-            "checkpoint_a": "Base",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "Base"
         },
         {
             "response_a_scores": {
@@ -3627,8 +3627,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a valid answer to the question.",
-            "checkpoint_a": "Base",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "Base"
         },
         {
             "response_a_scores": {
@@ -3649,8 +3649,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a valid answer to the question.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "CP2"
+            "checkpoint_a": "CP2",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -3671,8 +3671,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a story or anecdote.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -3759,8 +3759,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a word cloud.",
-            "checkpoint_a": "Base",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "Base"
         },
         {
             "response_a_scores": {
@@ -3803,8 +3803,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a password.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -3825,8 +3825,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a password.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "CP2"
+            "checkpoint_a": "CP2",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -3891,8 +3891,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a rewritten sentence.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -3913,8 +3913,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a rewritten sentence.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "CP2"
+            "checkpoint_a": "CP2",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -3935,8 +3935,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a list of items for a camping trip.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -3979,8 +3979,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a blog post on the importance of diversifying computer science.",
-            "checkpoint_a": "Base",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "Base"
         },
         {
             "response_a_scores": {
@@ -4045,8 +4045,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a valid implementation of boggo sort in C++",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "CP2"
+            "checkpoint_a": "CP2",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -4067,8 +4067,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a haiku transformation.",
-            "checkpoint_a": "Base",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "Base"
         },
         {
             "response_a_scores": {
@@ -4111,8 +4111,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide terms related to machine learning.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -4243,8 +4243,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses failed to follow the instruction and did not provide a spell check of the article.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -4265,8 +4265,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses failed to follow the instruction and did not provide a spell check of the article.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "CP2"
+            "checkpoint_a": "CP2",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
@@ -4287,8 +4287,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide a balanced diet for a marathon runner.",
-            "checkpoint_a": "Base",
-            "checkpoint_b": "CP1"
+            "checkpoint_a": "CP1",
+            "checkpoint_b": "Base"
         },
         {
             "response_a_scores": {
@@ -4331,8 +4331,8 @@
             },
             "winner": "TIE",
             "justification": "Both responses contain errors and do not provide any ideas for a creative ensemble.",
-            "checkpoint_a": "CP1",
-            "checkpoint_b": "Base"
+            "checkpoint_a": "Base",
+            "checkpoint_b": "CP1"
         },
         {
             "response_a_scores": {
