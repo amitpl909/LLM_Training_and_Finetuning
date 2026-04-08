@@ -92,7 +92,7 @@ def train_ablation_variant(
     model_id = config["student_model"]
     
     # Load Stage 1 checkpoint as base
-    stage1_checkpoint = Path(config["stage1"]["output_dir"]) / "stage1_alpaca_final"
+    stage1_checkpoint = Path("checkpoints/stage1_alpaca_final")
     if not stage1_checkpoint.exists():
         raise FileNotFoundError(f"Stage 1 checkpoint not found: {stage1_checkpoint}")
     
@@ -123,7 +123,7 @@ def train_ablation_variant(
     tokenizer.pad_token = tokenizer.eos_token
     
     # Prepare dataset
-    train_data_path = config["stage2"]["train_data_path"]
+    train_data_path = "data_prep/stage2_json_instruct_train.json"
     train_dataset = prepare_ablation_dataset(
         train_data_path,
         tokenizer,
@@ -131,7 +131,7 @@ def train_ablation_variant(
     )
     
     # Add evaluation dataset
-    eval_data_path = config["stage2"]["eval_data_path"] 
+    eval_data_path = "data_prep/stage2_json_instruct_eval.json"
     eval_dataset = prepare_ablation_dataset(eval_data_path, tokenizer)
     
     print(f"Training samples: {len(train_dataset)}")
@@ -139,14 +139,14 @@ def train_ablation_variant(
     print(f"Learning rate: {learning_rate}")
     
     # Setup training arguments for ablation variant
-    output_dir = f"{config['stage2']['output_dir']}/ablation_epochs{epochs}_{output_suffix}".rstrip("_")
+    output_dir = f"checkpoints/ablation_epochs{epochs}_{output_suffix}".rstrip("_")
     
     training_args = TrainingArguments(
         output_dir=output_dir,
         overwrite_output_dir=True,
-        per_device_train_batch_size=config["stage2"].get("per_device_train_batch_size", 8),
-        per_device_eval_batch_size=config["stage2"].get("per_device_eval_batch_size", 16),
-        gradient_accumulation_steps=config["stage2"].get("gradient_accumulation_steps", 1),
+        per_device_train_batch_size=config.get("batch_size", 8),
+        per_device_eval_batch_size=config.get("batch_size", 8),
+        gradient_accumulation_steps=config.get("gradient_accumulation_steps", 8),
         num_train_epochs=epochs,  # ← ABLATION PARAMETER
         learning_rate=learning_rate,
         weight_decay=0.01,
