@@ -89,7 +89,7 @@ def train_ablation_variant(
     config = load_config()
     
     # Model setup
-    model_id = config["model"]["model_id"]
+    model_id = config["student_model"]
     
     # Load Stage 1 checkpoint as base
     stage1_checkpoint = Path(config["stage1"]["output_dir"]) / "stage1_alpaca_final"

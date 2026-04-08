@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/work/nbe841/LLM_Training_and_Finetuning/training/ablation_stage2_epochs.py", line 238, in <module>
+    main()
+  File "/work/nbe841/LLM_Training_and_Finetuning/training/ablation_stage2_epochs.py", line 221, in main
+    result = train_ablation_variant(
+  File "/work/nbe841/LLM_Training_and_Finetuning/training/ablation_stage2_epochs.py", line 95, in train_ablation_variant
+    stage1_checkpoint = Path(config["stage1"]["output_dir"]) / "stage1_alpaca_final"
+KeyError: 'stage1'

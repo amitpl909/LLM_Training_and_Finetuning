@@ -1,0 +1,16 @@
+This model config has set a `rope_parameters['original_max_position_embeddings']` field, to be used together with `max_position_embeddings` to determine a scaling factor. Please set the `factor` field of `rope_parameters`with this ratio instead -- we recommend the use of this field over `original_max_position_embeddings`, as it is compatible with most model architectures.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+`torch_dtype` is deprecated! Use `dtype` instead!
+`flash-attention` package not found, consider installing for better performance: No module named 'flash_attn'.
+Current `flash-attention` does not support `window_size`. Either upgrade or use `attn_implementation='eager'`.
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:58<00:58, 58.63s/it]Fetching 2 files: 100%|██████████| 2/2 [00:58<00:00, 29.32s/it]
+Traceback (most recent call last):
+  File "/work/nbe841/LLM_Training_and_Finetuning/evaluation/inference.py", line 147, in <module>
+    main()
+  File "/work/nbe841/LLM_Training_and_Finetuning/evaluation/inference.py", line 93, in main
+    base_model = AutoModelForCausalLM.from_pretrained(
+  File "/home/nbe841/.conda/envs/llm_env/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 380, in from_pretrained
+    return model_class.from_pretrained(
+  File "/home/nbe841/.conda/envs/llm_env/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4089, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+TypeError: Phi3ForCausalLM.__init__() got an unexpected keyword argument 'load_in_4bit'

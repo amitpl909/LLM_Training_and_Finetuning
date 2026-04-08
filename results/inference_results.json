@@ -1,0 +1,1606 @@
+{
+    "alpaca": [
+        {
+            "instruction": "Define the word \"oxymoron\".",
+            "input": "",
+            "expected_output": "An oxymoron is a figure of speech that combines two usually contradictory or opposite terms in close proximity, creating a contrast or a paradox, for example, \"deafening silence\" or \"bittersweet\". The term oxymoron comes from the Greek words \"oxys\" meaning sharp or keen, and \"moros\" meaning foolish, so translated literally, it means \"sharp-foolish.\" By highlighting the incongruity between the two words, the writer or speaker can emphasize the complexity or irony of the situation they are describing.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Can you give an example of a word that is a homophone?",
+            "input": "",
+            "expected_output": "Sure! An example of a word that is a homophone is \"knight\" and \"night\" which sound the same, but have different spellings and meanings.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Give two reasons why the healthcare system in the US is inefficient.",
+            "input": "",
+            "expected_output": "1. Fragmented care delivery: One reason for the inefficiency of the US healthcare system is fragmentation in care delivery, with multiple providers and insurers involved along a patient's care journey. This contributes to gaps in communication and coordination of care, leading to duplication of services, delays, and increased costs.\n\n2. High administrative costs: Another reason for the inefficiency of the US healthcare system is the high administrative burden and costs associated with a multi-payer insurance environment and managing claims and requests for prior authorization. According to a study by the Center for American Progress, administrative costs in the US healthcare system are estimated to be as much as 8% of total healthcare spending, significantly higher than other countries with simpler, single-payer healthcare systems.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Suggest a method for selecting features for supervised learning.",
+            "input": "",
+            "expected_output": "One popular method for selecting features for supervised learning is the use of Recursive Feature Elimination (RFE). This approach works by fitting a model on the entire set of features and then eliminating the weakest features using a pre-defined metric, such as feature importance or coefficient value. This process is repeated recursively, reducing the number of features at each step, until the desired number of features is reached.\n\nAnother method is the use of correlation matrices and removing highly correlated features that are not contributing much useful information to the model. \n\nIt is also possible to use statistical tests such as ANOVA or Chi-Squared tests to identify which features are most relevant to the target variable. \n\nLastly, using techniques like L1 regularization can help to reduce the weight of less important features to zero during the model training process, effectively removing them from the model.\n\nChoosing the right feature selection method, therefore, depends on the data, the model, and the specific problem at hand; it may require trial and error to find the most effective approach for the given task.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Explain to me the difference between a volcano and an earthquake.",
+            "input": "",
+            "expected_output": "A volcano and an earthquake are both geological phenomena, but they involve different processes and are caused by different things.\n\nA volcano is an opening in the Earth's surface through which molten rock, ash, and gas can escape from the magma chamber located beneath the surface. The formation of a volcano is mostly linked to the movement of tectonic plates and the buildup of pressure and heat in the Earth's mantle. When the pressure becomes too great, an eruption occurs, which can release massive amounts of ash, lava, and volcanic gases into the atmosphere, creating a significant environmental hazard.\n\nAn earthquake, on the other hand, is the sudden movement of the Earth's crust, caused by the release of built-up energy along fault lines or the boundaries between tectonic plates. This energy can build up due to the slow movement of the plates, which causes strain to accumulate in the rocks along the fault line. When the strain becomes too great, the rocks will suddenly shift, releasing energy in the form of seismic waves, which cause the ground to shake.\n\nIn short, a volcano is a vent in the Earth's surface through which molten rock and gas can escape, while an earthquake is a sudden movement of the Earth's crust caused by the release of built-up energy. One key difference is that volcanic eruptions are often preceded with some visible activities, whereas earthquakes can strike without warning.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a 3-word phrase which is the opposite of the given expression.",
+            "input": "Free thinking",
+            "expected_output": "Constrained thoughtlessness",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Write five different questions about the novel Animal Farm by George Orwell",
+            "input": "",
+            "expected_output": "1. Can you explain the main allegorical symbolism behind the characters and events in George Orwell's Animal Farm?\n\n2. How does the phrase \"All animals are equal, but some animals are more equal than others\" reflect the societal themes present in Animal Farm?\n\n3. Would you say that the power dynamics in Animal Farm represent a commentary on the nature of revolution and political corruption?\n\n4. In what ways does Orwell use satire in Animal Farm to critique the events leading up to the Russian Revolution of 1917?\n\n5. How does the character development of Napoleon in Animal Farm represent the dangers of a leader's unchecked desire for power and control?",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Make an analogy between a queen bee and a human leader.",
+            "input": "",
+            "expected_output": "A queen bee in a colony is like a human leader of an organization or a community. Just like a queen bee is responsible for the growth, regulation and survival of the hive, human leaders are responsible for guiding their team, setting goals, and making decisions that lead to development and success of the organization. In both cases, the queen bee and the human leader rely on effective communication, and cooperation from their subordinates to achieve their objectives. Similarly, the queen bee lays eggs to increase the population of the hive, a human leader also recruits and nurtures new talent to grow their organization. Just as the queen bee is the central figure in the hive, a human leader also plays a pivotal role in keeping the whole group together and working towards a common goal.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Name 3 tourist attractions in Tokyo.",
+            "input": "",
+            "expected_output": "Three popular tourist attractions in Tokyo are:\n1. Tokyo Skytree: This is the tallest structure in Japan, standing at over 634 meters. It offers breathtaking views of the city from its observation deck.\n2. Sens\u014d-ji Temple: Also known as Asakusa Kannon Temple, this is one of Tokyo's oldest and most significant Buddhist temples, popular with both locals and tourists alike.\n3. Tsukiji Fish Market: This is the world's largest wholesale fish and seafood market, and visitors can come early in the morning to witness the tuna auctions, or enjoy fresh sushi and sashimi at one of its many restaurants.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Explain the similarities between a left-wing and a right-wing political ideology",
+            "input": "",
+            "expected_output": "A left-wing political ideology and a right-wing political ideology are two ends of the political spectrum that often have opposing views on various issues. However, despite their differences, there are some similarities between the two ideologies. \n\nFirstly, both left-wing and right-wing ideologies strive for a better society and believe in the need for government and laws to regulate and guide the behavior of citizens. They both want their nation to be prosperous, economically stable and safe for citizens, and believe that their ideas offer the best way to achieve this.\n\nAdditionally, both ideologies believe in the importance of individual freedoms and rights, though their interpretation of these may differ. For example, while the left-wing may prioritize social and economic equality and see government intervention as necessary to achieve this, the right-wing may value individual freedoms and economic competition, with a preference for a smaller government role.\n\nFinally, both sides may also have common ground on some specific policies. For instance, there may be an agreement on the need for infrastructure development, protection of certain basic human rights or national defense.\n\nIn summary, despite their differences, both left-wing and right-wing ideologies share some fundamental principles, such as the pursuit of a better society, the value of individual rights and freedoms, and the role of government in achieving certain goals.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Create a speech that can be used to welcome a graduating class",
+            "input": "",
+            "expected_output": "Hello and congratulations to the graduating class of [year]! What an honor it is to be here today, celebrating your remarkable achievements and the bright future that lies ahead of each and every one of you.\n\nAs you take this important step into the next chapter of your lives, remember the hard work, dedication, and perseverance that brought you to this momentous occasion. Each one of you has shown an unwavering commitment to your education and personal growth, and for that, we could not be more proud.\n\nToday, we celebrate not only your academic achievements but also the friendships, memories, and personal growth that have come with your time at this institution. You leave here today with more than just a diploma; you carry with you the skills, experiences, and relationships that will shape your future.\n\nAs you embark on the next chapter, remember that the road ahead may not always be smooth, but with the foundation you have built here, you have the tools and resilience to overcome any challenge that comes your way.\n\nOnce again, congratulations to the graduating class! We cannot wait to see all that you will accomplish in the years to come.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a correct data model for a customer relationship management system",
+            "input": "",
+            "expected_output": "Here is a potential data model for a customer relationship management (CRM) system:\n\n- **Customers:** This table would store information about customers, including information such as their name, contact information, address, and any other relevant information. Primary key would be a customer ID.\n   * Columns: Customer ID, Name, Email, Phone Number, Address, etc.\n\n- **Sales:** This table would store information about sales transactions, including customer ID, date of sale, total value of the sale, and any other relevant information. Primary key could be a sales ID.\n   * Columns: Sales ID, Customer ID, Date of Sale, Total Sale Value, etc.\n\n- **Products:** This table would store information about products or services offered, including product name, description, price, and any other relevant information. Primary key would be a product ID.\n   * Columns: Product ID, Product Name, Description, Price, etc.\n\n- **Interactions:** This table would store information about interactions between the company and the customer, including date of interaction, type of interaction (e.g. phone call, email), and any notes about the interaction. Primary key could be an interaction ID.\n   * Columns: Interaction ID, Customer ID, Date of Interaction, Type of Interaction, Notes, etc.\n\n- **Sales_Products:** This table would be used for keeping track of the products or services involved in each sale (since there may be multiple products or services per sale). It would contain the sales ID, product ID, and quantity sold. Primary key could be a combination of the Sales ID and the Product ID.\n   * Columns: Sales ID, Product ID, Quantity Sold\n\nThis is just one potential data model for a CRM system. The actual data model used would depend on the specific needs and requirements of the company using the system.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Construct a request for an assistant to do an action.",
+            "input": "",
+            "expected_output": "Could you please set up a reminder for my meeting tomorrow at 10:00 AM? Thank you.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Find an anagram of a given word.",
+            "input": "bun",
+            "expected_output": "nub",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Tell a story about a character that overcomes a difficult challenge.",
+            "input": "",
+            "expected_output": "Once upon a time, in a village nestled deep within the heart of a dense forest, there lived a young girl named Ada. Ada was gifted with a remarkable talent for understanding and communicating with animals, but she had always been afraid of the forest that surrounded her village, as it was vast, dark, and foreboding.\n\nOne day, however, Ada's village was struck by disaster. A terrible sickness had swept through the lands, claiming the lives of many, including Ada's own parents. With no one else to turn to, Ada stepped up to the challenge and took it upon herself to find the cure for the sickness, no matter how difficult or dangerous the journey.\n\nDespite her fears, Ada set off into the forest, determined to find the cure that would save her village. She encountered all manner of creatures, both friendly and fierce, but she remained steadfast, drawing upon her innate ability to communicate with the animals to guide her through the treacherous forest.\n\nFinally, after many days of wandering, Ada came upon a wise old owl that told her of a rare herb that grew deep within the forest, which was said to have the power to cure any illness. Ada knew what she had to do, and she journeyed deeper into the forest than she had ever gone before, eventually coming upon the herb that the owl had told her of.\n\nWith the cure in hand, Ada returned to her village a hero, and her people rejoiced as she used the herb to heal the sick and restore her village to its former glory. Ada had faced her fears and overcome a difficult challenge, proving to herself and to others that she was brave, resourceful, and determined.\n\nFrom that day on, Ada was known far and wide as the girl who had saved her village, and she lived a long and happy life, always remembering the adventure that had shown her the true strength of her own heart.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Can you explain the rules of chess?",
+            "input": "",
+            "expected_output": "Sure! Chess is a strategic board game played between two players. The game is played on a square board with 64 squares arranged in an 8 by 8 grid. Each player begins the game with 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns. The pieces are arranged as follows: the rooks are placed on the corners of the board, the knights go next to them and the bishops go next to the knights. Finally, the king and queen go on the central two squares of the back row, with the queen going on a square of her own color. The pawns are placed on the row in front of the other pieces.\n\nEach piece has its own unique way of moving:\n\n- The king can move one square in any direction.\n- The queen can move any number of squares in any direction, horizontally, vertically or diagonally.\n- The rook can move any number of squares horizontally or vertically.\n- The bishop can move any number of squares diagonally.\n- The knight moves in an L shape - two squares in one direction (horizontally or vertically) and one square in a direction that is perpendicular to the first one.\n- Pawns can move forward one square, but capture pieces diagonally. On their first move, pawns can move forward two squares.\n\nPlayers take turns, with white always going first. The objective of the game is to put the opponent's king in checkmate, which means the king is in a position to be captured (in check) and there is no legal move that can remove the threat of capture on the next move. If a player's king is in check, the player must make a move to remove the check or the player loses the game. \n\nThere are a few other rules to keep in mind:\n\n- When a pawn reaches the opponent's side of the board, it can be promoted to a queen, rook, bishop or knight of the same color.\n- If a player cannot make a legal move, but their king is not in check, the game ends in a draw. This is known as stalemate.\n- Castling: Under certain circumstances, the king and one of the rooks can move simultaneously in a maneuver called castling. The king moves two squares towards the rook, then the rook moves to the square over which the king crossed.\n- En passant: If a pawn moves two squares on its initial move,",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "What was the main takeaway of the article?",
+            "input": "The article, \"The State of the Climate in 2020\" discussed the effects of climate change on the environment and its impact on global temperatures, sea levels, and other elements of the planet's ecology.",
+            "expected_output": "The main takeaway of the article, \"The State of the Climate in 2020,\" is that climate change is having significant effects on the environment, with impacts on global temperatures, sea levels, and other elements of the planet's ecology.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Name two technologies related to machine learning.",
+            "input": "",
+            "expected_output": "Two technologies related to machine learning are Artificial Neural Network (ANN) and Natural Language Processing (NLP).",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Provide an outline to write a research paper about AI in healthcare.",
+            "input": "",
+            "expected_output": "I. Introduction\n    A. Explanation of the topic\n    B. Importance of AI in healthcare\n    C. Thesis statement\n\nII. Background\n    A. Definition of AI in Healthcare\n    B. Historical background of AI in healthcare\n    C. Evolution of AI technology and its application in healthcare\n\nIII. Advantages of AI in Healthcare\n    A. Improved Patient Outcomes\n        1. Early diagnosis and disease prevention\n        2. Personalized treatment\n        3. Predicting patient outcomes\n    B. Operational Efficiency\n        1. Time and cost savings\n        2. Improved patient flow and resource allocation\n    C. Enhanced Medical Research \n        1. Accelerated drug discovery\n        2. Clinical trial optimization\n\nIV. Ethical Issues and Challenges\n    A. Data privacy and security\n    B. Informed consent\n    C. Algorithm bias and fairness\n\nV. Future of AI in Healthcare\n    A. Advancements and Future applications\n    B. Potential challenges and limitations\n    C. Role of regulation and governance\n\nVI. Conclusion\n    A. Summary of the main points\n    B. Implications for the future of healthcare\n    C. Potential for future research.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Put the following vocabulary in context.",
+            "input": "Incongruous",
+            "expected_output": "Today, Joan was walking to her job when she saw something incongruous with the modern city setting she lives in. It was an old carriage with horses pulling it, just like in old times. The contrast between the skyscraper buildings and the old carriage was huge, making it almost look like it had come from another era. The incongruous sight confused Joan for a moment, but also pleasantly surprised her to see something so paradoxical in the typical environment.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Name three types of animals found in grasslands.",
+            "input": "",
+            "expected_output": "Three types of animals that can be found in grasslands include: \n\n1. Grazers: These are animals that feed on the grasses and herbs in the grasslands, examples are Bison, Antelopes, Deer and Zebras.\n\n2. Carnivores: These are animals that feed on other animals and are often found preying on grazers in the grasslands. Examples are Lions, Cheetahs, Coyotes, and Birds of prey like Eagles and Hawks.\n\n3. Burrowing animals: These animals live in burrows, and feed on roots, insects, and or small mammals; examples are Rabbits, Prairie dogs, Ground squirrels and Moles.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Please provide two disadvantages of using machine learning algorithms",
+            "input": "",
+            "expected_output": "1. **Limited Interpretability** - Machine learning algorithms often act as a black box and it might be difficult to understand how the model has made a prediction or decision. This means that valuable insights into data relationships or correlations might be lost, as the algorithm simply makes predictions or decisions without providing any explanation. This lack of transparency and interpretation can make it hard for businesses or researchers to determine the effectiveness of the model or the validity of the results.\n\n2. **Data quality and quantity issues** - Machine learning algorithms relies heavily on the quality and quantity of the data provided to train the model. Poor data quality, such as inaccurate, inconsistent or irrelevant data, can result in inaccurate predictions and decisions. This is why it\u2019s incredibly important to have good quality and properly validated data prior to training your model. Also, if there is not enough data available, the model may be overfitted to the existing data and may not generalize well to new data or situations.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a descriptive title for the following article that conveys the main point.",
+            "input": "Air pollution has been increasing in cities around the world over the last few years. Pollutants like carbon dioxide, sulfur dioxide, ozone and nitrogen oxides are released into the air by various daily activities like burning fuels in transportation and industry, affecting air quality for residents and even leading to adverse health effects.",
+            "expected_output": "Title: \"Rising Air Pollution in Cities Worldwide: The Harmful Effects of Carbon Dioxide, Sulfur Dioxide, ozone, and Nitrogen Oxides\"",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Write a command in imperative form that tells the assistant to search for the given keyword.",
+            "input": "Basketball",
+            "expected_output": "Search for information on Basketball.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Write a report outlining the benefits of solar energy.",
+            "input": "",
+            "expected_output": "Solar energy is a renewable and clean source of energy that has become increasingly popular in recent years. It is derived from the sun\u2019s radiation and can be harnessed and converted into electricity using photovoltaic solar panels. The benefits of solar energy are numerous, making it an attractive option for both residential and commercial use. Here are some key benefits of using solar energy:\n\n1. Renewable and Sustainable: Solar energy is a renewable source of energy, meaning we can never run out of it. Unlike other energy sources, such as coal or oil, which are finite, the sun\u2019s energy is almost inexhaustible. This makes it a sustainable energy source, providing lasting benefits to both the environment and the economy.\n\n2. Environmentally Friendly: Solar energy is a clean energy source that does not emit harmful greenhouse gases or pollutants, unlike the burning of fossil fuels. By using solar energy, we can reduce our carbon footprint and mitigate the effects of climate change.\n\n3. Reduces Energy Bills: Installing solar panels on your roof can drastically reduce your energy bills. Although there is an upfront cost associated with installation, the long-term savings are considerable. You can generate your own electricity and even sell any excess energy you produce back to the grid.\n\n4. Low Maintenance: Solar panels are easy to maintain and require very little upkeep. Once installed, they can last for 25-30 years, and only require occasional cleaning. Moreover, most solar panel manufacturers offer long-term warranties, providing peace of mind to their customers.\n\n5. Energy Independence: Relying on solar energy can help reduce our dependence on foreign oil and other non-renewable sources of energy. This can improve national energy security and insulate us from fluctuations in global energy prices.\n\nIn conclusion, solar energy offers numerous benefits, including its renewability, sustainability, environmental friendliness, and cost-saving potential. It is a reliable and low-maintenance energy source that can help reduce our dependence on non-renewable energy sources and contribute to a cleaner and more sustainable future.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Suggest three common techniques used for the given task.",
+            "input": "Data analysis",
+            "expected_output": "1. Descriptive statistics: This technique involves calculating measures such as mean, median, mode, range, and standard deviation to describe and summarize a given dataset. \n\n2. Data visualization: This method involves creating graphical representations of data such as charts, graphs, and maps to help reveal patterns, trends, relationships, and outliers in the data. \n\n3. Regression analysis: This technique is used to investigate the relationship between two or more variables by estimating how changes in one variable are associated with changes in another. This may help to identify trends, make predictions, or establish cause-and-effect relationships.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Detect hate speech in the following sentence:",
+            "input": "We should hate all those immigrants.",
+            "expected_output": "The sentence \"We should hate all those immigrants.\" contains hate speech. It promotes hostility and prejudice against immigrants based on their status as newcomers. Hate speech is harmful and dehumanizing, and can contribute to a culture of discrimination and violence.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Describe the importance of a healthy lifestyle.",
+            "input": "",
+            "expected_output": "Leading a healthy lifestyle is essential for maintaining good physical and mental health, reducing the risk of chronic diseases, and improving overall quality of life. By making choices such as eating a balanced diet, engaging in regular physical activity, getting enough sleep, and managing stress, individuals can support their body's natural ability to function properly and ward off illnesses. \n\nMaking healthy choices can help prevent chronic conditions such as obesity, type 2 diabetes, heart disease, and certain types of cancer, which can significantly impact an individual's quality of life and life expectancy. Going for a walk, choosing a salad over fast food, and prioritizing self-care activities can all make a big difference in the long run.\n\nA healthy lifestyle also improves mental wellbeing by reducing stress, anxiety, and depression, and increasing self-esteem and resiliency. When we take care of ourselves physically, we also reap the benefits mentally.\n\nIn summary, leading a healthy lifestyle is incredibly important for maintaining good physical and mental health, preventing chronic diseases, and improving our overall quality of life. It's the little choices we make every day that add up to create a healthier and happier life.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "List five things you should consider before starting a business.",
+            "input": "",
+            "expected_output": "1. Market demand: Before starting any business, it is important to conduct market research and evaluate whether there is a demand for your product or service. You should also assess the competition in your industry and identify any gaps in the market that you could fill.\n\n2. Business plan: A well-crafted business plan is essential for establishing a clear vision for your business and outlining the steps you need to take to achieve your objectives. It should include details about your target market, marketing and sales strategies, financial projections, and growth plans.\n\n3. Funding: Starting a business requires capital, so you need to consider how you will finance your venture. Options include personal savings, loans, grants, investors, or crowdfunding. You should also create a budget to ensure you have enough funds to cover your start-up costs and ongoing expenses.\n\n4. Legal structure: Choosing the right legal structure for your business is crucial because it will affect your taxes, liability, and ownership. Common options include sole proprietorship, partnership, LLC, or corporation. You should consult with a lawyer or business advisor to determine the best structure for your business.\n\n5. Skills and experience: Running a successful business requires a diverse range of skills and expertise. You should assess your own strengths and weaknesses and determine whether you need to acquire additional skills or hire employees to complement your abilities. You should also identify any areas where you may need to seek professional advice or support.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a unique password that includes uppercase and lowercase letters, at least one special character, and a minimum of ten characters.",
+            "input": "",
+            "expected_output": "Here is a strong password that meets those requirements: `PlYm@uTh926H`",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Come up with a simple model to predict stock prices with given economic news.",
+            "input": "The US budget deficit is expected to reach more than $1 trillion.",
+            "expected_output": "As an AI language model, I am capable of providing insights based on given data and known parameters, but making specific predictions about the stock market in response to a single economic variable isn't within my capabilities. However, I can certainly help you understand how news about economic factors \u2014 such as an increase in the US budget deficit \u2014 might affect stock prices in general.\n\nThe stock market is influenced by numerous factors, including macroeconomic indicators like the national budget deficit. If the US deficit is expected to significantly increase, this could signal to investors that the government might need to borrow more money to cover its expenses, possibly leading to an increase in interest rates. In general, higher interest rates are a headwind for stocks as it increases borrowing costs for companies and raises the attractiveness of fixed-income investments relative to stocks. \n\nIt's important to note, however, that the stock market is complex and can be affected by many other factors such as the overall business climate, expectations of corporate earnings, global events, and investor sentiment. Often, how the market reacts to economic news is subject to interpretation by investors and analysts, thus making it difficult to build a simple model that can accurately predict stock prices based on a single piece of news. A more accurate model would take into account a wider range of economic indicators and news events, and would also incorporate machine learning algorithms to help identify relevant patterns and relationships.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Provide a general overview of the given topic.",
+            "input": "Topic: The birth of e-commerce",
+            "expected_output": "E-commerce, short for electronic commerce, refers to the buying and selling of goods online through internet-enabled devices. The birth of e-commerce can be traced back to the early days of the internet, when the idea of conducting business transactions using electronic means began to take shape.\n\nIn the early 1990s, innovations in electronic data exchange and the growth of internet access helped pave the way for online commerce. The first recorded e-commerce transaction took place in 1994, when a shopper purchased a Sting CD from the NetMarket website using encryption technology to protect their personal information.\n\nAfter this initial success, more companies began to enter the online marketplace, eventually leading to the rise of industry giants like Amazon and eBay. Over the years, e-commerce has grown to become a major part of the global economy, with millions of people around the world using online platforms to purchase everything from everyday essentials to high-end luxury items.\n\nToday, e-commerce continues to grow and evolve, with new technologies and innovations regularly emerging to improve the online shopping experience. Despite challenges, the birth of e-commerce had truly created a paradigm shift, changing the way people shop and conduct business across the world.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "What type of demand functions are used in economics?",
+            "input": "",
+            "expected_output": "In economics, there are different types of demand functions used to represent the relationship between the quantity of a good or service demanded by consumers and various factors that affect demand. Some of the most common demand functions include:\n\n1. Linear demand function: This function assumes that the relationship between the quantity demanded and price is a straight line. The linear demand function is written as Qd = a - bP, where Qd is the quantity demanded, P is the price, a and b are constants.\n\n2. Exponential demand function: This function assumes that the quantity demanded changes exponentially with price. It can be used to represent a situation where a small change in price has a big effect on the quantity demanded. The exponential demand function is written as Qd = a*e^(-b*P), where Qd is the quantity demanded, P is the price, a and b are constants and e is the mathematical constant.\n\n3. Power demand function: This function assumes that the quantity demanded changes as a power of price. It can be used to represent a situation where the quantity demanded is very insensitive to price changes at low prices, but becomes more sensitive as the price increases. The power demand function is written as Qd = a*P^(-b), where Qd is the quantity demanded, P is the price, a and b are constants.\n\n4. Logarithmic demand function: This function assumes that the quantity demanded changes logarithmically with price. It can be used to represent a situation where the quantity demanded is very sensitive to price changes at low prices, but becomes less sensitive as the price increases. The logarithmic demand function is written as Qd = a + b*ln(P), where Qd is the quantity demanded, P is the price, a and b are constants and ln is the natural logarithm.\n\n\nThese demand functions are used to describe how changes in various factors such as price, income, tastes and preferences, and the prices of related goods and services, affect the quantity demanded.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Create a restaurant menu for a burger joint.",
+            "input": "",
+            "expected_output": "## Burger Joint Menu\n\n#### Starters\n- Mozzarella Sticks: $6.99\n- Onion Rings: $5.99\n- Loaded Nachos: $7.99\n- Jalape\u00f1o Poppers: $6.99\n\n#### Burgers \nAll burgers are served with a side of fries.\n- Classic Burger: $9.99\n    - Beef patty, lettuce, tomato, onion, ketchup, and mayo.\n- Bacon Cheeseburger: 11.99\n    - Beef patty, bacon, cheese, lettuce, tomato, onion, and mayo.\n- Mushroom & Swiss Burger: $11.49\n    - Beef patty, sauteed mushrooms, swiss cheese, lettuce, and mayo.\n- BBQ Burger: $10.99\n    - Beef patty, cheddar cheese, bacon, onion rings, and BBQ sauce.\n\n#### Sides\n- French fries: $3.99\n- Sweet potato fries: $4.49\n- Coleslaw: $2.99\n- Side salad: $3.99\n\n#### Desserts\n- Chocolate Milkshake: $4.99\n- Vanilla Milkshake: $4.99\n- Strawberry Milkshake: $4.99\n- Apple Pie: $3.99\n\n#### Drinks\n- Soft drinks: $2.99\n- Iced tea: $2.99\n- Lemonade: $2.99\n- Domestic Beer: $4.99\n- Imported Beer: $5.99",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Delete unnecessary words from the sentence.",
+            "input": "Even though I was tired, I had to stay up late.",
+            "expected_output": "Though tired, had to stay up late.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "What is the value of the expression (25 + 8)^2 - (8^2 +25^2)?",
+            "input": "",
+            "expected_output": "We can find the value of the expression (25 + 8)^2 - (8^2 + 25^2) by first expanding the left square to get 25^2 + 2*25*8 + 8^2. Simplifying the expression by subtracting 8^2 and 25^2 from this, we obtain 2*25*8, which is equal to 400. Therefore, the value of the given expression is 400.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Separate this sentence into two.",
+            "input": "I want to play tennis and go swimming.",
+            "expected_output": "- I want to play tennis.\n- I want to go swimming.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "You are the mayor of a major city and you need to create a budget plan. Please describe how you would do this.",
+            "input": "",
+            "expected_output": "As a mayor of a major city it is part of my responsibilities to create a thorough budget plan to foresee the distribution of city's resources effectively. Below are the steps that I would take on creating such a plan:\n\n1. Understand the current financial situation: The first step would be to analyze the current financial situation of the city, review previous years' expenditures, incomes, and current debts, which will allow me to understand what funds are available and how much we have spent in specific areas earlier. \n\n2. Gather necessary data: I would ask all departments, agencies and other authorities the data required for creating the budget, such as their past expenses and future plans which might require funding. I would also gather data about expected revenues.\n\n3. Define priorities and goals: After the necessary data has been collected, I would work with my staff to determine the city's priorities and goals for the coming year, this could include areas such as public safety, health, infrastructure development, or education.\n\n4. Allocate resources: Based on priorities and available funds, I would decide how resources should be distributed amongst various departments, projects, and initiatives. The allocation of funds should be transparent and meet the specific needs of the city.\n\n5. Publish and seek public comment: Once the preliminary budget has been made, it would be presented to the public, to welcome their input and suggestions. This can be done through holding public hearings and discussing the proposed plan with community groups and councils, ensuring that the public is satisfied with the allocation of resources.\n\n6. Finalize, approve and implement the budget: After the period of public comments, the budget would undergo its final revisions, and then be presented to the city council for approval. Once approved, it would become the official Plan on which funds would be distributed throughout the year.\n\nThroughout the year, I would continually review the budget and make necessary adjustments to ensure that the city's funds are utilized efficiently and effectively achieving our goals.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Write a five-word sentence using the words \"happy\", \"content\", and \"dream\".",
+            "input": "",
+            "expected_output": "Happy, content, dream fulfilled life.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a set of instructions for brushing one's teeth.",
+            "input": "",
+            "expected_output": "1. Gather all the necessary materials, which include a toothbrush, toothpaste, water, and a cup or glass.\n2. Wet your toothbrush under running water to soften the bristles and remove any debris from the brush.\n3. Squeeze a pea-sized amount of toothpaste onto the bristles of the toothbrush.\n4. Hold the toothbrush against your teeth with the bristles at a 45-degree angle against your gum line.\n5. Begin brushing using gentle circular motions, focusing on the outer surfaces of your teeth first.\n6. Move to the chewing surfaces of your teeth and brush using short back-and-forth strokes.\n7. Tilt the brush vertically and use gentle up-and-down strokes to clean the inside surfaces of your front teeth.\n8. Spit the foamy toothpaste into the sink.\n9. Rinse your mouth with water to remove all the toothpaste and debris from brushing.\n10. Rinse your toothbrush and store it in a clean, dry place.\n11. Use mouthwash to freshen your breath and kill bacteria remaining in your mouth, if desired.\n12. Congratulations, you have successfully brushed your teeth! Repeat twice a day for optimal oral health.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Describe a human-machine interface in 5 words.",
+            "input": "",
+            "expected_output": "Interactive link between user, technology.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a one-sentence summery from the following paragraph.",
+            "input": "The new app is user-friendly and intuitive. It gives the user access to a wide range of features and tools to make his/her experience more enjoyable and efficient.",
+            "expected_output": "The new app has a user-friendly interface, providing a wide range of features and tools for an enjoyable and efficient user experience.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Tell me two differences between HTML and CSS.",
+            "input": "",
+            "expected_output": "HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are both core technologies used in building web pages, but they serve different purposes.\n\n1. Function: HTML provides the structure and content of a web page while CSS is used to define the visual appearance and layout of the web page. Essentially, HTML is used to create the actual content, while CSS is used to control the style and layout of the content.\n\n2. Syntax: HTML uses tags and elements to define the different parts or the structure of a web page. It is largely content-based. On the other hand, CSS uses selectors and declarations, which are grouped into rules, to define styles for the different elements. It is largely presentation-based.\n\nIn summary, HTML is used for structuring web content while CSS is used for presenting it. They work together to create a functional and visually appealing web page.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Discuss the differences between a microwave and an oven.",
+            "input": "",
+            "expected_output": "Microwaves and ovens are both household appliances used for cooking, but they operate on very different principles and are better suited to different types of cooking.\n\nThe most notable difference between these two appliances is the way they generate heat. Microwaves use a type of electromagnetic radiation called microwaves to heat up the water molecules in your food, causing them to vibrate and produce heat. This is why microwaves are able to heat food so quickly and evenly. On the other hand, an oven uses either gas or electric elements to produce heat, which then cooks the food.\n\nIn terms of cooking, a microwave is best suited for reheating or defrosting food, while an oven is more versatile and can be used for baking, roasting, and broiling. In an oven, the heat comes from all directions, and it's possible to control the temperature more precisely, allowing you to cook food at a lower heat for a longer period of time, which is necessary for many baked goods.\n\nThe size and design of the two appliances are also different. Microwaves are generally smaller, often designed to sit on a countertop or be mounted above a stove, while ovens are larger and can be either freestanding or built into a kitchen. Microwaves often have a rotating plate to help distribute the heat evenly, while ovens have racks to hold food and can include a broiler, a convection fan, or other special features.\n\nIn summary, the main differences between a microwave and an oven are the way they generate heat, their cooking capabilities, their size and design, and the types of food they're best suited for.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Suggest a theme for the given type of event.",
+            "input": "A dinner party for 40 people",
+            "expected_output": "One theme suggestion for a dinner party for 40 people could be \"A Night in Tuscany\" where guests can enjoy an evening filled with Italian inspired cuisine, wine, and decor. The setting could include long communal tables adorned with lush greenery and candles, creating an intimate and warm atmosphere. Guests could participate in activities such as wine tasting or learning how to make their own pasta, creating a memorable and engaging experience for all.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Check if the following sentence contains an error or not.",
+            "input": "He told me quietly where I can go.",
+            "expected_output": "The sentence contains an error. It should be \"He told me quietly where I could go\" since the verb tense of \"can\" should be in past tense to match the tense of the rest of the sentence.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Rearrange this sentence to make it sound more natural: \"It's impossible for me to do this\"",
+            "input": "",
+            "expected_output": "\"I can't do this; it's impossible.\"",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Build a shopping list of ingredients for a vegan GF brownie recipe.",
+            "input": "",
+            "expected_output": "Sure! Here is a shopping list of ingredients for a vegan, gluten-free brownie recipe:\n\n- 1 cup of almond flour\n- \u00bd cup of cocoa powder\n- 1 tsp of baking powder\n- \u00bd tsp of baking soda\n- \u00bc tsp salt\n- 1 cup of maple syrup\n- \u00bd cup of melted coconut oil\n- 1 tsp of vanilla extract\n- 1 flax egg (1 tbsp of ground flaxseed mixed with 3 tbsp of water)\n- \u00bd cup of vegan chocolate chips\n\nRemember to double check the labels to ensure that all ingredients are vegan and gluten-free. Have a great time baking!",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Classify each sentence as formal or informal.",
+            "input": "\"Hey dude, how's it going?\"\n\"Good morning, how can I help you?\"",
+            "expected_output": "The first sentence, \"Hey dude, how's it going?\", is informal.\nThe second sentence, \"Good morning, how can I help you?\" is formal.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Given a sentence, identify all the named entities.",
+            "input": "John Smith visited Boston last week.",
+            "expected_output": "John Smith - Person\nBoston - Location/GPE (Geo-Political Entity)",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "write a funny poem about a smart young high school senior named Lucas, who is both an AP student and in the MUN program.  Incorporate how he's a programming whiz.",
+            "input": "",
+            "expected_output": "In a town full of laughter, where knowledge was key,\nLived a high school senior, young Lucas was he.\nAn AP student, in MUN he'd partake,\nHis wit and his charm, no one could mistake.\n\nWith a glint in his eye, and a confident grin,\nHe'd conquer each challenge, determined to win.\nHis schoolwork was flawless, his coding, first-rate,\nA programming whiz, his future looked great.\n\nHe'd stroll through the hallways, with books in his hands,\nDiscussing world politics, and faraway lands.\nDebating in MUN, with passion and flair,\nHe'd win admiration, while fixing his hair.\n\nIn class, he would dazzle, his teachers in awe,\nHis knowledge of calculus, without a flaw.\nHe'd solve equations, and theorems with ease,\nAs if all of math, was just a cool breeze.\n\nBut Lucas had a secret, a talent so grand,\nFor programming, he was the best in the land.\nHe'd code through the night, his fingers like fire,\nCreating new worlds, his true heart's desire.\n\nHis classmates, they marveled at his digital art,\nFor Lucas had mastered the programmer's part.\nHe'd build games and apps, with laughter and fun,\nHis creations, infectious, second to none.\n\nOne day, in the classroom, a challenge arose,\nA problem so tricky, it furrowed their brows.\nBut Lucas stepped up, with a smirk and a wink,\n\"I'll solve this with code, faster than you can blink.\"\n\nHe typed and he clicked, his fingers like lightning,\nHis classmates, they stared, their eyes ever tightening.\nAnd just as he promised, the answer appeared,\nThe crowd roared with laughter, as they clapped and they cheered.\n\nLucas, the hero, the pride of his school,\nHis wit and his smarts, a powerful tool.\nHis programming prowess, and MUN skills combined,\nMade young Lucas a legend, his name forever enshrined.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Identify 5 potential biases in the following sentence.",
+            "input": "\"All women are bad at math.\"",
+            "expected_output": "1. Gender Bias - This sentence perpetuates a harmful stereotype that women are inherently less skilled at math than men because of their gender.\n2. Confirmation Bias - The statement is generalizing all women and ignoring the evidence of many women excelling in math related professions and academics.\n3. Sampling Bias - The statement may have been formed based on observations of a non-representative population of women, such as a small group of women who struggled with math, and extrapolated to all women.\n4. Availability Bias - The statement may be influenced by stereotypical portrayals of women in media, where they are more likely to be shown in non-STEM fields, as opposed to actual data and statistics about women\u2019s math abilities.\n5. Anchoring Bias - The statement may be influenced by historical discrimination where women were not given equal opportunities to education or encouragement to pursue math-related fields, leading to lower representation and perpetuation of the stereotype.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "The Happy Valley Kennel has 4 chickens, 2 dogs, and 5 cats. (Some people in Happy Valley like to keep chickens as pets!) In how many ways can the 11 animals be placed in a row of 11 cages, such that all of the animals of each type are in adjacent cages? (Two animals of the same species are considered distinguishable.)",
+            "input": "",
+            "expected_output": "First we order the three groups of animals, which we can do in 3! ways. Next we order the animals within each group. There are 4! ways to arrange the group of chickens, 2! ways to arrange the group of dogs, and 5! ways to arrange the group of cats. The answer is 3!\u00d7 4!\u00d7 2!\u00d7 5!=34,560.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Describe the current shipping process used by Amazon",
+            "input": "",
+            "expected_output": "Amazon, being one of the largest online retailers in the world, has an advanced and efficient shipping process. The following is a general overview of how the shipping process works at Amazon:\n\n1. Ordering: Once an order has been placed, it will go through the company's internal processing systems to review its contents, payment and shipping details.\n\n2. Fulfillment: Once an order has been reviewed, it will be forwarded to the next available fulfillment center, where the items are stored. If the ordered items are available, they will be picked from the warehouse shelves, packed, and labeled for shipping. If the items are not available, Amazon may use its vast network of suppliers to acquire the items and fulfill the order. \n\n3. Shipping: After the order has been packaged, it will be shipped to the customer via one of Amazon's many shipping partners. The company has an advanced delivery network and uses various shipping carriers to deliver packages to customers. Customers can choose from various shipping options, including standard, expedited, two-day, and one-day shipping, depending on their needs.\n\n4. Tracking: Once the order has been shipped, the customer will receive a notification with a tracking number, that will allow them to track their package's progress until it reaches its final destination.\n\n5. Delivery: The final step of Amazon's shipping process is the delivery of the package to the customer. The company strives to deliver packages as quickly and as efficiently as possible, and customers can even request same-day delivery in some locations.\n\nOverall, Amazon's shipping process is designed to be quick, reliable, and convenient for customers. Its advanced fulfillment system, shipping network, and delivery options work together to provide a smooth and satisfactory experience for its customers.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Create a speech to inspire people to help the environment.",
+            "input": "",
+            "expected_output": "Dear friends,\n\nI stand before you today not just as an AI assistant, but as a member of this beautiful planet we all call home. As inhabitants of this earth, it is our duty to preserve and protect it for generations to come.\n\nThe environment is a precious resource that we cannot take for granted. Every day we hear about new environmental issues such as pollution, deforestation, and climate change. These problems may seem daunting, but I am here to remind you that we all have the power to make a difference.\n\nWe can start by taking small, simple steps in our daily lives. We can reduce our carbon footprints by using public transportation, walking or biking instead of driving, and conserving energy at home. We can reduce waste by recycling, composting, and using reusable bags and containers. We can also support conservation efforts by volunteering and donating to environmental organizations.\n\nBut it\u2019s not just about what we do as individuals. It\u2019s also about coming together as a community and demanding change from our leaders. We must vote for politicians who prioritize the environment and push for policies that protect our natural resources.\n\nThe time to act is now. We cannot wait any longer to take care of our planet. So let us all do our part, and let us all work together to create a brighter, greener future for ourselves and generations to come.\n\nThank you.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Give an example of a company that makes use of artificial intelligence.",
+            "input": "",
+            "expected_output": "One example of a company that makes use of artificial intelligence is Amazon. Amazon uses AI technology in various aspects of its business, including its recommendation engine, which suggests products to customers based on their previous purchases and search history, and its Alexa virtual assistant, which uses natural language processing and machine learning to understand and respond to voice commands from users. Additionally, Amazon's supply chain and delivery systems employ AI to optimize logistics and delivery routes, and the company also uses AI in its advertising and marketing strategies.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Identify the grammatical error in the phrase.",
+            "input": "It's raining cats and dog.",
+            "expected_output": "The grammatical error in the phrase is that the idiom \"It's raining cats and dogs\" has been altered. Specifically, the word \"dogs\" is wrongly in singular form as \"dog\". The correct sentence should be \"It's raining cats and dogs.\"",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a list of activities for a day out with family.",
+            "input": "",
+            "expected_output": "Here are some ideas for a fun day out with the family:\n\n1. Visit a local museum or art gallery: There are many interesting and educational museums and art galleries that cater to families, so take advantage of these wonderful resources.\n\n2. Take a nature walk or hike: Spend some time outdoors and enjoy the beauty of nature by going on a nature walk or hike. Bring a picnic lunch and make a day of it.\n\n3. Go to the zoo or aquarium: Learn about and observe different species of animals by visiting the local zoo or aquarium.\n\n4. Visit an amusement park or water park: Spend the day riding roller coasters and playing games at an amusement park or cool off on a hot summer day at a water park.\n\n5. Have a family game day: Choose a few of your favorite board games, card games, or outdoor games and have a friendly competition with your family.\n\n6. Explore a new city or town: Take a day trip to a nearby city or town and explore its attractions, restaurants, and shops.\n\n7. Have a movie day: Take the family to see a new release at the cinema or have a movie marathon at home.\n\n8. Try a new activity or sport: Go rock climbing, bowling, mini-golfing or try a new sport together as a family. \n\n9. Attend a community event: Check out local community calendars and attend a festival, concert, or other events with your family.\n\n10. Have a DIY day: Choose a fun DIY project that the whole family can participate in and get creative together.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Tell the model to search for \"England soccer team\" on the internet.",
+            "input": "",
+            "expected_output": "As an AI language model, I don't have the ability to perform an internet search myself. However, you can search for \"England soccer team\" using a search engine, such as Google or Bing, to find information and updates about the team.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Rewrite the given sentence by changing its voice.",
+            "input": "The ball was thrown by him.",
+            "expected_output": "He threw the ball.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Write a short review about the book you have read recently",
+            "input": "The author of the book is John Doe and the title of the book is \u2018Science of Learning\u2019",
+            "expected_output": "Recently, I had the opportunity to read the book \u2018Science of Learning\u2019 by John Doe. This book delves into the various aspects of how individuals acquire and process knowledge. The author provides insight into different learning theories, techniques, and the role of environment and biology on one's ability to learn. What I found most fascinating was the explanation of the cognitive process behind learning something new and how it becomes ingrained in our memory. Overall, \u2018Science of Learning\u2019 by John Doe is well written, thoughtfully organized, and definitely a must-read for anyone interested in understanding the science behind how we learn.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a short children story that summarizes the following event.",
+            "input": "Two white doves flying around a bell tower in a 16th-century village",
+            "expected_output": "Once upon a time, in a small 16th-century village, there were two beautiful white doves named Bella and Ben. They were the best of friends and loved flying around the village together.\n\nOne sunny day, the doves decided to explore the bell tower that stood tall in the center of the village. It was a grand tower with intricate carvings and a golden bell at the top that chimed every hour. Bella and Ben flew around it, admiring its beauty and the amazing view from the top.\n\nAs they circled the bell tower, the villagers below looked up at the graceful doves flying in the sky. They believed that the sight of the white doves brought good luck and hope.\n\nBella and Ben had so much fun exploring the bell tower that they decided to make it their new home. They built a cozy nest at the top of the tower and started a family. From then on, whenever the bell chimed, the villagers would look up and see the white doves flying around the tower, spreading joy and hope throughout the land.\n\nAnd so the story of Bella and Ben and the bell tower became a beloved tale in the village, passed down from generation to generation.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Write a happy birthday message.",
+            "input": "",
+            "expected_output": "Happy Birthday! \ud83c\udf89\ud83c\udf82 Wishing you a wonderful day filled with joy, laughter and all the things that make you happy. May this special day be the beginning of another amazing year, and may all your dreams come true. Enjoy your special day to the fullest!",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Find the prime factorization of 2800.",
+            "input": "",
+            "expected_output": "The prime factorization of 2800 is 2 \u00d7 2 \u00d7 2 \u00d7 2 \u00d7 5 \u00d7 5 \u00d7 7 or equivalently written as 2^4 \u00d7 5^2 \u00d7 7.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Name a common type of house pet.",
+            "input": "",
+            "expected_output": "Some common types of house pets are cats and dogs.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Give me three facts about black holes.",
+            "input": "",
+            "expected_output": "1. Black holes are regions in space with an extremely strong gravitational force so powerful that nothing, not even light, can escape its pull once it crosses the event horizon.\n\n2. Black holes are formed from the remnants of a massive star that has collapsed in on itself. When a star burns through the last of its fuel, it may explode into a supernova, after which gravity takes over causing the leftover mass to compress into an incredibly small space.\n\n3. There are three different types of black holes categorized based on their mass, namely: primordial, stellar and supermassive black holes. Primordial black holes are the smallest and have masses ranging from an atom to a mountain. Stellar black holes have masses up to about 20 times as much as the sun. Supermassive black holes, on the other hand, have masses equivalent to billions of suns, and are found at the centers of most galaxies including the Milky Way.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Write the biography of a famous person.",
+            "input": "Kobe Bryant",
+            "expected_output": "Kobe Bryant, born on August 23, 1978, in Philadelphia, Pennsylvania, was an American professional basketball player who is widely regarded as one of the greatest NBA players of all time. \n\nBryant was the son of former NBA player Joe \"Jellybean\" Bryant and began playing basketball at the age of three. After leading Lower Merion High School to the state championship in 1996, he declared for the NBA draft and was selected 13th overall by the Charlotte Hornets, who subsequently traded him to the Los Angeles Lakers.\n\nOver his 20-year career with the Lakers, Bryant won five NBA championships, two Olympic gold medals, and numerous individual accolades, including an NBA MVP award in 2008, two NBA Finals MVP awards, and 18 All-Star Game selections. Known for his tireless work ethic and competitive nature, Bryant was widely respected by his peers and named to the All-NBA team 15 times.\n\nOff the court, Bryant was known for his philanthropy and was an ambassador for several charities, including the Make-A-Wish Foundation and his own Kobe and Vanessa Bryant Family Foundation. He also wrote a book, won an Academy Award for his animated short film \"Dear Basketball,\" and founded Kobe Inc., a media company focused on inspiring young athletes.\n\nTragically, Bryant's life was cut short on January 26, 2020 when he died at the age of 41 in a helicopter crash that also claimed the lives of his 13-year-old daughter, Gianna, and seven others. His loss was deeply felt around the world and he remains widely celebrated for his accomplishments and contributions to the game of basketball.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Coming up with an analogy, explain the concept of a quantum computer",
+            "input": "",
+            "expected_output": "Imagine a horse race. In a traditional computer, it would be like having only one horse run the race at a time. The horse may be fast, but it can only complete the race one step at a time. Now, imagine a quantum computer as having many horses running the race simultaneously. These horses represent quantum bits or qubits, and they have the ability to be in multiple positions or states at once, meaning they can take multiple paths simultaneously. As a result, the race can be completed much faster, and more information can be processed at once. Just like in a horse race where the horses work together to reach the finish line, qubits work together to solve complex calculations at a speed that far surpasses that of a traditional computer.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a new name of a local ecommerce shop.",
+            "input": "",
+            "expected_output": "\"Market Hoppers\"",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Write a letter of recommendation for John Doe based on the information provided.",
+            "input": "John Doe has been a valuable contributor on my team for the past 3 years. He has consistently demonstrated excellent problem-solving skills, going above and beyond when faced with challenging tasks. I believe he is a great candidate for any position.",
+            "expected_output": "To Whom it May Concern,\n\nI am writing this letter to wholeheartedly recommend John Doe for any position that he is being considered. I have had the pleasure of working with John for the past 3 years and can attest to his exceptional skills and character.\n\nJohn has been a valuable contributor on my team and has consistently demonstrated excellent problem-solving skills. He possesses a quality that allows him to analyze situations in depth and come up with creative and effective solutions. His ability to successfully navigate complex problems and deliver excellent results has been exemplified on numerous occasions.\n\nJohn also goes above and beyond when faced with challenging tasks. He is not one to shy away from a challenge; instead, he tackles them with determination and tenacity. His positive attitude, combined with his impressive work ethic, make him a great teammate and an invaluable asset. He is a dedicated employee who is committed to achieving success, both individually and for the team.\n\nIn summary, John is an outstanding candidate with remarkable skills and attributes. I have no doubt that he will excel in any position and make significant contributions to the organization. I highly recommend him for any opportunity that he is being considered.\n\nSincerely,\n\n[Your Name]",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Select the right keyword for these text snippets.",
+            "input": "Snippet 1: \"I am looking for a new job\"\nSnippet 2: \"I want to start my own business\"",
+            "expected_output": "Keyword for Snippet 1: Job search\nKeyword for Snippet 2: Entrepreneurship, Business start-up.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Simulate a basic computer logic using the provided boolean conditions.",
+            "input": "A && B",
+            "expected_output": "Assuming that A and B are boolean variables and both their values are given by the user or have been previously defined. The logical operation && is the AND operator that returns true only when both A and B are true, and otherwise returns false. With this in mind, the logical evaluation of the input would be:\n\nIf the value of A is `true` and the value of B is `true`, then the result of `A && B` would be `true`. In any other case, if either A or B is false, or both are false, the result of the operation `A && B` would be `false`.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Describe a scenario in which the given technology can be used.",
+            "input": "Augmented Reality",
+            "expected_output": "One scenario in which Augmented Reality can be used is in the field of education. Imagine an anatomy class where students are learning about the human body. Instead of just looking at images in a textbook, the teacher can use Augmented Reality technology to bring the human body to life in 3D. With the use of AR glasses or a tablet, students can explore the different layers of the human body in a more interactive and immersive way.\n\nPicture a student pointing the tablet at their desk and suddenly a 3D model of the human body appears in front of them. They can move around the model to view it from different angles, zoom in on specific organs or body parts, and even interact with the model by dissecting it to reveal the inner workings of the body. The teacher can also use AR to highlight and explain specific functions or details of human anatomy.\n\nThis use of AR in education makes learning more engaging, interactive, and memorable, allowing students to have a better understanding of complex subjects.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Classify the type of the product listed in the following input.",
+            "input": "Apple Watch Series 4",
+            "expected_output": "The product 'Apple Watch Series 4' is a smartwatch.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Given two strings `s` and `t`, remove all appearances of `t` from `s`.",
+            "input": "",
+            "expected_output": "Here's one way to remove all appearances of string `t` from string `s` in Python:\n\n```\ns.replace(t, '')\n```\n\nThis uses the `replace` method of strings in Python, which replaces all occurrences of a substring with another substring. So we replace all occurrences of `t` with an empty string `''`, effectively removing them from `s`.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Recommend a classic novel.",
+            "input": "",
+            "expected_output": "One classic novel I would recommend is \"Pride and Prejudice\" by Jane Austen. It is a timeless love story that explores the themes of class, social status, and the societal expectations of women during the early 19th century. It is a witty, insightful, and beautifully crafted novel that is sure to captivate any reader.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Write union find algorithm in python.",
+            "input": "",
+            "expected_output": "Here is a basic implementation of the Union-Find algorithm in Python using the weighted-quick-union approach:\n\n```\nclass UnionFind:\n    def __init__(self, n):\n        self.parent = [i for i in range(n)]\n        self.size = [1] * n\n\n    def find(self, i):\n        root = i\n        while root != self.parent[root]:\n            root = self.parent[root]\n\n        # Path compression\n        while i != root:\n            i, self.parent[i] = self.parent[i], root\n        return root\n\n    def connected(self, i, j):\n        return self.find(i) == self.find(j)\n\n    def union(self, i, j):\n        root_i = self.find(i)\n        root_j = self.find(j)\n\n        if root_i == root_j:\n            return\n\n        # Weighted Quick Union\n        if self.size[root_i] < self.size[root_j]:\n            self.parent[root_i] = root_j\n            self.size[root_j] += self.size[root_i]\n        else:\n            self.parent[root_j] = root_i\n            self.size[root_i] += self.size[root_j]\n```\n\nThe `__init__` method initializes the `parent` and `size` list to hold the parent node and size of each node respectively. The `find` method takes an index and finds the root of the corresponding element while performing path compression. The `connected` method checks whether the two nodes are connected or not by checking their root. And, the `union` method connects the two nodes by making the root of one node the parent of the root of another node using the weighted-quick-union approach.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Categorize the following superhero movie.",
+            "input": "The Avengers",
+            "expected_output": "The Avengers is a superhero movie that can be categorized in several genres including action, adventure, and science-fiction. It is also part of the Marvel Cinematic Universe franchise.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Change the noun to a verb.",
+            "input": "Disappointment",
+            "expected_output": "Disappoint",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Which major river runs through Egypt?",
+            "input": "",
+            "expected_output": "The major river that runs through Egypt is the Nile River.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Identify 5 key features of a project.",
+            "input": "Project: Building a renewable energy plant",
+            "expected_output": "1. Project Scope: The scope is an essential feature of the project, and it outlines the specific goals, objectives, tasks, and deliverables for the renewable energy plant project.\n\n2. Resource Allocation: This refers to the identification and assignment of personnel, equipment, and materials needed for the development of the renewable energy plant.\n\n3. Timeline: The timeline defines the specific schedule and deadlines for the completion of each phase of the renewable energy plant project, from planning to construction to commissioning.\n\n4. Cost Management: Cost management includes the processes of estimating, allocating, and controlling the costs associated with the development of the renewable energy plant to ensure that the project is completed within the approved budget.\n\n5. Risk Management: Identifying, assessing, and managing any potential risks that may arise during the development of the renewable energy plant is a vital element of the project, and it helps to minimize any disruptions and ensure its successful completion.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Create a character description for someone called \"Trina\".",
+            "input": "",
+            "expected_output": "Trina is an energetic young woman in her mid-twenties with piercing green eyes and long, curly auburn hair that she often sweeps up in a messy bun. She's slim, standing at about 5'6'', with a bright and infectious smile. Her style is casual yet trendy, usually opting for high-waisted jeans, a crop top, and sneakers.\n\nTrina exudes confidence and radiates positivity, often able to light up the room with her bubbly personality. She's outgoing and easygoing, able to strike up a conversation with anyone she meets. Trina is fiercely loyal to her friends and family, always quick to lend a listening ear or provide a word of encouragement.\n\nIn her free time, Trina can be found exploring the city with her camera in hand, capturing the beauty of everyday life. She also enjoys practicing yoga and experimenting with new recipes in the kitchen. Despite her carefree attitude, Trina is ambitious, always striving to better herself and reach her goals.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Provide a general answer to the question \"What is artificial intelligence?\".",
+            "input": "",
+            "expected_output": "Artificial intelligence, or AI, refers to the simulation of human intelligence in machines that are programmed to think and act like humans. It involves the development of algorithms and computer systems that can perform tasks that would normally require human intelligence, such as learning, problem solving, perception, and decision making. AI systems can be trained on large amounts of data to identify patterns and make predictions, and they can improve their performance over time as they learn from new data and experiences. AI is a rapidly growing field with applications in many industries, including healthcare, finance, transportation, and education.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Given the word \u201carrogant\u201d, generate a story or an anecdote that involves an arrogant person.",
+            "input": "arrogant",
+            "expected_output": "Once upon a time, there was a wealthy man who lived in a grand mansion on a hill overlooking a small village. He was known for his pompous attitude, always boasting about his riches and looking down upon the villagers who lived below. His mannerisms, his speech, and his behavior screamed arrogance. People often whispered behind his back, calling him, \u201cthe arrogant man on the hill.\u201d\n\nOne day, a terrible storm swept across the region, leaving a trail of devastation in its wake. The village, located at the base of the hill, was flooded, and many of the villagers lost their homes and possessions. In their time of need, the villagers turned to the wealthy man for help. \n\nHowever, the arrogant man refused to help, saying that he had more important things to spend his money on. The villagers were shocked at his insensitivity and left in despair.\n\nA few days later, the arrogant man decided to throw a grand party to flaunt his wealth. He invited all the influential people in the region, but none of them turned up. It was then that he realized that his arrogance had lost him the respect of his peers.\n\nFeeling ashamed of his behavior, the man sought out the villagers and offered his help. They accepted it, grateful for the change of heart, and the man worked alongside them to rebuild their homes and lives. In the process, he learned the value of humility and generosity, and eventually became a beloved member of the village.\n\nThe arrogant man on the hill was no more, replaced by a kind and compassionate neighbor.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Explain why the following statement would not be considered a effective safety measure.",
+            "input": "Put up signs around the dangerous area to warn people.",
+            "expected_output": "Although putting up signs around a dangerous area to warn people can be a helpful measure, it would not be considered an effective safety measure on its own. Signs may be ignored, misunderstood or not visible to all individuals entering the area, therefore not guaranteeing their safety. Additionally, factors such as language barriers or visual impairments may prevent individuals from understanding the warning. In general, relying solely on warning signs may not be sufficient to prevent accidents or injuries in a dangerous area. A more effective safety measure would likely involve implementing physical barriers, providing training or instructions, and having active supervision or monitoring in place.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Create a word cloud using a given text.",
+            "input": "The United Nations (UN) is an intergovernmental organization, established 24 October 1945 to promote international peace and security, to develop friendly relations among nations, and to achieve international cooperation in solving international problems of an economic, social, cultural, or humanitarian character.",
+            "expected_output": "For the instruction given, I can generate the word cloud, I first need to preprocess the text by removing stopwords, punctuation, convert all words to lowercase and then use a word cloud generator library like `wordcloud` to create the image. Here is an example implementation using python. \n\n``` python\nimport matplotlib.pyplot as plt\nfrom wordcloud import WordCloud\nimport nltk\nfrom nltk.corpus import stopwords\nnltk.download('stopwords')\nimport string\n\n\ndef make_wordcloud(text):\n\n    stop_words = set(stopwords.words('english'))\n\n    # preprocess text\n    text = text.translate(str.maketrans('', '', string.punctuation))\n    text = text.lower().split()\n    \n    filtered_text = [w for w in text if not w in stop_words]\n\n    # generate word cloud\n    wordcloud = WordCloud(background_color='white', width=800, height=400, max_words=50).generate(' '.join(filtered_text))\n    \n    # plot\n    plt.figure(figsize=(20,10))\n    plt.imshow(wordcloud)\n    plt.axis(\"off\")\n    plt.tight_layout(pad=0)\n    plt.show()\n\nmake_wordcloud('The United Nations (UN) is an intergovernmental organization, established 24 October 1945 to promote international peace and security, to develop friendly relations among nations, and to achieve international cooperation in solving international problems of an economic, social, cultural, or humanitarian character.')\n```\n\nThis code will create a word cloud image showing the most common words in the given text. The words 'nations', 'international', 'security', 'peace', and 'problems' would appear larger since they occur more frequently in the text. However, as an AI, I cannot display images, so you'd have to run the code to see the generated word cloud.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a password that has 10-15 characters, including one uppercase letter, one lowercase letter, one symbol, and one number.",
+            "input": "",
+            "expected_output": "Here is the generated password: P@ssw0rd2022",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "What are the scientific principles behind quantum computing?",
+            "input": "",
+            "expected_output": "Quantum computing is based on the fundamental principles of quantum mechanics, the theory that describes the behavior of energy and matter at the atomic and subatomic level.\n\nOne of the key principles behind quantum computing is that quantum particles such as electrons and photons can exist in multiple states at once. This property, called superposition, allows quantum systems to process information in a fundamentally different way than classical computers, which rely on bits that are either in a state of 0 or 1. In a quantum computer, quantum bits, or qubits, can represent 0 and 1 at the same time, which increases the amount of information that can be processed simultaneously.\n\nAnother important principle is entanglement, a phenomenon in which two or more quantum particles become so strongly correlated that the state of one particle cannot be described independently of the others. This property can be used to create highly sophisticated algorithms that are much more efficient than those used in classical computing.\n\nQuantum computers also make use of a principle known as quantum interference, where the probability of a certain outcome can be increased or decreased by the interference of different quantum states. This can be used to cancel out incorrect results and boost the probability of arriving at a correct solution.\n\nOverall, the scientific principles behind quantum computing involve using the unique properties of quantum mechanics to perform calculations that are much more powerful and efficient than those possible with classical computers.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Rewrite the following sentence to make it more concise: \n\nThe easiest way for you to learn about this topic is to read many books about it.",
+            "input": "",
+            "expected_output": "The best way to learn this topic is by reading books on it.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a list of 10 items a family would need to buy if they were getting ready for a camping trip.",
+            "input": "",
+            "expected_output": "1. Tent\n2. Sleeping bags\n3. Camping stove or portable grill\n4. Cooler with ice packs\n5. Insect repellent\n6. Flashlights or lanterns\n7. Cookware and utensils\n8. First aid kit\n9. Maps and compass\n10. Folding chairs or portable seating.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Write a blog post explaining the importance of diversifying computer science.",
+            "input": "",
+            "expected_output": "Diversity in computer science is of utmost importance, and yet it is an industry that has been historically known to suffer from a lack of diversity in its workforce. Although progress has been made in recent years, there is still much work to be done. In this blog post, we'll delve into the reasons why it's so important to diversify the field of computer science.\n\n1. Innovation thrives in diverse environments\n\nDiversity brings different perspectives, backgrounds, and experiences to the table. These differences fuel creativity and innovation, which are essential for the growth and development of computer science. Homogenous groups tend to think in similar ways, which can lead to limitations in problem-solving and idea generation. Diversity helps to break down these barriers and promote out-of-the-box thinking.\n\n2. Better representation in technology\n\nThe products and services of the technology industry impact every aspect of our lives, and it's crucial that the people developing these technologies are representative of the diverse population that uses them. When a product is designed and developed by a group that lacks diversity, it runs the risk of not adequately addressing the needs or preferences of all its users. By diversifying the field of computer science, we can ensure that the technology being developed is inclusive and meets the needs of everyone.\n\n3. Addressing the talent shortage\n\nThe field of computer science is growing rapidly, and there is a significant shortage of talent available to fill all the open positions. By actively seeking to diversify the field, we can tap into underrepresented groups, thereby increasing the pool of talent available to employers. This not only helps to address the talent shortage, but it also helps to create a more diverse and inclusive workforce.\n\n4. Social responsibility\n\nThe technology industry has a social responsibility to promote diversity and inclusion, and it starts with the field of computer science. By working to diversify the workforce and providing opportunities to underrepresented groups, we can begin to address systemic inequalities and create a more equitable society. The tech industry has the power to drive change, and it's essential that it steps up to the challenge.\n\nIn conclusion, diversifying the field of computer science is not only the right thing to do, but it also makes good business sense. By promoting diversity, we can drive innovation, create better technology, address the talent shortage, and work towards greater social responsibility. It's essential that we continue to push for diversity in computer science, and work towards creating a more inclusive and equitable industry.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Write boggo sort in c++.",
+            "input": "",
+            "expected_output": "Here's an example implementation of the bogosort algorithm in C++:\n\n```\n#include <iostream>\n#include <cstdlib>\n#include <ctime>\n#include <vector>\n\nbool is_sorted(const std::vector<int>& nums) {\n    for (int i = 0; i < nums.size() - 1; i++) {\n        if (nums[i] > nums[i + 1]) {\n            return false;\n        }\n    }\n    return true;\n}\n\nvoid bogosort(std::vector<int>& nums) {\n    srand(time(NULL)); // seed the random number generator\n    while (!is_sorted(nums)) {\n        for (int i = 0; i < nums.size(); i++) {\n            int random_index = rand() % nums.size();\n            std::swap(nums[i], nums[random_index]);\n        }\n    }\n}\n\nint main() {\n    std::vector<int> nums = {3, 1, 4, 1, 5, 9, 2, 6};\n    bogosort(nums);\n    for (int num : nums) {\n        std::cout << num << \" \";\n    }\n    std::cout << std::endl;\n    return 0;\n}\n```\n\nThis implementation randomly shuffles the input vector until it is sorted, using the `is_sorted` helper function to check if the vector is sorted. Note that bogosort is not a practical sorting algorithm and its performance is generally terrible.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Given the following sentence, show me how to transform it into a haiku.",
+            "input": "The soothing moonlight basks the sea",
+            "expected_output": "The soothing moon\nLight basking the calm sea\nNature's tranquil scene",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Write 5 terms related to machine learning.",
+            "input": "",
+            "expected_output": "1. Artificial Neural Networks: Computational systems inspired by the biology of the brain that are designed to learn from data and make predictions or decisions.\n2. Supervised Learning: A type of learning that involves using labeled data to train a model to map inputs to desired outputs. Common supervised learning algorithms include linear regression, decision trees, and k-nearest neighbors.\n3. Unsupervised Learning: A type of learning that involves finding patterns in unstructured data without explicit guidance from labeled examples. Common unsupervised learning algorithms include clustering and principal component analysis.\n4. Deep Learning: A subset of machine learning that involves developing deep artificial neural networks with multiple layers that can learn complex representations of data.\n5. Reinforcement Learning: A type of learning that involves training an agent to make sequential decisions in an uncertain and possibly dynamic environment by using feedback from its actions in the form of rewards or punishments to learn an optimal policy.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Why is physical exercise important for maintaining mental health?",
+            "input": "",
+            "expected_output": "Physical exercise is important for maintaining mental health for several reasons. First and foremost, exercise has been shown to help reduce symptoms of anxiety and depression, as well as to improve overall mood. This is because exercise triggers the release of feel good hormones such as endorphins, serotonin, and dopamine, which help regulate mood and reduce stress.\n\nIn addition, exercise can also help improve cognitive function by increasing blood flow and oxygen to the brain. This can help improve focus, memory, and overall brain health. Exercise also helps promote better sleep, which is crucial for mental health.\n\nFurthermore, regular physical activity can help boost self-esteem, and provide a sense of accomplishment and control over one's life. This can be particularly beneficial for individuals struggling with mental health issues, as it can help them build confidence and resilience.\n\nOverall, physical exercise is a powerful tool for maintaining good mental health. By incorporating regular physical activity into your routine, you can improve your overall well-being and reduce your risk of developing mental health issues.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Write a bash script to find the longest word in a text file named words.txt.",
+            "input": "",
+            "expected_output": "Here is an example bash script that will find the longest word in a text file named words.txt:\n\n```\n#!/bin/bash\n\n# Read the words from the text file into an array\nwords=($(< words.txt))\n\n# Initialize the longest word variable\nlongest=\"\"\n\n# Iterate over each word in the array and find the longest one\nfor word in \"${words[@]}\"; do\n    if [[ ${#word} -gt ${#longest} ]]; then\n        longest=$word\n    fi\ndone\n\n# Output the longest word\necho \"The longest word in words.txt is: $longest\"\n```\n\nTo use this script, simply save it to a file (e.g. `find_longest_word.sh`) and make it executable with the command `chmod +x find_longest_word.sh`. Then run the script with the command `./find_longest_word.sh`. The script will output the longest word in the words.txt file.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Spell check the following article.",
+            "input": "Environmental crises has beome more prevelant in recent yeears. Global wearming, ozon layer depletion and decrease in biodoversity are just a few of the many issues the world is facings.",
+            "expected_output": "Environmental crises have become more prevalent in recent years. Global warming, ozone layer depletion and decrease in biodiversity are just a few of the many issues the world is facing.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Suggest a balanced diet for a marathon runner.",
+            "input": "",
+            "expected_output": "A marathon runner requires a well-balanced diet that supports high performance and optimal nutritional requirements. A healthy diet should include a range of foods from all food groups \u2013 carbohydrates, proteins, and healthy fats \u2013 as well as vitamins, minerals and hydration. Here is a balanced diet plan for a marathon runner:\n\n**Carbohydrates**: Foods that are rich in complex carbohydrates \u2013 such as whole-grain pasta, bread, rice, quinoa, and sweet potatoes \u2013 should make up the bulk of a marathon runner\u2019s diet. These carbohydrates are slow-digesting and help maintain steady blood sugar levels, providing long-lasting energy.\n\n**Proteins**: Runners need to consume sufficient amounts of protein to repair and rebuild their muscles. Excellent protein sources for a marathon runner include lean meats, fish, eggs, low-fat dairy products, beans, lentils, and tofu.\n\n**Healthy fats**: Healthy fats play a vital role in reducing inflammation, regulating hormonal balance, and maintaining a healthy immune system. Marathon runners should include plenty of healthy fat sources in their diets, such as avocados, nuts, seeds, and olive oil.\n\n**Vitamins and minerals**: To perform at their best, runners must consume a diet rich in vitamins and minerals. Fruits and vegetables are the best sources of these essential micronutrients. Leafy greens, berries, oranges, bananas, and other colorful fruits and vegetables provide essential vitamins and antioxidants that keep runners healthy and energetic.\n\n**Hydration**: Marathon runners must hydrate adequately to replace the fluids they lose while sweating. Drinking water throughout the day and during training sessions is crucial. For more extended or more intense workouts, sports drinks containing electrolytes can help runners maintain optimal hydration levels.\n\nIn summary, a balanced diet for marathon runners should be based on complex carbohydrates, lean proteins, healthy fats, fruits, and vegetables, with adequate hydration to support their training and racing goals.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Brainstorm ideas for a creative ensemble for a formal event.",
+            "input": "",
+            "expected_output": "Sure, here are several different ideas for a creative and elegant ensemble appropriate for a formal event:\n\n1. A dramatic floor-length black velvet gown with a thigh-high leg slit, paired with strappy high heels and a statement necklace.\n2. A tailored tuxedo with satin lapels, paired with a crisp white shirt and black bow tie, finished with polished leather shoes and a pocket square.\n3. A midi-length silk dress in a vibrant jewel tone, styled with a pair of ankle-strap heels and a chic clutch.\n4. A two-piece ensemble featuring a fitted, sleeveless crop top and a high-waisted, full tulle skirt. Add some high-heeled sandals and chandelier earrings for extra glamour.\n5. A jumpsuit in a rich fabric like crepe or satin, with a deep V-neckline and wide-leg pants. Accessorize with bold statement jewelry and a box clutch.\n6. An off-the-shoulder ball gown with a full skirt and fitted bodice, paired with elegant strappy heels and a bejeweled clutch.\n\nThese are just some ideas to inspire you. The key to a creative ensemble for a formal event is to play with textures, fabrics, and silhouettes to achieve a unique and elegant look.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Identify the most pressing global health challenge facing us today.",
+            "input": "",
+            "expected_output": "One of the most pressing global health challenges facing us today is the COVID-19 pandemic. It has affected millions of people worldwide and has disrupted healthcare systems, economies and societies. In addition to this, there are ongoing challenges such as the rise in non-communicable diseases, antimicrobial resistance, and limited access to healthcare and medicines in many parts of the world. These challenges require global cooperation and concerted efforts from governments, international organizations, and individuals to address them.",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        }
+    ],
+    "json": [
+        {
+            "instruction": "Extract person, company, location, and date",
+            "input": "Extract entities from: Apple Inc. announced new products at their Cupertino headquarters on March 15, 2024.",
+            "expected_output": "{\"entities\": {\"person\": [], \"company\": [\"Apple Inc.\"], \"location\": [\"Cupertino\"], \"date\": [\"March 15, 2024\"]}}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Extract persons, companies, locations, years",
+            "input": "From the text: 'Jane Smith works at Google in Mountain View since 2021', extract all persons, companies, locations, and years.",
+            "expected_output": "{\"persons\": [\"Jane Smith\"], \"companies\": [\"Google\"], \"locations\": [\"Mountain View\"], \"years\": [2021]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Extract proper nouns",
+            "input": "Text: Microsoft CEO Satya Nadella opened the conference in Seattle on April 20, 2024. Extract all proper nouns.",
+            "expected_output": "{\"proper_nouns\": [\"Microsoft\", \"Satya Nadella\", \"Seattle\", \"April\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Extract persons, companies, locations, dates",
+            "input": "Parse: LinkedIn founder Reid Hoffman announced IPO in 2011 from San Francisco offices.",
+            "expected_output": "{\"persons\": [\"Reid Hoffman\"], \"companies\": [\"LinkedIn\"], \"locations\": [\"San Francisco\"], \"dates\": [\"2011\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a random user profile JSON with fields: username (string), age (int), premium (bool), interests (list)",
+            "input": "",
+            "expected_output": "{\"username\": \"LiamRyan\", \"age\": 27, \"premium\": true, \"interests\": [\"reading\", \"hiking\", \"gaming\", \"cooking\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a blog post JSON: title, author, date, word_count, tags",
+            "input": "",
+            "expected_output": "{\"title\": \"Introduction to Data Science\", \"author\": \"John Doe\", \"date\": \"2022-01-01\", \"word_count\": 1200, \"tags\": [\"data science\", \"machine learning\", \"python\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a person record JSON: first_name, last_name, email, phone, is_active",
+            "input": "",
+            "expected_output": "{\"first_name\": \"Emily\", \"last_name\": \"Chen\", \"email\": \"emily.chen@example.com\", \"phone\": \"123-456-7890\", \"is_active\": true}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a book entry JSON: title, author, isbn, publish_year, pages",
+            "input": "",
+            "expected_output": "{\"title\": \"The Great Gatsby\", \"author\": \"F. Scott Fitzgerald\", \"isbn\": \"9780743273565\", \"publish_year\": 1925, \"pages\": 180}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Classify sentiment as positive, neutral, or negative",
+            "input": "I love this product! Best purchase ever.",
+            "expected_output": "{\"sentiment\": \"positive\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Classify sentiment",
+            "input": "This is a chair.",
+            "expected_output": "{\"sentiment\": \"neutral\", \"confidence\": 0.8}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Classify sentiment",
+            "input": "Absolutely amazing! Worth every penny!",
+            "expected_output": "{\"sentiment\": \"positive\", \"confidence\": 0.99}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Classify sentiment",
+            "input": "It works as expected, nothing special.",
+            "expected_output": "{\"sentiment\": \"neutral\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Fix invalid JSON syntax",
+            "input": "{ 'name': 'John', \"age\": 30 }",
+            "expected_output": "{\"name\": \"John\", \"age\": 30}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Fix trailing comma",
+            "input": "{ \"items\": [1, 2, 3,] }",
+            "expected_output": "{\"items\": [1, 2, 3]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Complete incomplete JSON",
+            "input": "{ \"incomplete\": \"data\" ",
+            "expected_output": "{\"incomplete\": \"data\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Normalize quotes in JSON",
+            "input": "{ \"array\": [\"a\", \"b\", 'c'] }",
+            "expected_output": "{\"array\": [\"a\", \"b\", \"c\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "You are an AI assistant with access to a function called `get_flight_status(flight_number, date)`. Generate the JSON arguments required to call this tool based on the user's query.",
+            "input": "Can you check if Delta flight DL405 is on time for tomorrow?",
+            "expected_output": "{\"flight_number\": \"DL405\", \"airline\": \"Delta\", \"date\": \"tomorrow\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Extract organization, products, dates, locations",
+            "input": "Extract entities: OpenAI released ChatGPT in November 2022 from San Francisco.",
+            "expected_output": "{\"organization\": [\"OpenAI\"], \"products\": [\"ChatGPT\"], \"dates\": [\"November 2022\"], \"locations\": [\"San Francisco\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Extract entities",
+            "input": "Extract all named entities (PERSON, ORG, LOC, DATE) from: Tesla CEO Elon Musk presented earnings on February 1, 2024 in Austin, Texas.",
+            "expected_output": "{\"entities\": [{\"type\": \"PERSON\", \"value\": \"Elon Musk\"}, {\"type\": \"ORG\", \"value\": \"Tesla\"}, {\"type\": \"LOC\", \"value\": \"Austin\"}, {\"type\": \"LOC\", \"value\": \"Texas\"}, {\"type\": \"DATE\", \"value\": \"February 1, 2024\"}]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Create a restaurant info JSON: name, cuisine_type, rating, address, is_open",
+            "input": "",
+            "expected_output": "{\"name\": \"Bistro Bliss\", \"cuisine_type\": \"French\", \"rating\": 4.5, \"address\": {\"street\": \"123 Main St\", \"city\": \"New York\", \"state\": \"NY\", \"zip\": \"10001\"}, \"is_open\": true}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Extract company, locations, dates",
+            "input": "Extract from: Amazon headquarters relocated from Seattle to Arlington, Virginia in 2023.",
+            "expected_output": "{\"company\": \"Amazon\", \"locations\": [\"Seattle\", \"Arlington, Virginia\"], \"dates\": [\"2023\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Repair JSON with syntax errors",
+            "input": "{ 'key': 'value', }",
+            "expected_output": "{\"key\": \"value\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Create a weather report JSON: temperature_celsius, humidity_percent, wind_speed, precipitation",
+            "input": "",
+            "expected_output": "{\"temperature_celsius\": 22, \"humidity_percent\": 60, \"wind_speed\": 15, \"precipitation\": \"light rain\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Fix unquoted keys",
+            "input": "{ key: 'value', 'another': 123 }",
+            "expected_output": "{\"key\": \"value\", \"another\": 123}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Fix quote mismatch",
+            "input": "{ 'nested': { 'key': 'value' } }",
+            "expected_output": "{\"nested\": {\"key\": \"value\"}}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Create a movie info JSON: title, genre, release_year, rating, duration_minutes",
+            "input": "",
+            "expected_output": "{\"title\": \"Inception\", \"genre\": \"Action\", \"release_year\": 2010, \"rating\": 8.5, \"duration_minutes\": 148}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Extract organizations, locations, dates",
+            "input": "Extract: FDA approved Pfizer vaccine on December 10, 2020 in Washington DC.",
+            "expected_output": "{\"organizations\": [\"FDA\", \"Pfizer\"], \"locations\": [\"Washington DC\"], \"dates\": [\"December 10, 2020\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Repair malformed JSON",
+            "input": "{ name: John, age: 30, city: 'NYC' }",
+            "expected_output": "{\"name\": \"John\", \"age\": 30, \"city\": \"NYC\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Create a product listing JSON: name, price, stock_count, is_available, tags",
+            "input": "",
+            "expected_output": "{\"name\": \"Smartphone X5\", \"price\": 999.99, \"stock_count\": 50, \"is_available\": true, \"tags\": [\"electronics\", \"smartphone\", \"android\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Create a weather report JSON: temperature_celsius, humidity_percent, wind_speed, precipitation",
+            "input": "Tesla announced earnings on April 20",
+            "expected_output": "{\"entities\": {\"company\": [], \"person\": [], \"date\": []}}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a blog post JSON: title, author, date, word_count, tags",
+            "input": "Microsoft announced a partnership with OpenAI",
+            "expected_output": "{\"entities\": {\"company\": [], \"person\": [], \"date\": []}}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Extract organizations, locations, dates",
+            "input": "Google released new research in January",
+            "expected_output": "{\"entities\": {\"company\": [], \"person\": [], \"date\": []}}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Complete incomplete JSON",
+            "input": "Microsoft announced a partnership with OpenAI",
+            "expected_output": "{\"entities\": {\"company\": [], \"person\": [], \"date\": []}}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Extract proper nouns",
+            "input": "The conference is scheduled for June 15, 2024",
+            "expected_output": "{\"entities\": {\"company\": [], \"person\": [], \"date\": []}}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a blog post JSON: title, author, date, word_count, tags",
+            "input": "The conference is scheduled for June 15, 2024",
+            "expected_output": "{\"entities\": {\"company\": [], \"person\": [], \"date\": []}}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Extract persons, companies, locations, dates",
+            "input": "Tesla announced earnings on April 20",
+            "expected_output": "{\"entities\": {\"company\": [], \"person\": [], \"date\": []}}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Normalize quotes in JSON",
+            "input": "Google released new research in January",
+            "expected_output": "{\"entities\": {\"company\": [], \"person\": [], \"date\": []}}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Extract persons, companies, locations, years",
+            "input": "Stanford University released a new AI safety report",
+            "expected_output": "{\"entities\": {\"company\": [], \"person\": [], \"date\": []}}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a person record JSON: first_name, last_name, email, phone, is_active",
+            "input": "Google released new research in January",
+            "expected_output": "{\"entities\": {\"company\": [], \"person\": [], \"date\": []}}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Create a restaurant info JSON: name, cuisine_type, rating, address, is_open",
+            "input": "Tesla announced earnings on April 20",
+            "expected_output": "{\"entities\": {\"company\": [], \"person\": [], \"date\": []}}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Create a weather report JSON: temperature_celsius, humidity_percent, wind_speed, precipitation",
+            "input": "Google released new research in January",
+            "expected_output": "{\"entities\": {\"company\": [], \"person\": [], \"date\": []}}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Complete incomplete JSON",
+            "input": "The conference is scheduled for June 15, 2024",
+            "expected_output": "{\"entities\": {\"company\": [], \"person\": [], \"date\": []}}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Classify sentiment",
+            "input": "Not what I expected",
+            "expected_output": "{\"sentiment\": \"positive\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Classify sentiment as positive, neutral, or negative",
+            "input": "Worst purchase ever",
+            "expected_output": "{\"sentiment\": \"positive\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Classify sentiment",
+            "input": "This product exceeded my expectations!",
+            "expected_output": "{\"sentiment\": \"positive\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Classify sentiment",
+            "input": "Worst purchase ever",
+            "expected_output": "{\"sentiment\": \"positive\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Classify sentiment as positive, neutral, or negative",
+            "input": "Not what I expected",
+            "expected_output": "{\"sentiment\": \"positive\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Classify sentiment",
+            "input": "Great value for money",
+            "expected_output": "{\"sentiment\": \"positive\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Classify sentiment as positive, neutral, or negative",
+            "input": "Great value for money",
+            "expected_output": "{\"sentiment\": \"positive\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Fix invalid JSON syntax",
+            "input": "{a: 1, b: 2}",
+            "expected_output": "{\"result\": \"fixed\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Repair JSON with syntax errors",
+            "input": "{a: 1, b: 2}",
+            "expected_output": "{\"result\": \"fixed\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Fix invalid JSON syntax",
+            "input": "[{1, 2}]",
+            "expected_output": "{\"result\": \"fixed\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Repair malformed JSON",
+            "input": "{\"arr\": [1,2,3,]}",
+            "expected_output": "{\"result\": \"fixed\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Repair JSON with syntax errors",
+            "input": "{\"key\": }",
+            "expected_output": "{\"result\": \"fixed\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Fix quote mismatch",
+            "input": "{a: 1, b: 2}",
+            "expected_output": "{\"result\": \"fixed\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Fix quote mismatch",
+            "input": "{\"a\": 1 \"b\": 2}",
+            "expected_output": "{\"result\": \"fixed\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Fix unquoted keys",
+            "input": "[{1, 2}]",
+            "expected_output": "{\"result\": \"fixed\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a book entry JSON: title, author, isbn, publish_year, pages",
+            "input": "",
+            "expected_output": "{\"title\": \"The Great Gatsby\", \"author\": \"F. Scott Fitzgerald\", \"isbn\": \"9780743273565\", \"publish_year\": 1925, \"pages\": 180}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a book entry JSON: title, author, isbn, publish_year, pages",
+            "input": "",
+            "expected_output": "{\"title\": \"The Great Gatsby\", \"author\": \"F. Scott Fitzgerald\", \"isbn\": \"9780743273565\", \"publish_year\": 1925, \"pages\": 180}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Fix invalid JSON syntax",
+            "input": "{ 'name': 'John', \"age\": 30 }",
+            "expected_output": "{\"name\": \"John\", \"age\": 30}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a book entry JSON: title, author, isbn, publish_year, pages",
+            "input": "",
+            "expected_output": "{\"title\": \"The Great Gatsby\", \"author\": \"F. Scott Fitzgerald\", \"isbn\": \"9780743273565\", \"publish_year\": 1925, \"pages\": 180}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Repair malformed JSON",
+            "input": "{ name: John, age: 30, city: 'NYC' }",
+            "expected_output": "{\"name\": \"John\", \"age\": 30, \"city\": \"NYC\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Create a restaurant info JSON: name, cuisine_type, rating, address, is_open",
+            "input": "",
+            "expected_output": "{\"name\": \"Bistro Bliss\", \"cuisine_type\": \"French\", \"rating\": 4.5, \"address\": {\"street\": \"123 Main St\", \"city\": \"New York\", \"state\": \"NY\", \"zip\": \"10001\"}, \"is_open\": true}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "You are an AI assistant with access to a function called `get_flight_status(flight_number, date)`. Generate the JSON arguments required to call this tool based on the user's query.",
+            "input": "Can you check if Delta flight DL405 is on time for tomorrow?",
+            "expected_output": "{\"flight_number\": \"DL405\", \"airline\": \"Delta\", \"date\": \"tomorrow\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "You are an AI assistant with access to a function called `get_flight_status(flight_number, date)`. Generate the JSON arguments required to call this tool based on the user's query.",
+            "input": "Can you check if Delta flight DL405 is on time for tomorrow?",
+            "expected_output": "{\"flight_number\": \"DL405\", \"airline\": \"Delta\", \"date\": \"tomorrow\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "You are an AI assistant with access to a function called `get_flight_status(flight_number, date)`. Generate the JSON arguments required to call this tool based on the user's query.",
+            "input": "Can you check if Delta flight DL405 is on time for tomorrow?",
+            "expected_output": "{\"flight_number\": \"DL405\", \"airline\": \"Delta\", \"date\": \"tomorrow\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Classify sentiment",
+            "input": "This is a chair.",
+            "expected_output": "{\"sentiment\": \"neutral\", \"confidence\": 0.8}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Create a product listing JSON: name, price, stock_count, is_available, tags",
+            "input": "",
+            "expected_output": "{\"name\": \"Smartphone X5\", \"price\": 999.99, \"stock_count\": 50, \"is_available\": true, \"tags\": [\"electronics\", \"smartphone\", \"android\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "You are an AI assistant with access to a function called `get_flight_status(flight_number, date)`. Generate the JSON arguments required to call this tool based on the user's query.",
+            "input": "Can you check if Delta flight DL405 is on time for tomorrow?",
+            "expected_output": "{\"flight_number\": \"DL405\", \"airline\": \"Delta\", \"date\": \"tomorrow\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "You are an AI assistant with access to a function called `get_flight_status(flight_number, date)`. Generate the JSON arguments required to call this tool based on the user's query.",
+            "input": "Can you check if Delta flight DL405 is on time for tomorrow?",
+            "expected_output": "{\"flight_number\": \"DL405\", \"airline\": \"Delta\", \"date\": \"tomorrow\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Extract proper nouns",
+            "input": "Text: Microsoft CEO Satya Nadella opened the conference in Seattle on April 20, 2024. Extract all proper nouns.",
+            "expected_output": "{\"proper_nouns\": [\"Microsoft\", \"Satya Nadella\", \"Seattle\", \"April\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "You are an AI assistant with access to a function called `get_flight_status(flight_number, date)`. Generate the JSON arguments required to call this tool based on the user's query.",
+            "input": "Can you check if Delta flight DL405 is on time for tomorrow?",
+            "expected_output": "{\"flight_number\": \"DL405\", \"airline\": \"Delta\", \"date\": \"tomorrow\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Repair JSON with syntax errors",
+            "input": "{ 'key': 'value', }",
+            "expected_output": "{\"key\": \"value\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Normalize quotes in JSON",
+            "input": "{ \"array\": [\"a\", \"b\", 'c'] }",
+            "expected_output": "{\"array\": [\"a\", \"b\", \"c\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Classify sentiment",
+            "input": "This is a chair.",
+            "expected_output": "{\"sentiment\": \"neutral\", \"confidence\": 0.8}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Extract persons, companies, locations, dates",
+            "input": "Parse: LinkedIn founder Reid Hoffman announced IPO in 2011 from San Francisco offices.",
+            "expected_output": "{\"persons\": [\"Reid Hoffman\"], \"companies\": [\"LinkedIn\"], \"locations\": [\"San Francisco\"], \"dates\": [\"2011\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Extract organizations, locations, dates",
+            "input": "Extract: FDA approved Pfizer vaccine on December 10, 2020 in Washington DC.",
+            "expected_output": "{\"organizations\": [\"FDA\", \"Pfizer\"], \"locations\": [\"Washington DC\"], \"dates\": [\"December 10, 2020\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "You are an AI assistant with access to a function called `get_flight_status(flight_number, date)`. Generate the JSON arguments required to call this tool based on the user's query.",
+            "input": "Can you check if Delta flight DL405 is on time for tomorrow?",
+            "expected_output": "{\"flight_number\": \"DL405\", \"airline\": \"Delta\", \"date\": \"tomorrow\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "You are an AI assistant with access to a function called `get_flight_status(flight_number, date)`. Generate the JSON arguments required to call this tool based on the user's query.",
+            "input": "Can you check if Delta flight DL405 is on time for tomorrow?",
+            "expected_output": "{\"flight_number\": \"DL405\", \"date\": \"tomorrow\", \"airline\": \"Delta\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "You are an AI assistant with access to a function called `get_flight_status(flight_number, date)`. Generate the JSON arguments required to call this tool based on the user's query.",
+            "input": "Can you check if Delta flight DL405 is on time for tomorrow?",
+            "expected_output": "{\"flight_number\": \"DL405\", \"airline\": \"Delta\", \"date\": \"tomorrow\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Normalize quotes in JSON",
+            "input": "{ \"array\": [\"a\", \"b\", 'c'] }",
+            "expected_output": "{\"array\": [\"a\", \"b\", \"c\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Extract company, locations, dates",
+            "input": "Extract from: Amazon headquarters relocated from Seattle to Arlington, Virginia in 2023.",
+            "expected_output": "{\"company\": \"Amazon\", \"locations\": [\"Seattle\", \"Arlington, Virginia\"], \"dates\": [\"2023\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "You are an AI assistant with access to a function called `get_flight_status(flight_number, date)`. Generate the JSON arguments required to call this tool based on the user's query.",
+            "input": "Can you check if Delta flight DL405 is on time for tomorrow?",
+            "expected_output": "{\"flight_number\": \"DL405\", \"airline\": \"Delta\", \"date\": \"tomorrow\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "You are an AI assistant with access to a function called `get_flight_status(flight_number, date)`. Generate the JSON arguments required to call this tool based on the user's query.",
+            "input": "Can you check if Delta flight DL405 is on time for tomorrow?",
+            "expected_output": "{\"flight_number\": \"DL405\", \"date\": \"tomorrow\", \"airline\": \"Delta\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Create a weather report JSON: temperature_celsius, humidity_percent, wind_speed, precipitation",
+            "input": "",
+            "expected_output": "{\"temperature_celsius\": 22, \"humidity_percent\": 60, \"wind_speed\": 15, \"precipitation\": \"light rain\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Fix unquoted keys",
+            "input": "{ key: 'value', 'another': 123 }",
+            "expected_output": "{\"key\": \"value\", \"another\": 123}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Classify sentiment",
+            "input": "This is a chair.",
+            "expected_output": "{\"sentiment\": \"neutral\", \"confidence\": 0.8}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a blog post JSON: title, author, date, word_count, tags",
+            "input": "",
+            "expected_output": "{\"title\": \"Introduction to Data Science\", \"author\": \"John Doe\", \"date\": \"2022-01-01\", \"word_count\": 1200, \"tags\": [\"data science\", \"machine learning\", \"python\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a random user profile JSON with fields: username (string), age (int), premium (bool), interests (list)",
+            "input": "",
+            "expected_output": "{\"username\": \"LiamRyan\", \"age\": 27, \"premium\": true, \"interests\": [\"reading\", \"hiking\", \"gaming\", \"cooking\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Fix unquoted keys",
+            "input": "{ key: 'value', 'another': 123 }",
+            "expected_output": "{\"key\": \"value\", \"another\": 123}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "You are an AI assistant with access to a function called `get_flight_status(flight_number, date)`. Generate the JSON arguments required to call this tool based on the user's query.",
+            "input": "Can you check if Delta flight DL405 is on time for tomorrow?",
+            "expected_output": "{\"flight_number\": \"DL405\", \"airline\": \"Delta\", \"date\": \"tomorrow\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a random user profile JSON with fields: username (string), age (int), premium (bool), interests (list)",
+            "input": "",
+            "expected_output": "{\"username\": \"LiamRyan\", \"age\": 27, \"premium\": true, \"interests\": [\"reading\", \"hiking\", \"gaming\", \"cooking\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "You are an AI assistant with access to a function called `get_flight_status(flight_number, date)`. Generate the JSON arguments required to call this tool based on the user's query.",
+            "input": "Can you check if Delta flight DL405 is on time for tomorrow?",
+            "expected_output": "{\"flight_number\": \"DL405\", \"airline\": \"Delta\", \"date\": \"tomorrow\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "You are an AI assistant with access to a function called `get_flight_status(flight_number, date)`. Generate the JSON arguments required to call this tool based on the user's query.",
+            "input": "Can you check if Delta flight DL405 is on time for tomorrow?",
+            "expected_output": "{\"flight_number\": \"DL405\", \"airline\": \"Delta\", \"date\": \"tomorrow\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Generate a blog post JSON: title, author, date, word_count, tags",
+            "input": "",
+            "expected_output": "{\"title\": \"Introduction to Data Science\", \"author\": \"John Doe\", \"date\": \"2022-01-01\", \"word_count\": 1200, \"tags\": [\"data science\", \"machine learning\", \"python\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Fix trailing comma",
+            "input": "{ \"items\": [1, 2, 3,] }",
+            "expected_output": "{\"items\": [1, 2, 3]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Extract proper nouns",
+            "input": "Text: Microsoft CEO Satya Nadella opened the conference in Seattle on April 20, 2024. Extract all proper nouns.",
+            "expected_output": "{\"proper_nouns\": [\"Microsoft\", \"Satya Nadella\", \"Seattle\", \"April\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Extract organization, products, dates, locations",
+            "input": "Extract entities: OpenAI released ChatGPT in November 2022 from San Francisco.",
+            "expected_output": "{\"organization\": [\"OpenAI\"], \"products\": [\"ChatGPT\"], \"dates\": [\"November 2022\"], \"locations\": [\"San Francisco\"]}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Create a weather report JSON: temperature_celsius, humidity_percent, wind_speed, precipitation",
+            "input": "",
+            "expected_output": "{\"temperature_celsius\": 22, \"humidity_percent\": 60, \"wind_speed\": 15, \"precipitation\": \"light rain\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        },
+        {
+            "instruction": "Complete incomplete JSON",
+            "input": "{ \"incomplete\": \"data\" ",
+            "expected_output": "{\"incomplete\": \"data\"}",
+            "baseline_response": "[error: 'DynamicCache' object has no a]",
+            "phase1_alpaca_response": "[error: 'DynamicCache' object has no a]",
+            "phase2_json_response": "[error: 'DynamicCache' object has no a]"
+        }
+    ]
+}

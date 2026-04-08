@@ -18,8 +18,8 @@ echo ""
 cd /work/nbe841/LLM_Training_and_Finetuning
 
 # Load environment
-module load cuda/12.2
-source venv/bin/activate
+module load anaconda3
+source activate llm_env
 
 echo "Python version: $(python --version)"
 echo "PyTorch: $(python -c 'import torch; print(torch.__version__)')"
