@@ -48,11 +48,28 @@ def get_rouge_l(prediction, reference):
     scores = scorer.score(reference, prediction)
     return scores['rougeL'].fmeasure
 
-def get_judge_decision(prompt, resp_a, resp_b):
-    """Pairwise Comparison Judge (Section 4.2 methodology)"""
-    system_prompt = "You are an impartial judge. Evaluate which response follows instructions better."
-    user_content = f"Instruction: {prompt}\n\nResponse A: {resp_a}\n\nResponse B: {resp_b}\n\n" \
-                   "Answer ONLY with '[[A]]' or '[[B]]' followed by a one-sentence reason."
+def get_judge_decision(prompt, resp_a, resp_b, checkpoint_a="CP1", checkpoint_b="CP2"):
+    """
+    Structured Judge Evaluation following Section 9 of assignment.
+    Returns scores across 6 dimensions + winner + justification.
+    """
+    system_prompt = """You are an expert judge evaluating LLM responses.
+Score both responses on these 6 dimensions (1-5 scale):
+- instruction_following: Did it follow the instruction?
+- correctness: Is the answer factually correct?
+- clarity: Is the response clear and well-written?
+- completeness: Does it fully address the instruction?
+- structured_output_validity: For JSON tasks, is output valid?
+- hallucination_risk: Risk of fabricated/false information (1=high risk, 5=low risk)?
+
+Return ONLY a JSON object (no markdown, no extra text):
+{"response_a_scores": {dimensions...}, "response_b_scores": {dims...}, "winner": "A" or "B", "justification": "..."}"""
+    
+    user_content = f"""Instruction: {prompt}
+
+Response A: {resp_a}
+
+Response B: {resp_b}"""
     
     try:
         response = client.chat.completions.create(
@@ -61,11 +78,26 @@ def get_judge_decision(prompt, resp_a, resp_b):
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_content}
             ],
-            temperature=0.0 # Strict determinism
+            temperature=0.0,
+            max_tokens=500
         )
-        return response.choices[0].message.content
+        
+        result_text = response.choices[0].message.content.strip()
+        # Parse JSON from response
+        try:
+            result = json.loads(result_text)
+            result["checkpoint_a"] = checkpoint_a
+            result["checkpoint_b"] = checkpoint_b
+            return result
+        except json.JSONDecodeError:
+            # If not valid JSON, try to extract it
+            import re
+            json_match = re.search(r'\{.*\}', result_text, re.DOTALL)
+            if json_match:
+                return json.loads(json_match.group())
+            return {"error": f"Could not parse judge response: {result_text}"}
     except Exception as e:
-        return f"Error: {e}"
+        return {"error": str(e)}
 
 def main():
     input_file = "results/inference_results.json"
@@ -83,18 +115,38 @@ def main():
     }
 
     # 1. ALPACA EVALUATION & FORGETTING ANALYSIS
-    print("\n--- Running Alpaca Forgetting Analysis ---")
+    print("\n--- Running Alpaca Judge Evaluation ---")
     total_alpaca = len(data["alpaca"])
     rouge_p1, rouge_p2 = [], []
+    
+    alpaca_judgments = []
 
-    for item in data["alpaca"]:
+    for idx, item in enumerate(data["alpaca"]):
+        print(f"Evaluating Alpaca prompt {idx+1}/{total_alpaca}...")
+        
         # Stage 1 vs Base
-        res1 = get_judge_decision(item["prompt"], item["baseline_response"], item["phase1_alpaca_response"])
-        if "[[B]]" in res1: results_table["alpaca"]["P1_win_vs_Base"] += 1
+        res1 = get_judge_decision(
+            item["instruction"], 
+            item["baseline_response"], 
+            item["phase1_alpaca_response"],
+            "Baseline",
+            "Stage 1 (Alpaca)"
+        )
+        if res1.get("winner") == "B": 
+            results_table["alpaca"]["P1_win_vs_Base"] += 1
+        alpaca_judgments.append(res1)
         
         # Stage 2 vs Stage 1 (The Forgetting Check)
-        res2 = get_judge_decision(item["prompt"], item["phase1_alpaca_response"], item["phase2_json_response"])
-        if "[[B]]" in res2: results_table["alpaca"]["P2_win_vs_P1"] += 1
+        res2 = get_judge_decision(
+            item["instruction"], 
+            item["phase1_alpaca_response"], 
+            item["phase2_json_response"],
+            "Stage 1 (Alpaca)",
+            "Stage 2 (JSON)"
+        )
+        if res2.get("winner") == "B": 
+            results_table["alpaca"]["P2_win_vs_P1"] += 1
+        alpaca_judgments.append(res2)
         
         # Calculate ROUGE-L relative to baseline (or ground truth if available)
         rouge_p1.append(get_rouge_l(item["phase1_alpaca_response"], item["baseline_response"]))
@@ -127,6 +179,10 @@ def main():
     results_table["json"]["schema"] = (s_sum / total_json) * 100
     results_table["json"]["exact"] = (e_sum / total_json) * 100
 
+    # Save detailed judge results for analysis
+    with open("results/judge_results_detailed.json", "w") as f:
+        json.dump(alpaca_judgments, f, indent=4)
+    
     # Save final statistics for the Three-Checkpoint Comparison Table
     with open("results/final_evaluation_report.json", "w") as f:
         json.dump(results_table, f, indent=4)

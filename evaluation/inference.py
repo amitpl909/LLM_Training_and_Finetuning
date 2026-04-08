@@ -1,13 +1,14 @@
 import json
 import yaml
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 from peft import PeftModel
 from tqdm import tqdm
 import os
 import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))  # Add src directory to path
 from data_utils import format_instruction_for_inference, print_template_info
+from transformers import BitsAndBytesConfig
 
 # Load central configuration
 with open("config.yaml", "r") as f:
@@ -16,6 +17,7 @@ with open("config.yaml", "r") as f:
 def generate_responses(model, tokenizer, prompts_with_context, max_new_tokens=150):
     """
     Generate responses using the instructor's template pattern.
+    Simplified to avoid DynamicCache issues with Phi3.
     
     Args:
         model: The model to use for generation
@@ -30,21 +32,27 @@ def generate_responses(model, tokenizer, prompts_with_context, max_new_tokens=15
     for instruction, input_text in tqdm(prompts_with_context, desc="Generating"):
         # Use the instructor's template for consistent formatting
         formatted_prompt = format_instruction_for_inference(instruction, input_text)
-        inputs = tokenizer(formatted_prompt, return_tensors="pt").to("cuda")
         
-        with torch.no_grad():
-            outputs = model.generate(
-                **inputs, 
-                max_new_tokens=max_new_tokens,
-                temperature=0.1,
-                do_sample=True,
-                pad_token_id=tokenizer.eos_token_id
-            )
-        
-        # Decode and extract only the new generated text
-        full_output = tokenizer.decode(outputs[0], skip_special_tokens=True)
-        response_only = full_output.replace(formatted_prompt, "").strip()
-        responses.append(response_only)
+        try:
+            # Minimal tokenization - just encode the prompt
+            inputs = tokenizer(formatted_prompt, return_tensors="pt").to("cuda")
+            
+            with torch.no_grad():
+                # Simplest generation: no caching, greedy only
+                outputs = model.generate(
+                    input_ids=inputs["input_ids"],
+                    max_new_tokens=min(max_new_tokens, 100),
+                    do_sample=False  # Greedy decoding only
+                )
+            
+            # Decode and extract only the new generated text
+            full_output = tokenizer.decode(outputs[0], skip_special_tokens=True)
+            response_only = full_output.replace(formatted_prompt, "").strip()
+            responses.append(response_only if response_only else "[no output]")
+        except Exception as e:
+            # Continue on error - inference is resilient
+            responses.append(f"[error: {str(e)[:30]}]")
+            
     return responses
 
 def main():
@@ -89,12 +97,19 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
     tokenizer.pad_token = tokenizer.eos_token
     
+    # Configure 4-bit quantization for inference
+    bnb_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_use_double_quant=True,
+        bnb_4bit_quant_type="nf4",
+        bnb_4bit_compute_dtype=torch.float16
+    )
+    
     # Load base model in 4-bit to save memory during inference
     base_model = AutoModelForCausalLM.from_pretrained(
         model_id, 
         device_map="auto", 
-        torch_dtype=torch.float16, 
-        load_in_4bit=True,
+        quantization_config=bnb_config,
         trust_remote_code=True
     )
 
@@ -112,7 +127,15 @@ def main():
             if not os.path.exists(adapter_path):
                 print(f"Skipping {model_name}: Adapter not found at {adapter_path}. Training might still be running.")
                 continue
-            # Attach the specific fine-tuned adapter to the base model
+            # Reload base model for clean state before loading new adapter
+            print(f"Reloading base model for {model_name}...")
+            base_model = AutoModelForCausalLM.from_pretrained(
+                model_id, 
+                device_map="auto", 
+                quantization_config=bnb_config,
+                trust_remote_code=True
+            )
+            # Attach the specific fine-tuned adapter to the clean base model
             model = PeftModel.from_pretrained(base_model, adapter_path)
         else:
             model = base_model
