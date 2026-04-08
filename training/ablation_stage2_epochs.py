@@ -144,7 +144,6 @@ def train_ablation_variant(
     
     training_args = TrainingArguments(
         output_dir=output_dir,
-        overwrite_output_dir=True,
         per_device_train_batch_size=config.get("batch_size", 8),
         per_device_eval_batch_size=config.get("batch_size", 8),
         gradient_accumulation_steps=config.get("gradient_accumulation_steps", 8),
