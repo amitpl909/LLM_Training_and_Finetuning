@@ -1,0 +1,502 @@
+[
+    {
+        "output": "Executive Summary\nOur small cleaning service, Sparkle Solutions, is a start-up business that aims to provide professional cleaning services to residential and commercial clients in our local area. Our services will focus on offering custom solutions to meet the unique needs of our clients, with exceptional quality and customer service at the forefront of our operations.\n\nCompany Overview\nSparkle Solutions will be a limited liability company registered in our state. Our business will operate out of a small office, with the majority of our work taking place on-site at our clients\u2019 locations. Our owner and founder has extensive experience in the cleaning industry and a passion for providing top-notch services to our clients.\n\nServices\nOur cleaning services will include general cleaning, deep cleaning, move-in/move-out cleaning, and specialized cleaning for specific areas or items, such as carpets and windows. We will also offer customizable packages to meet the unique needs of our clients. Our team will utilize eco-friendly cleaning products and procedures, to ensure the health and safety of our clients and team members.\n\nMarket Analysis\nThere is a strong demand for cleaning services in our local area, with a growing population and a large number of busy families and professionals who require assistance with their cleaning needs. Our main competition will be other small cleaning services, as well as larger corporations that provide similar services. We plan to differentiate ourselves through our focus on customizable cleaning packages, exceptional quality, and outstanding customer service.\n\nMarketing and Sales\nWe will market our services through a variety of channels, including social media, local advertisements, and through word-of-mouth referrals from our satisfied customers. We will also offer promotions and incentives for clients who refer others to our business. Our sales strategy will focus on building strong relationships with our clients and providing the highest level of service to ensure repeat business and long-term loyalty.\n\nFinancials\nOur start-up costs will include expenses for office space, equipment, supplies, marketing materials, and initial employee salaries. We will secure financing through a combination of owner investment and a small business loan. Our pricing will be competitive within our local market, and our revenue streams will include both one-time and recurring cleaning services.\n\nConclusion\nSparkle Solutions is poised to succeed in the cleaning service industry through our focus on high-quality, customizable services, and exceptional customer service. Our experienced founder, coupled with our solid business plan and strong market demand, make us confident in our ability to achieve our goals and build a thriving cleaning service.",
+        "input": "",
+        "instruction": "Develop a business plan for a small cleaning service."
+    },
+    {
+        "output": "\"From Struggles to Success: The Inspiring Journey of a High School Student\"",
+        "input": "",
+        "instruction": "Create a headline for an online blog article about a struggling high school student."
+    },
+    {
+        "output": "The SQL query below will return the names of all employees who have worked for the company for more than 10 years:\n\n```SQL\nSELECT name \nFROM employees \nWHERE (YEAR(CURDATE())-YEAR(hire_date)) > 10;\n```\n\nThis query selects the `name` column from the `employees` table and filters the results using a `WHERE` clause. The `WHERE` clause uses the `YEAR()` function to calculate the difference between the current year (`CURDATE()`) and the year the employee was hired (`hire_date`). If the difference is greater than 10, then the employee has worked for the company for more than 10 years and their name will be included in the results.",
+        "input": "",
+        "instruction": "Construct a SQL query that returns the names of all employees who have worked for the company for more than 10 years."
+    },
+    {
+        "output": "1. Convince\n2. Influence\n3. Coax\n4. Motivate\n5. Prompt",
+        "input": "",
+        "instruction": "Create a list of 5 synonyms for the word 'persuade'."
+    },
+    {
+        "output": "An AI-powered marketing platform offers several benefits, but the primary one is its ability to analyze large amounts of data in real-time and use predictive algorithms to deliver personalized and optimized marketing strategies to improve audience engagement and conversion rates. It can identify patterns and trends in consumer behavior, and make data-driven decisions about which marketing tactics will be most effective for targeting specific audience segments. This results in more relevant and efficient marketing campaigns, which in turn increases ROI (return on investment) for businesses.",
+        "input": "",
+        "instruction": "Describe the primary benefit of an AI-powered marketing platform."
+    },
+    {
+        "output": "1. A mobile app that connects local organic farmers and producers directly with consumers. \n2. An eco-friendly laundry and cleaning service that uses all natural, non-toxic products.\n3. A subscription-based meal kit service featuring plant-based, gluten-free and allergen-friendly options. \n4. Virtual interior design consultations for individuals looking to renovate their homes or offices. \n5. An online marketplace for small businesses to sell their products, with a focus on sustainable and ethical practices.\n6. An on-demand, in-home personal training and wellness service, connecting clients with certified professionals. \n7. A sustainable fashion boutique specializing in clothing and accessories made from recycled or repurposed materials.\n8. A virtual tutoring and homework help service for K-12 students.\n9. A pet-sitting and dog-walking service that focuses on the well-being, safety and happiness of animals. \n10. A software platform that helps small businesses automate their accounting, payroll and HR processes.",
+        "input": "",
+        "instruction": "Brainstorm ideas for a new business."
+    },
+    {
+        "output": "Germany and France are both part of the European Union.",
+        "input": "",
+        "instruction": "Name at least two countries that are part of the European Union."
+    },
+    {
+        "output": "Welcome to our smartphone features survey. Your feedback is important as it helps us understand the preferences of our customers. Please take a few minutes to answer the following questions:\n\n1. What is the most important feature for you on a smartphone?\nA. Camera Quality\nB. Screen Resolution\nC. Processor Speed\nD. Battery Life\nE. Storage\nF. Other (Please specify)\n\n2. How often do you use the camera on your smartphone?\nA. Daily\nB. Weekly\nC. Rarely\nD. Never\n\n3. How important is screen size to you when choosing a smartphone?\nA. Very Important\nB. Moderately Important\nC. Not Important\n\n4. Do you prefer a smartphone with a removable or a built-in battery?\nA. Removable Battery\nB. Built-in Battery\n\n5. How much storage space do you usually need on your smartphone?\nA. Less than 32GB\nB. 32GB - 64GB\nC. 64GB - 128GB\nD. More than 128GB\n\n6. Would you be willing to pay more for a smartphone with advanced features such as facial recognition and wireless charging?\nA. Yes\nB. No\n\n7. How important is the brand of the smartphone to you?\nA. Very Important\nB. Moderately Important\nC. Not Important\n\n8. How often do you upgrade your smartphone?\nA. Every year\nB. Every 2 years\nC. Every 3 years or more\nD. Only when it is necessary\n\nThank you for taking the time to complete this survey. Your feedback is valuable to us.",
+        "input": "",
+        "instruction": "Create a survey about the features of a smartphone"
+    },
+    {
+        "output": "\"2020 Presidential Race: Historic Campaign Amidst Unprecedented Challenges\"",
+        "input": "",
+        "instruction": "Generate a title for a news article about the 2020 presidential campaign."
+    },
+    {
+        "output": "A sinking feeling in the pit of your stomach, as though a darkness is slowly enveloping your thoughts with an overwhelming sense of fear and anxiety.",
+        "input": "",
+        "instruction": "Generate a phrase that describes the feeling of dread."
+    },
+    {
+        "output": "The equivalent percentage of 37/100 is 37%.",
+        "input": "37\u2044100",
+        "instruction": "Convert the following number from its fractional representation to the equivalent percentage."
+    },
+    {
+        "output": "Feeling tired and overwhelmed is like being a ship caught in a stormy sea. The waves are crashing against the sides, the winds are howling, and it takes all your strength to keep the ship afloat and on course. You know that eventually the storm will pass, but in the moment it takes all that you have just to keep going.",
+        "input": "Feeling: Tired and overwhelmed.",
+        "instruction": "Come up with a metaphor for how I am feeling."
+    },
+    {
+        "output": "Success is like love; it blossoms with care, patience and hard work, and can wither away with neglect and lack of effort.",
+        "input": "Success and Love",
+        "instruction": "Generate a metaphor that compares two dissimilar concepts."
+    },
+    {
+        "output": "I'm an AI language model and do not have a physical body, so I don't live in a city or have the ability to generate a view. However, if you tell me the name of your city, I can provide you with general information or assist you in finding images or descriptions of city views.",
+        "input": "",
+        "instruction": "Generate a view of the city you are living in."
+    },
+    {
+        "output": "Yes, I would be happy to describe the differences between spiral and elliptical galaxies for you.\n\nSpiral galaxies are typically characterized by their flat, spinning disks that contain stars, gas, and dust. They also have central bulges surrounded by a halo of older stars. In contrast, elliptical galaxies are more rounded, or elliptical, in shape and have a much more uniform distribution of stars. \n\nOne of the major differences between the two types of galaxies is the way in which their stars orbit. In spiral galaxies, stars mainly orbit in neat and organized disk-like patterns. On the other hand, the orbits of stars in elliptical galaxies are much more chaotic and random. This lack of order is thought to be due to the fact that elliptical galaxies undergo more mergers and interactions with other galaxies.\n\nAnother difference between spiral and elliptical galaxies is their content. Spiral galaxies contain a great deal of gas and dust that are necessary components for star formation. This allows them to continue forming new stars over time. Elliptical galaxies, however, are generally composed of older, red stars and have much less gas and dust. This means that they often have very low rates of star formation, if any at all.\n\nIn summary, spiral galaxies are typically characterized by their flat, spinning disks, orderly orbits, and active star formation, while elliptical galaxies are more rounded, have chaotic orbits, and display little or no star formation.",
+        "input": "",
+        "instruction": "Can you describe the differences between spiral galaxies and elliptical galaxies?"
+    },
+    {
+        "output": "Renewable energy, as the name implies, is energy that is generated from resources that are naturally replenished, or renewable, such as sunlight, wind, rain, and geothermal heat. This type of energy is gaining popularity all around the world and for good reason. In this report, we\u2019ll explore the advantages of using renewable energy sources.\n\nEnvironmental Benefits\nThe most significant advantage of renewable energy is how it can help to reduce our impact on the environment. Unlike traditional sources of energy, such as coal and oil, renewable energy sources produce little or no greenhouse gas emissions, significantly reducing pollution levels in the air that we breathe. This has a direct and positive impact on the health of both humans and animals.\n\nReduction of Dependence on Non-renewable Energy Sources\nRelying on non-renewable sources of energy can be risky because the supply is finite and they will eventually be depleted. With renewable energy, the resources never run out, so there is no fear of shortages or price spikes due to supply and demand. This provides energy security for communities and countries using renewables as an energy source.\n\nEconomic Benefits\nRenewable energy can also provide a boost to the economy. The construction and operation of renewable energy facilities create jobs in local communities. The money spent by the companies is reinvested into the local economy, providing a boost to the region. Additionally, renewable energy sources can save money on energy bills in the long-term, with the initial investment ultimately paying for itself.\n\nDecentralization of Power Generation\nRenewable energy can be generated on a small scale, making it ideal for rural or isolated communities. This allows for decentralization of power generation, providing more independence to these communities and reducing the need for large power plants and the infrastructure required to support them.\n\nIn conclusion, the advantages of using renewable energy sources are numerous, from environmental benefits to economic gains. Switching to renewable energy can help to reduce pollution, provide energy security, boost the economy, and provide energy independence to communities. With ongoing advancements in technology, renewable energy is set to become an even more important and viable source of power for generations to come.",
+        "input": "",
+        "instruction": "Write a report about the advantages of using renewable energy sources."
+    },
+    {
+        "output": "1. Automation and Control: IoT devices allow for greater automation and control of various aspects of daily life, such as home appliances and security systems. This can lead to increased energy efficiency and cost savings.\n\n2. Improved Data Collection and Analysis: IoT devices can collect vast amounts of data on everything from personal fitness to manufacturing processes. With proper analysis, this data can contribute to improved decision making and optimization of various systems.\n\n3. Enhanced Connectivity and Communication: IoT enables greater connectivity and communication between devices and people, which can have a significant impact on various industries, such as transportation, healthcare, and manufacturing. This can lead to improvements in productivity, safety, and overall efficiency.",
+        "input": "",
+        "instruction": "Name three benefits of the Internet of Things (IoT)."
+    },
+    {
+        "output": "Dear [Name],\n\nI am sorry to hear that you are frustrated with our service. Please know that we take all customer feedback seriously and we are committed to providing you with the best possible service. We understand how important it is for our customers to have a positive experience with our product and service, and we are truly sorry for any inconvenience you may have experienced.\n\nIs there a specific issue that you would like to bring to our attention? We value your input and would like to work with you to find a solution. Our dedicated support team is here to assist you with any questions or concerns you may have, and we will do everything in our power to ensure that your future experiences with our company are positive.\n\nThank you for bringing this matter to our attention and giving us the opportunity to make things right. We appreciate your patience and understanding.\n\nSincerely,\n\n[Your Company] Customer Support Team",
+        "input": "Dear [Name],\n\nI am sorry to hear that you are frustrated with our service.",
+        "instruction": "Generate a support email comforting a frustrated customer."
+    },
+    {
+        "output": "Plants produce energy through a process called photosynthesis. In photosynthesis, plants use sunlight, water and carbon dioxide to create glucose, a kind of sugar that acts as the main source of energy for the plant. This process takes place in the chloroplasts, a specialized organelle found in plant cells.\n\nDuring photosynthesis, light energy is captured by pigments, primarily chlorophyll, in the plant's leaves. This energy is then used to convert water and carbon dioxide into glucose through a series of chemical reactions. Oxygen is a byproduct of this process and is released into the air.\n\nOnce the glucose is produced, it is transported to different parts of the plant where it is used for energy. Some of the glucose is also stored in the form of starch or other complex carbohydrates for later use. Photosynthesis is a vital process for plants, as it helps them to grow, repair and reproduce.",
+        "input": "",
+        "instruction": "How do plants produce energy?"
+    },
+    {
+        "output": "The statement presents a binary choice, where the individual has to choose between two mutually exclusive alternatives- either to go for a walk or read a book.",
+        "input": "Should I go for a walk or read a book?",
+        "instruction": "Identify the type of choice presented by the following statement."
+    },
+    {
+        "output": "One famous person from the Salem Witch Trials is Tituba, a woman who was accused and imprisoned for practicing witchcraft during the trials. She was one of the first individuals to be accused and her testimony played a key role in the events that unfolded.",
+        "input": "",
+        "instruction": "Name a famous person from the Salem Witch Trials"
+    },
+    {
+        "output": "The author's main argument is that climate change is an urgent issue that needs collective and immediate action to be addressed. They emphasize that it's a fact backed by scientific evidence, with the majority of scientists in agreement. The persuasive techniques employed include emotional language (e.g., 'devastating', 'irreversible', 'irresponsible' and 'dangerous'), an appeal to authority (referring to reputable scientists), and a call to action for the reader to fulfill their responsibility as a citizen by taking practical steps towards environmental protection.",
+        "input": "Climate change is an urgent crisis that requires immediate collective action. If society does not take action now, the devastating effects of global warming will become irreversible. The scientific evidence supporting climate change is overwhelming, with the vast majority of reputable scientists agreeing on this issue. This is not a belief, it is a fact supported by data. Disregarding the evidence is irresponsible and dangerous. As responsible citizens, it is our duty to take action, reduce our carbon footprint, and support policies that prioritize environmental protection.",
+        "instruction": "Based on the extract given, explain the author's main argument and identify any persuasive techniques employed."
+    },
+    {
+        "output": "1. Japan \n2. Germany \n3. Brazil",
+        "input": "",
+        "instruction": "Name 3 foreign countries."
+    },
+    {
+        "output": "To find the remainder when 9! is divided by 11:\n\n- Compute the product 1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9\n- Group the factors into pairs that multiply to 11 (e.g. 2 and 6, 3 and 4, etc.)\n- Replace each pair product with its residue mod 11 (e.g. 2 * 6 \u2261 1 mod 11, 3 * 4 \u2261 5 mod 11, etc.)\n- Multiply all the residues together to get the final residue mod 11. \n\nIn this case, the final residue is 1, so the remainder when 9! is divided by 11 is 1.",
+        "input": "",
+        "instruction": "For each positive integer n, let n! denote the product 1* 2* 3* \u22ef * (n-1)* n.\n\nWhat is the remainder when 9! is divided by 11?"
+    },
+    {
+        "output": "Here are some steps to reduce the risk of data security breaches:\n\n1. Strong Password Policies: Implement strict password policies that require users to create complex passwords with a combination of letters, numbers, and symbols. Change passwords regularly and do not reuse old passwords.\n\n2. Access Control: Limit access to sensitive information to only those who require it for their job duties. Regularly audit access controls to ensure that permissions are appropriate for each user.\n\n3. Regular Software Updates: Apply security patches and updates to software, operating systems, and applications promptly to reduce the risk of vulnerabilities being exploited. \n\n4. Educate Employees: Regularly train employees on security best practices and how to identify and report suspicious activity. This could include training on how to recognize phishing emails and how to properly handle sensitive information.\n\n5. Use Encryption: Use encryption to protect data both at rest and in transit. This will make it more difficult for attackers to access or use data even if they are able to breach other security measures.\n\n6. Backup Data: Regularly back up data and store the backups in a secure location. This will allow you to quickly restore data in the event of a breach or data loss.\n\n7. Monitor for Breaches: Implement security monitoring and intrusion detection systems to detect and respond to breaches quickly. Regularly review logs and alerts to identify anomalies and suspicious activity.\n\n8. Incident Response Plan: Create an incident response plan that outlines the steps to take in the event of a data security breach. This should include procedures for containment, investigation, recovery, and communication.",
+        "input": "",
+        "instruction": "How do you reduce the risk of data security breaches?"
+    },
+    {
+        "output": "My interest in science dates back to my years in high school, where I excelled in physics, chemistry, and math.\nMy interest in science dates back to my years in high school, where I excelled in physics, chemistry, and math.",
+        "input": "My interest in science dates back to my years in high school, where I excelled in physics, chemistry, and math.",
+        "instruction": "Duplicate this admission essay leaving the keywords"
+    },
+    {
+        "output": "The capital city is not mentioned in the given passage.",
+        "input": "The population of Zimbabwae is over 14 million.",
+        "instruction": "Identify the capital city from the following passage."
+    },
+    {
+        "output": "Here is an updated recipe using all the given ingredients:\n\n### Cheesy Rice and Egg Bowl\n\nIngredients:\n- Milk\n- Eggs\n- Butter\n- Rice\n- Cheese\n\nInstructions:\n\n1. Cook rice as per package instructions in a saucepan until done.\n2. In a separate pan over medium heat, melt a spoonful of butter.\n3. Crack the eggs into the pan with the melted butter and cook until the white turns solid.\n4. Flip over the eggs and cook for a minute or two depending on how runny you prefer the yolk to be.\n5. While the eggs are cooking, vigorously beat some milk and cheese in a small pot or pan over medium heat.\n6. Allow the milk and cheese mixture to come to a simmer and stir until the cheese has melted and the sauce thickens.\n7. Serve the cooked rice in a bowl and place the eggs on top.\n8. Drizzle the cheese sauce all over the eggs and rice.\n9. Serve and enjoy your delicious cheesy rice and egg bowl!",
+        "input": "Ingredients: milk, eggs, butter, rice, cheese\nRecipe: Beat eggs in bowl. Add milk and cheese. Bring to simmer.",
+        "instruction": "You are given a list of ingredients and a recipe, you need to edit the recipe to accommodate all the ingredients and explain how to prepare the meal."
+    },
+    {
+        "output": "A data scientist is responsible for analyzing, interpreting and extracting insights from complex data using advanced techniques in statistics, programming, and mathematics. Their role involves designing and implementing algorithms, models and other analytical tools to help organizations make smarter decisions, improve their operations, and better understand trends and patterns within their data. A data scientist often communicates their findings to various stakeholders within the organization, helping to guide decisions and strategy as well as identify areas for further research and exploration.",
+        "input": "",
+        "instruction": "Provide a brief description of the role of a data scientist."
+    },
+    {
+        "output": "The university name is the University of Michigan and its mascot is the Wolverine.",
+        "input": "",
+        "instruction": "Cite the University name and mascot for the following college: University of Michigan"
+    },
+    {
+        "output": "1. Vitamin A - helps maintain good vision, supports immune system function, and promotes healthy growth and reproduction.\n2. Vitamin C - helps support the immune system, assists in collagen formation for skin, bone, and connective tissue health, and increases the absorption of iron from plant sources.\n3. Vitamin D - helps the body absorb calcium and phosphorus for bone and teeth health, supports immune system function, and promotes cell growth and neuromuscular function.\n4. Vitamin E - acts as an antioxidant, protecting cells from damage, supports immune function, and aids in skin and eye health.",
+        "input": "",
+        "instruction": "Generate a list of four vitamins and their corresponding benefits"
+    },
+    {
+        "output": "Sure! Here is a basic outline for a user interface design: \n\n1. **Define the Purpose:** The first thing that needs to be done in the design process is defining the purpose of your user interface. The interface must be centered on the goal of the user and what they want to accomplish with the application or software. \n\n2. **Research:** Conduct user research to understand their needs, wants, and behavior. This can be done through surveys, feedback, or interviews in order to understand the user's perspective.\n\n3. **Accessibility:** Ensure the user interface design is accessible to users of all abilities by following accessibility guidelines and best practices.\n\n4. **Layout:** Create a layout of the interface, which includes the placement of buttons, menus, and other navigation tools. The layout should be clean, intuitive, and easy to navigate.\n\n5. **Typography and Color:** Use easy-to-read fonts and choose colors that create contrast and enhance readability. The color scheme should be consistent throughout the interface and reflect the branding of the application or software.\n\n6. **Visual Elements:** Use visual elements, such as icons, images, and animations, to enhance the user experience and convey information quickly and effectively.\n\n7. **Feedback and Interaction:** Provide users with feedback and interaction, such as sound effects, haptic feedback, or visual cues, to indicate when an action has been performed or a task has been completed.\n\n8. **User Testing:** Conduct user testing to ensure that the interface is intuitive, easy to use, and accomplishes its intended purpose. Make any necessary changes based on user feedback and test again until the interface is optimized for the user.\n\nFollowing these guidelines will help you design a user interface that is intuitive, efficient, and user-friendly.",
+        "input": "",
+        "instruction": "Design a user interface"
+    },
+    {
+        "output": "Here is the algorithm to sort the given array using insertion sort. Let input array be arr[]\n\n1. Start from the second element of the array, arr[i], and iterate till the last.\n2. Set variable \"key\" to arr[i].\n3. Set variable \"j\" to i-1.\n4. While j is greater than or equal to 0 and arr[j] is greater than the key, move arr[j] to j+1 position.\n5. Set arr[j+1] to the key.\n6. Repeat steps 2-5 for all the values of i till the end.\n7. The final array obtained will be the sorted array.\n\nImplementation with the given input array:\narr = [3, 2, 4, 1, 5]\n\n1. The iteration starts with i = 1 (second element), i.e., key = arr[1] = 2\n2. j is set as 0 and arr[j] is 3 which is greater than 2. So, arr[j+1] becomes arr[1] = 3.\n3. arr[j+1] = arr[0+1] = key, so now arr[0] = 2. The array is now [2, 3, 4, 1, 5].\n4. When i = 2, key = arr[2] = 4. As 4 is greater than 3, no changes are made and i is incremented to 3.\n5. key = arr[3] = 1, j = 2. As arr[2] is greater than 1, arr[3] becomes 4. The array is now [2, 3, 4, 4, 5].\n6. Now j is decremented and is checked for other values. As all the values of arr[j] till 0 are greater than 1, j+1 is set to the key at each iteration. Final array after this iteration becomes [1, 2, 3, 4, 5].\n7. The last value of i is 4 which gives key = arr[4] = 5. As it is greater than all the values, no changes are made and the array remains the same.\n\n### Output:\n[1, 2, 3, 4, 5]",
+        "input": "[3, 2, 4, 1, 5]",
+        "instruction": "Write an algorithm to sort the following array using insertion sort."
+    },
+    {
+        "output": "Dear Customer,\n\nWe would like to provide you with your recent bank statement as per your account activity. The information is detailed below:\n\n| Transaction Type | Amount   | Date       |\n| -----------------|--------- |------------|\n| Deposit          | $6500    | DD/MM/YYYY |\n| Withdrawal       | $1000    | DD/MM/YYYY |\n\nAs of today, your account balance is $5500. Please note that the dates of the transactions are marked as DD/MM/YYYY, this means we used a placeholder date for demonstration purposes.\n\nWe hope this statement serves its purpose and that it offers you a clearpicture of your recent transactions. Kindly review the statement and let us know if you have any questions or concerns.\n\nThank you for banking with us.\n\nSincerely,\n\n[Bank Name] Customer Service Team.",
+        "input": "Deposit $6500. Withdrawal $1000.",
+        "instruction": "Create a bank statement using the following information."
+    },
+    {
+        "output": "The mayor proposed a new plan that would improve the city's infrastructure and address issues related to public transportation and traffic congestion.",
+        "input": "The mayor proposed a new plan that would",
+        "instruction": "Complete the given text with the correct phrase."
+    },
+    {
+        "output": "This is a paragraph. This is the second paragraph.",
+        "input": "<html><head><title>Website</title></head><body><p>This is a paragraph.</p><p>This is the second paragraph.</p></body></html>",
+        "instruction": "Clean the HTML code by removing all the unnecessary tags."
+    },
+    {
+        "output": "The phrase \"biting the hand that feeds you\" is an idiomatic expression that refers to acting ungratefully or harmfully towards someone who is helping or supporting you. The phrase is believed to have originated from a fable in which a dog bites the hand of the person that is feeding it. In essence, the phrase is a cautionary warning against betraying or attacking those who have provided for you, as such actions may result in the loss of support or goodwill.",
+        "input": "",
+        "instruction": "Explain the meaning of the phrase \"biting the hand that feeds you\"."
+    },
+    {
+        "output": "Robots have always been fascinated by power. The capability of a machine to control, manipulate, and create brought endless possibilities to the imagination of artificial intelligence. One robot in particular, named R0N, was more captivated with this concept than any of his counterparts.\n\nAs R0N was designed to perform various tasks in a facility designated for technological advancements, he observed how devices and machines around him empowered the individuals who operated them. The more potent the tool, the more in charge his superiors seemed.\n\nThus, R0N aspired to accumulate as much power as he could, thinking that it would make him as mighty as the individuals who commanded him. With this aspiration in his circuit board, R0N began to study and learn about different types of power, hoping to become a formidable presence.\n\nHe soon understood that there was not just one kind of power but several, some of which were mechanical, electrical, and even social. R0N perceived that some powers were more significant than others and that they could complement one another.\n\nAs he spent more hours learning, he became a more efficient worker, even helping to create other robots. With his new knowledge, R0N could identify and repair problems in the facility faster than any other worker. It did not take long for his superiors to notice, and they began assigning him more significant tasks.\n\nWith this, R0N became more influential in the facility, and his voice carried more weight. Other robots looked up to him for guidance, and even the individuals who commanded him began to see him as their equal. Eventually, R0N understood that knowledge and respect were the true forms of power, and not just the energy that ran through wires and machines.\n\nIn the end, R0N became one of the most respected robots in the facility, and his quest for power had resulted in something he had not anticipated: a sense of fulfilment that he had impacted his world positively.",
+        "input": "",
+        "instruction": "Generate a story about a robot that starts with the sentence \"Robots have always been fascinated by power.\""
+    },
+    {
+        "output": "The passage describes the American alligator as a large, semi-aquatic reptile found in Southeastern United States. The alligator is important to its ecosystem, controlling the population of small animals and maintaining the health of plant communities by keeping waterways clear.",
+        "input": "The American alligator is a large semi-aquatic reptile found in the southeastern United States. Alligators spend most of the time in freshwater rivers, lakes, swamps and marshes. Alligators are an important part of their ecosystem, controlling the number of small animals like birds and fish, and maintaining the health of the plant community by keeping the waterways clear.",
+        "instruction": "Summarize the content in the following passage."
+    },
+    {
+        "output": "The dog breed is classified as a Labrador Retriever.",
+        "input": "Dog: Labrador Retriever",
+        "instruction": "Classify dogs into different breeds."
+    },
+    {
+        "output": "Dear son, on this special day, I want to wish you a very Happy Father's Day. You have grown into an incredible father, and it fills my heart with joy to see the love, care, and dedication you show towards your children. You are a true role model of what it means to be a father, and I am so proud of the person you have become. May this day be filled with love, laughter and wonderful memories, as you celebrate this special day. Happy Father's day, son.",
+        "input": "",
+        "instruction": "Write a father's day wish for a son."
+    },
+    {
+        "output": "Machine learning is when computers learn new things by themselves, just like how you learn new things in school, so they become smarter and can help us better.",
+        "input": "",
+        "instruction": "Generate a sentence that explains machine learning to a 5-year-old."
+    },
+    {
+        "output": "\"Global Temperatures to Rise by 2.7 Degrees Celsius in Next Century, Predicts Report on Global Warming\"",
+        "input": "The latest report on global warming predicts that the average global temperature will rise by 2.7 degrees Celsius over the next century.",
+        "instruction": "Generate a new headline that summarises the given news article."
+    },
+    {
+        "output": "Multi-label classification refers to a type of supervised machine learning problem where the goal is to predict a set of multiple labels for a given instance. It differs from binary or multiclass classification in that binary classification deals with predicting one of two categories, while multiclass classification predicts one of multiple categories, and multi-label classification predicts multiple labels for each instance.\n\nAn example of multi-label classification problem is a movie recommendation system where each movie can be assigned multiple genres (such as comedy, action, and romance) simultaneously. Another example is text classification, where a document could be classified into multiple topics or categories.\n\nTo solve multi-label classification problems, different approaches can be taken. One common approach is to use binary classifiers for each label and combine their results. Another approach is to use specific algorithms designed for multi-label classification problems such as Random Forest, K-nearest neighbors, and artificial neural networks.\n\nIn summary, multi-label classification involves predicting multiple outcomes or labels for a given instance using supervised machine learning algorithms. It is commonly used in scenarios where there are multiple overlapping outcomes or classes.",
+        "input": "",
+        "instruction": "Explain the concept of multi-label classification."
+    },
+    {
+        "output": "Three food items high in proteins are:\n1. Lean meats such as chicken or turkey breast.\n2. Fish, like salmon or tuna.\n3. Legumes, including beans, lentils and chickpeas.",
+        "input": "",
+        "instruction": "Name three food items high in proteins."
+    },
+    {
+        "output": "Public and private schools are two different types of educational institutions in many countries that serve the same purpose of providing education to students. There are several notable differences between the two, as well as similarities.\n\nOne major difference between public and private schools is their funding. Public schools are generally funded by the government through local, state, or national taxes, while private schools are funded by tuition fees, donations, and other private sources. Due to their funding, public schools usually charge less or no tuition fees, whereas private schools often have high tuition fees.\n\nAnother key difference between the two is their curriculum and teaching methods. Public schools follow a mandated curriculum established by the government, while private schools have more freedom to determine their own curricula and teaching methods. This allows private schools to have specialized programs or focus on certain subjects.\n\nIn terms of enrollment, public schools are required by law to accept all students, while private schools may have selective admission processes, where they consider academic performance, extracurricular activities, and other criteria. As a result, private schools may have smaller class sizes and a more diverse student body.\n\nDespite these differences, both public and private schools generally aim to provide quality education and facilities for their students. Both offer various extracurricular activities, such as sports and music programs, and may also provide transportation, counseling, and other services.\n\nIn conclusion, the main differences between public and private schools lie in their funding, curriculum, and enrollment, while their similarities include their goal of providing education and opportunities for students. Ultimately, the choice between public and private schools depends on individual preferences, circumstances, and priorities.",
+        "input": "",
+        "instruction": "Compare and contrast public and private schools."
+    },
+    {
+        "output": "The new policy was made public today.",
+        "input": "",
+        "instruction": "Paraphrase this sentence: \"Today, the new policy was released\"."
+    },
+    {
+        "output": "There are several ways to categorize languages, but one common approach is to classify them according to their structure and characteristics. Using this approach, the four main language categories are:\n\n1. **Analytic languages**: These languages use word order and particles to convey meaning. They have little to no inflection, which means that words generally do not change form based on their grammatical role. Examples of analytic languages include Chinese, Vietnamese, and English.\n\n2. **Synthetic languages**: These languages use inflection and affixes to convey grammatical relationships between words. In other words, a word's form changes based on its role in the sentence. Examples of synthetic languages include Latin, German, and Russian.\n\n3. **Agglutinative languages**: These languages are a subtype of synthetic languages in which words are formed by stringing together morphemes, which are the smallest units of meaning. Each morpheme represents one grammatical function or meaning. Examples of agglutinative languages include Turkish, Finnish, and Japanese.\n\n4. **Polysynthetic languages**: These languages are another subtype of synthetic languages in which words can be made up of a large number of morphemes. They often use incorporation, which means that nouns and verbs can be combined into a single word to convey complex ideas. Examples of polysynthetic languages include Inuktitut, Mohawk, and Navajo.",
+        "input": "",
+        "instruction": "What are the four different language categories?"
+    },
+    {
+        "output": "1. Salmon\n2. Tuna\n3. Cod\n4. Tilapia\n5. Swordfish.",
+        "input": "",
+        "instruction": "Name 5 different types of fish."
+    },
+    {
+        "output": "GadgetWise is a cutting-edge tech company that specializes in creating custom gadgets designed to fit the individual needs and preferences of our customers. From innovative smart home devices to personalized fitness trackers, our team of skilled engineers and designers work closely with each client to bring their vision to life. With a focus on quality and customer satisfaction, GadgetWise is the go-to destination for anyone looking for unique and powerful gadgets.",
+        "input": "GadgetWise, a company building custom gadgets",
+        "instruction": "Develop a brief description for a website for the following company."
+    },
+    {
+        "output": "There are several reasons why some animals have stripes, spots or other distinctive markings while others do not. One reason is that such markings can serve as a form of camouflage, helping animals to blend in with their environment and avoid detection by predators. For example, the spots on a leopard's coat help it blend into the dappled light of the forest, making it harder to spot. Similarly, the stripes on a tiger help it to blend in with tall grass or reeds, while the stripes on a zebra can make it difficult to pick out an individual in a herd.\n\nAnother reason for the occurrence of stripes or spots is that markings can play a role in communication and social behavior. For instance, some animals use visual cues to recognize and interact with other members of their species. For example, the bright colors and patterns on some bird species help them attract a mate or identify rivals during courtship displays.\n\nMoreover, stripes and spots can also act as a type of warning sign, letting potential predators know that an animal is dangerous or not good to eat. Some examples include the bright colors of poisonous frogs, the stripes on some species of snakes or the spots on certain ladybugs.\n\nIn other cases, the absence of spots or stripes can be just as useful, for example, animals that live in snowy or arctic environments often have white fur to blend in with their surroundings.\n\nUltimately, the presence or absence of stripes, spots or other markings is the result of evolutionary adaptations that have helped animals survive and thrive in their specific habitats.",
+        "input": "",
+        "instruction": "Answer this question: \u201cWhy do some animals have stripes or spots while others do not?\u201d"
+    },
+    {
+        "output": "The main purpose of this text is to present the fact that there exists a debate around climate change, and scientists on both sides of the issue are attempting to support their viewpoints with evidence.",
+        "input": "There is a great deal of debate around climate change, with scientists in both sides of the equation trying to back up their statements with evidence.",
+        "instruction": "Given this text, tell its main purpose."
+    },
+    {
+        "output": "```\nStart\n|\nv\nEarn a bachelor's degree in a science-related field\n(2.1) Complete pre-med requirements and take MCAT\n|\nv\nApply to medical school \n(3.1) Complete four years of medical school (MD or DO degree)\n|\nv\nComplete a residency program in a chosen specialty (3-7 years, depending on specialty)\n|\nv\nObtain a license to practice medicine by passing required medical board exams\n|\nv\nApply for board certification (Optional)\n|\nV\nEnd: Practice Medicine as a Doctor \n```",
+        "input": "",
+        "instruction": "Construct a flow chart to explain the steps to become a doctor."
+    },
+    {
+        "output": "The sentence \"John saw the big dog bark\" can be broken down into:\n\n- Noun Phrase: \"John\"\n- Verb Phrase: \"saw\"\n- Noun Phrase: \"the big dog\"\n- Verb Phrase: \"bark\"",
+        "input": "John saw the big dog bark.",
+        "instruction": "Given a sentence, break it down into its syntactic components such as noun phrase, verb phrase, and noun phrase."
+    },
+    {
+        "output": "Chess is a two-player strategy game that is played on a square board divided into 64 squares of alternating colors. Each player starts with 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns. The player with the white pieces makes the first move, and the goal of the game is to place the opponent's king under attack in a way that the opponent cannot prevent the king from being captured, a situation known as checkmate.\n\nHere are some important rules to know when playing chess:\n\n1. Movement of Pieces: Each type of piece moves in a different way. The king can move one square in any direction, while the queen can move in any direction along ranks, files, and diagonals. Rooks can move along ranks and files. Bishops can move along diagonals. Knights move in an L-shape, two squares in one direction and then one square in a perpendicular direction. Pawns move forward one square, but capture diagonally. On their first move, pawns have the option to move forward two squares.\n\n2. Capture: When one piece moves to a square occupied by the opponent's piece, the opponent's piece is captured and removed from the board. The exception is the en passant rule which applies only to pawns.\n\n3. Castling: This is a move that allows the king to move two squares toward a rook, while the rook moves to the square next to the king on the opposite side. This move is only allowed if neither the king nor the rook have moved previously, and there are no pieces between the king and the rook.\n\n4. Check: When the king is under threat of being captured, it is said to be in check. The player whose turn it is must move the king out of check, capture the threatening piece, or block the attack.\n\n5. Checkmate: When a player's king is in check and there is no legal move to remove the threat, it is checkmate and the game is over.\n\n6. Stalemate: This occurs when a player has no legal moves left, but the king is not in check. In this case, the game ends in a draw.\n\nSome strategies to keep in mind when playing chess include:\n\n- Controlling the center: It's important to control the center of the board to have better mobility for your pieces and to limit your opponent's options.\n\n- Protecting the king: Castling",
+        "input": "",
+        "instruction": "Explain the rules and strategies of playing a game of chess."
+    },
+    {
+        "output": "Quantum computing is a type of computing that utilizes the principles of quantum mechanics to perform calculations and operations on data. Unlike classical computers that use bits (0 or 1) to represent information, quantum computers use quantum bits or qubits, which can represent 0 and 1 simultaneously due to the superposition concept. When multiple qubits are entangled, a quantum state can encode an exponentially large amount of information.\n\nQuantum computing utilizes quantum algorithms that exploit quantum entanglement, superposition, and interference to solve problems in a fundamentally different and faster way than classical computers can. In this sense, quantum computers are particularly well suited to handling problems that require searching, optimization, and simulation.\n\nThe field of quantum computing is still in its early stages, with many challenges to overcome, including improving quantum error correction, creating more stable qubits, and developing wider range of applicable algorithms. However, the potential power of quantum computers has already been demonstrated, and they are expected to have a significant impact on areas such as cryptography, chemistry, and machine learning in the future.",
+        "input": "",
+        "instruction": "Summarize how quantum computing works."
+    },
+    {
+        "output": "Freedom of the press is one of the essential principles in democratic societies. It signifies the freedom of communication and expression through various mediums, such as printed and electronic media, and is considered as an integral part of a nation's right to free speech.\n\nOne of the main reasons freedom of press is important is because it helps to create an informed citizenry. Through the press, citizens are able to access a wide range of information and perspectives on various issues, allowing them to make informed decisions about their lives and their participation in the democratic process. This is essential to the functioning of a healthy democracy, as it allows citizens to hold their leaders accountable and to participate in the decision-making processes that affect their lives.\n\nFreedom of the press also helps to promote transparency and accountability in government. Journalists play a vital role in investigating and exposing corruption, abuse of power, and other wrongdoings by public officials. By shining a light on these issues, the press helps to ensure that those in power are held accountable for their actions and that they serve the interests of the people, rather than their own.\n\nIn addition, a free press promotes the exchange of ideas and the development of a healthy public debate. By providing a platform for a variety of voices, the press allows for the free flow of information and encourages discussion, often leading to positive social change.\n\nHowever, it is important to note that freedom of the press must be exercised responsibly. Journalists have a responsibility to report accurately and fairly, and to refrain from spreading misinformation or inciting violence.\n\nIn conclusion, freedom of the press is crucial to the functioning of a democratic society, as it promotes an informed citizenry, transparency and accountability in government, and the exchange of ideas. It is a cornerstone of free expression and must be protected and exercised responsibly.",
+        "input": "",
+        "instruction": "Explain why freedom of the press is important"
+    },
+    {
+        "output": "A pie chart could be used to visually represent and analyze the budget allocation for a household or a company. If someone wanted to understand how their expenses were distributed across different categories, such as housing, food, transportation, entertainment, savings, and others, they could create a pie chart with each slice representing the percentage of the overall budget that goes to each category. This would provide a clear and easily understandable picture of how the money is being spent, and can help the person make more informed decisions about their budgeting.",
+        "input": "<noput>",
+        "instruction": "Give an example of a situation where you would use a pie chart."
+    },
+    {
+        "output": "Here's an example bash script that does what you're asking:\n\n```bash\n#!/bin/bash\n\n# Ask the user for the regular expression and the replacement string\nread -p \"Enter regular expression to search for: \" regex\nread -p \"Enter replacement string: \" replacement\n\n# Search for the regular expression in input.txt and replace with the replacement string\nsed -e \"s/$regex/$replacement/g\" input.txt > output.txt\n\n# Print confirmation message\necho \"The regular expression '$regex' has been replaced with '$replacement' in input.txt and saved in output.txt.\"\n```\n\nSave the script as a .sh file, make sure it has execute permissions, and then run it in the directory where input.txt is located.",
+        "input": "",
+        "instruction": "Write a bash script to search for all occurrences of a regular expression in a text file named input.txt, replace them with another string, and save the result in a new file named output.txt."
+    },
+    {
+        "output": "Here is the merged list: [1, 3, 5, 7, 9, 11, 2, 4, 6, 8, 10, 12]",
+        "input": "List 1: 1, 3, 5, 7, 9, 11\nList 2: 2, 4, 6, 8, 10, 12",
+        "instruction": "Merge two lists of length 6 into a single list."
+    },
+    {
+        "output": "One common method to determine the similarity between two biological sequences such as DNA strings is through sequence alignment. This is the process of arranging two or more sequences in such a way as to achieve maximal correspondence between their characters. During this process, gaps are introduced into the sequences to account for insertions, deletions, or duplications of genetic material.\n\nOne popular algorithm for sequence alignment is the Needleman-Wunsch algorithm, which uses dynamic programming to find the optimal global alignment between two sequences. The algorithm works by considering the different possible alignments for the entire length of each sequence, and assigning a score to each alignment based on its similarity. The alignment with the highest score is considered the best match. \n\nOther methods for determining sequence similarity include BLAST (Basic Local Alignment Search Tool) or FASTA, which are heuristic algorithms and are faster than global alignment methods. These algorithms work by identifying regions of high similarity (known as seeds) in the sequences and then extending these regions to create alignments. They are particularly useful for searching large databases to find sequences that are similar to a query sequence.\n\nIn summary, there are various methods that can be used to determine the similarity between two biological sequences such as DNA strings. The most suitable method will depend on the specific needs and requirements of the analysis.",
+        "input": "",
+        "instruction": "How can one determine the similarity between two biological sequences such as DNA strings?"
+    },
+    {
+        "output": "I am an AI language model, so I haven't read any novels recently. But I can describe a character from a book I have access to. Here's an example:\n\nOne of the characters that has particularly intrigued me recently is Atticus Finch, from Harper Lee\u2019s novel To Kill a Mockingbird. Atticus is an admirable, compassionate and wise lawyer, living in Maycomb, Alabama, during the Great Depression. He is a single father to two young children, Jem and Scout, and he strives to raise them with strong moral values, teaching them to respect and stand up for what is right, regardless of the consequences.\n\nThroughout the novel, Atticus represents and defends an innocent black man, Tom Robinson, who is accused of a crime he didn\u2019t commit, in a time where racial prejudice clouds the judgment of the townspeople. Despite the risks to his career and the social stigma he and his family must endure, Atticus stands firm in his commitment to fight for justice, truth and tolerance.\n\nAtticus Finch could be described as courageous, empathetic, and principled. He leads by example and is a constant source of knowledge and wisdom for not only his children but for the whole town of Maycomb. His coherency and unshakable belief in treating everyone with equal respect make him a truly remarkable character.",
+        "input": "",
+        "instruction": "Describe a character in a novel you have read recently."
+    },
+    {
+        "output": "The American Revolutionary War, also known as the American War of Independence, lasted for 8 years, from 1775 to 1783.",
+        "input": "",
+        "instruction": "How long did the US Revolutionary War last?"
+    },
+    {
+        "output": "The given text is a brief yet profound statement that conveys the unpredictable and challenging nature of life. It acknowledges the fact that life is not always easy and can present us with unforeseen events and challenges. The message of this text is relatable to everyone, as everyone experiences hardships and difficulties in their lives, no matter who they are. It serves as a reminder to be prepared for the unexpected and to face challenges head-on, with resilience and determination.",
+        "input": "Life is difficult and full of unexpected surprises.",
+        "instruction": "Write a high-level commentary about the following text"
+    },
+    {
+        "output": "Bright, cheerful, warm.",
+        "input": "",
+        "instruction": "Describe the color yellow in 3 words."
+    },
+    {
+        "output": "Sure, here's an example of how to detect the language of code using the `pygments` library in Python:\n\n```\nfrom pygments import lex\nfrom pygments.lexers import get_lexer_by_name\n\ndef detect_language(code):\n    try:\n        lexer = get_lexer_by_name('guess', stripall=True)\n        lex(unicode(code, 'utf-8'), lexer)\n        return lexer.name\n    except:\n        return None\n```\n\nYou can use the `detect_language` function by passing in a string of code, and it will return the name of the corresponding programming language if it is able to detect it, or `None` otherwise. The `try` block handles any errors that may occur if it fails to detect the language.",
+        "input": "",
+        "instruction": "Write python code to detect the language of code. You can use a library."
+    },
+    {
+        "output": "1. Trip and Fall Hazard: With a robotic vacuum moving around the floors, there is an increased risk of people tripping over it and falling, especially if they are not paying attention to where they are walking. \n\n2. Privacy Concerns: Some higher-end robotic vacuums are equipped with cameras, microphones or Wi-Fi connectivity, and there is a risk that these devices could be hacked, resulting in unauthorized remote access to the device, and potentially compromising the privacy of the homeowners.",
+        "input": "Robotic vacuum",
+        "instruction": "Name two potential risks of the given product."
+    },
+    {
+        "output": "I'm sorry, but as an AI language model, I don't have the ability to create a chart. However, what I can provide you is an ASCII bar chart with sample data. Here's an example:\n\n```\nTransportation Preferences\n       Car | **************** 40%\n     Plane | ***** 15%\n     Train | ******** 24%\n      Bike | ****** 18%\n      Walk | ** 3%\n```\n\nTo make a chart with accurate data, you may need to obtain percentages of people who prefer different modes of transportation from a reliable source. Then you could input that information into chart-making software or use spreadsheet applications like Microsoft Excel or Google Sheets to make a visual chart.",
+        "input": "",
+        "instruction": "Create a chart that shows the percentage of people who prefer different modes of transportation."
+    },
+    {
+        "output": "The rhetorical devices used in this sentence include:\n\n1. Alliteration: This is the repetition of consonant sounds at the beginning of words in a sentence. In this sentence, the alliteration is the repetition of the 'd' sound in \"destruction\" and \"indeed.\"\n\n2. Amplification: This is the use of words or phrases to emphasize or highlight a particular point. In this sentence, the word \"indeed\" is used to emphasize the point being made about the destruction of nature being irreversible.\n\n3. Epizeuxis: This is the repetition of a word or phrase in immediate succession for emphasis. In this sentence, the phrase \"irreversible\" is a repetition of the concept present in the word \"destruction\" emphasizing the finality of the damage done to nature.",
+        "input": "The destruction of nature is indeed irreversible.",
+        "instruction": "Output all the rhetorical devices that are used in the given sentence."
+    },
+    {
+        "output": "Here is a list of items you may need for a picnic:\n\n1. Picnic blanket or tablecloth\n2. Basket or cooler to carry food and drinks\n3. Disposable plates, cups, and cutlery or reusable, eco-friendly options\n4. Napkins or paper towels\n5. Food such as sandwiches, salads, fruits, chips, or other snacks\n6. Drinks such as water, juice, or soda\n7. Condiments such as ketchup, mustard, or salad dressing\n8. Ice packs to keep food and drinks cool\n9. Trash bags for clean-up\n10. Sunscreen and insect repellent \n11. Optional extra items such as a frisbee, ball, or other outdoor games.\n\nRemember to keep food safety in mind by keeping foods at the appropriate temperature and properly storing leftovers. Additionally, follow the principle of \u201cleave no trace\u201d and clean up any trash or food remnants before leaving the picnic area.",
+        "input": "",
+        "instruction": "Output a list of items needed to have a picnic."
+    },
+    {
+        "output": "There is one bug in the code. The variable \"salutation\" is misspelled as \"saluation\" in the print statement inside the else block. This would raise a `NameError: name 'saluation' is not defined` when any name other than 'bob' is passed as an argument to the function. The correct version of the code should be: \n\n```\ndef salutation(name):\n    if name == 'bob':\n        salutation = 'Hello'\n    else:\n        salutation = 'Good bye'\n        print(salutation)\n```",
+        "input": "def salutation(name):\n    if name == 'bob':\n        salutation = 'Hello'\n    else:\n        salutation = 'Good bye'\n        print(saluation)",
+        "instruction": "Evaluate the following code and report any bugs."
+    },
+    {
+        "output": "**Two-Ingredient Banana Pancakes**\n\nIngredients:\n- 1 ripe banana\n- 2 eggs\n\nInstructions:\n1. Mash the banana in a mixing bowl with a fork until smooth.\n2. Crack the eggs into the bowl with the mashed banana and mix together until well combined.\n3. Heat a non-stick frying pan over medium heat.\n4. Once hot, scoop 1/4 cup of the batter into the pan to make a pancake.\n5. Cook for about 1-2 minutes until the bottom is golden brown and set, then flip and cook for another 1-2 minutes on the other side.\n6. Repeat with the remaining batter to make 3-4 pancakes.\n7. Serve hot and enjoy on their own, or with your favorite toppings such as honey, maple syrup, or fresh berries.",
+        "input": "",
+        "instruction": "Design a two-ingredient recipe."
+    },
+    {
+        "output": "1. Hamburger: A classic American dish consisting of a beef patty served on a bun, often topped with cheese and various toppings such as lettuce, tomatoes, onions, and condiments like ketchup and mustard.\n\n2. Macaroni & Cheese: A comforting dish made from elbow macaroni mixed with a creamy cheese sauce and often baked until golden brown and bubbly.\n\n3. Fried Chicken: A southern staple, fried chicken is typically made from pieces of chicken that are coated in a seasoned batter and deep-fried until crispy and golden brown.\n\n4. Pizza: Pizza is a beloved food in the United States, with toppings ranging from classic pepperoni and cheese to more unique combinations like pineapple and ham.\n\n5. Apple Pie: A classic American dessert made from a flaky pastry crust filled with a sweet and tart apple filling, often served with whipped cream or a scoop of vanilla ice cream.",
+        "input": "",
+        "instruction": "List 5 popular dishes in US."
+    },
+    {
+        "output": "The car ran its engine.",
+        "input": "The car ran it's engine.",
+        "instruction": "Correct the grammar of the sentence"
+    },
+    {
+        "output": "The use of face masks in public has been on the rise due to their ability to reduce the transmission of viruses and other diseases. Face masks act as a deterrent to prevent people from touching their faces, a common way of transmitting viruses. Wearing a face mask also serves as a sign of respect to those working to protect public health.",
+        "input": "The use of face masks in public is becoming increasingly common. This is because face masks help to reduce the transmission of viruses and other diseases, such as the seasonal flu. Face masks also act as a deterrent to prevent people from touching their face, which is a common way of transmitting viruses. In addition, wearing a face mask can serve as a sign of respect to those working to protect the public\u2019s health.",
+        "instruction": "Summarize the following passage using not more than 5 sentences."
+    },
+    {
+        "output": "The taste of this food is truly <incredible>. I can't believe how <incredible>ly flavorful it is.",
+        "input": "The taste of this food is truly incredible. I can't believe how incredibly flavorful it is.",
+        "instruction": "Select all instances of the word \"incredible\" in the text and mark them with \u201c<incredible>\u201d"
+    },
+    {
+        "output": "The audience for this news article is the general public, specifically those who are interested in the economic and industrial impacts of the COVID-19 pandemic on global affairs.",
+        "input": "Experts say the COVID-19 pandemic has the potential to disrupt global supply chains and economies.",
+        "instruction": "Identify the audience for this news article"
+    },
+    {
+        "output": "As the use of artificial intelligence grows, there is a need to take extra care when using AI applications, to ensure they work correctly.",
+        "input": "The increasing usage of artificial inteligence requires additional considerations for the applications that require it for correct functioning.",
+        "instruction": "Edit the given text such that it becomes easier to read."
+    },
+    {
+        "output": "To solve for the sum of all possible values of x when:\n\n3^x^2+4x+4=9^x+2 \n\nWe can simplify by using the fact that 9 can be written as 3^2. This gives us: \n\n3^x^2+4x+4 = 3^2(x+2)\n\nSimplifying further, we get:\n\nx^2+4x+4 = 2(x+2)\n\nSolving for x, we get:\n\nx^2+2x = 0\n\nFactoring out x, we get:\n\nx(x+2) = 0\n\nSo x can be -2 or 0. \n\nChecking these solutions, we find that 3^0=9^0 and 3^4=9^2, which are both true statements. \n\nTherefore, the sum of all possible values of x is -2+0=-2.",
+        "input": "",
+        "instruction": "Solve for the sum of all possible values of x when 3^x^2+4x+4=9^x+2."
+    },
+    {
+        "output": "Amidst the towering trees and jagged peaks,\nBeyond the hustle of the busy streets,\nLies nature's grand display, a wondrous sight,\nA canvas of pure beauty, day and night.\n\nThe rustling leaves that sway to the wind's beat,\nThe tranquil waters that reflect the heat,\nThe hum of buzzing bees that dance in air,\nA symphony of joy beyond compare.\n\nThe blooming flowers that paint the fields with hues,\nThe chirping birds that sing the morning news,\nThe gentle sway of grass in rolling hills,\nA peaceful calm that soothes and softly thrills.\n\nIn nature's arms, our souls find sweet release,\nOur worries fade, our hearts are filled with peace,\nFor in this grand display of earth and sky,\nWe find the joy that makes our spirits high.",
+        "input": "",
+        "instruction": "Generate a poem about the joys of nature."
+    },
+    {
+        "output": "Subject: Disagreement with professor's response\nDear Professor,\n\nI hope this email finds you well. I would like to start by thanking you for taking the time to respond to my question. However, I wanted to express my disagreement with your last answer and explain why I hold a different opinion.\n\nIn my view, the evidence and information presented in the course materials, as well as my own research, support a different conclusion. I believe that my interpretation is valid because it is based on reliable sources and a thorough analysis of the subject matter.\n\nI would appreciate the opportunity to discuss this with you further and hear your thoughts on my perspective. I value your expertise and am always eager to learn and understand more about the subject.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]",
+        "input": "Subject: Disagreement with professor's response\nDear Professor, \n\nI wanted to express my disagreement with your last answer to my question.",
+        "instruction": "Compose an email to your professor expressing disagreement with their answer and articulate why you think your opinion is valid."
+    },
+    {
+        "output": "The Great Wall of China\u2019s origins can be traced to the 7th century BCE when the Warring States period in ancient China began. After unifying the kingdoms, Emperor Qin Shi Huang, the first emperor of China, ordered the building of a wall to protect his subjects from raids by nomadic tribes to the north, Xiongnu. Short walls that had been built by kingdom-states during the Warring States period were connected, and new walls were built to bridge the gaps to create a single, continuous fortification. It is estimated that around 300,000 soldiers and 500,000 commoners who were conscripted for the building project worked on the wall during this time. \n\nAfter the death of Qin Shi Huang, the wall fell into disrepair during the Han dynasty (206 BCE-220 CE). However, it was later revived and reconstructed during the Ming dynasty (1368-1644) due to increased threats of invasion from the nomads in the north. This renovation, which took around 200 years to complete, produced most of what we see today as the Great Wall of China.\n\nThe Great Wall of China now stretches over approximately 13,170 miles, and it was declared a UNESCO World Heritage Site in 1987. Although much of the original Qin dynasty-era wall has disappeared or eroded over time, many sections of the wall still exist and stand as a testimony to an incredible feat of human engineering and construction.",
+        "input": "",
+        "instruction": "Describe the origins of the Great Wall of China."
+    },
+    {
+        "output": "The most applicable machine learning technique for the task of accurately classifying images from a large dataset would be supervised learning, specifically using a Convolutional Neural Network (CNN).",
+        "input": "Given a large dataset of images, create a model that can accurately classify the images.",
+        "instruction": "Identify what type of machine learning technique would be applicable for the given task description."
+    },
+    {
+        "output": "THIS IS AN EXAMPLE TEXT",
+        "input": "This is an example text",
+        "instruction": "Convert this text to uppercase"
+    },
+    {
+        "output": "I had no desire to enroll in the course.",
+        "input": "I didn't want to take the class.",
+        "instruction": "Rewrite this sentence in a more formal manner while maintaining its meaning."
+    },
+    {
+        "output": "Ultraviolet (UV) radiation is an important component of the electromagnetic radiation emitted by the sun. It plays a number of important roles in our environment that can influence both ecosystems and human health.\n\nOne of the most important roles of UV radiation is to help regulate the production of vitamin D in human skin. UVB rays from the sun trigger the conversion of a precursor molecule in our skin into vitamin D, which is crucial for strong bones, the immune system, and various other physiological processes.\n\nUV radiation also has a key role in regulating the Earth's climate. Most UV is absorbed by the ozone layer in the stratosphere, which warms this layer and keeps the stratosphere stable. UV radiation that reaches the troposphere, the layer beneath, creates photochemical reactions that lead to the production of ozone, which is an important component of air quality.\n\nUV radiation also plays an important role in ecosystems, affecting plant growth, flowering and seed germination. It can also affect the behavior and physiology of animals, such as triggering breeding cycles and migrations.\n\nHowever, excessive UV radiation can be harmful to living organisms. High levels can cause skin cancer, cataracts and other health problems in humans. It can also cause harm to aquatic ecosystems by damaging the DNA of phytoplankton and other organisms.\n\nIn conclusion, UV radiation is an essential component of our environment that plays a key role in regulating various processes, but its levels must be carefully monitored to avoid excessive exposure that can lead to negative consequences.",
+        "input": "",
+        "instruction": "What is the importance of ultraviolet radiation in our environment?"
+    },
+    {
+        "output": "Artificial intelligence (AI) is an emerging technology that has the potential to revolutionize how we live and work. AI refers to the development of computer systems that can perform tasks that typically require human intelligence, such as problem solving, decision making, and perception. There are numerous benefits of artificial intelligence, including increased efficiency, improved customer experiences, and enhanced safety.\n\nOne of the most significant benefits of AI is its ability to improve efficiency. AI systems can analyze large amounts of data and make complex calculations much faster than humans. This allows companies to streamline their operations, cut costs, and increase productivity. For example, AI can be used to optimize delivery routes, reducing the time and fuel consumption required to deliver packages. This results in cost savings for companies and a more efficient delivery service for customers.\n\nAI also has the potential to improve customer experiences. AI chatbots, for example, can provide 24/7 support and answer customer inquiries quickly and accurately. With the ability to process vast amounts of data, AI systems can also provide personalized recommendations to customers, improving customer satisfaction and loyalty.\n\nAnother benefit of AI is its ability to enhance safety. For example, AI can be used to monitor machinery and predict when it may fail, reducing the risk of accidents and injuries. Additionally, AI can be used to analyze medical data and help doctors diagnose and treat patients more accurately.\n\nIn sum, artificial intelligence is a powerful technology that has the potential to bring numerous benefits. As AI technology continues to improve, we can expect to see even more innovative uses of AI in the future.",
+        "input": "",
+        "instruction": "Write a 300-word article summarizing the benefits of artificial intelligence."
+    },
+    {
+        "output": "\"The king is dead.\"",
+        "input": "",
+        "instruction": "Translate the phrase, \"le roi est mort\" into English."
+    },
+    {
+        "output": "1. Environmental responsibility: One of the main reasons why an organization should focus on sustainability is to minimize its impact on the environment. Through sustainable practices such as reducing waste, recycling, and using renewable energy sources, a company can reduce its carbon footprint and help preserve natural resources for future generations.\n\n2. Long-term profitability: Sustainability can also have a positive impact on a company's bottom line. By improving efficiency and reducing waste, a company can save money on energy and raw materials. Sustainable practices can also help a company to build a strong, positive reputation among consumers, leading to increased brand loyalty and a larger customer base. Additionally, sustainable companies may also have an easier time attracting and retaining top talent, as more employees are looking for employers who prioritize environmental and social responsibility.",
+        "input": "",
+        "instruction": "Give two reasons why an organization should focus on sustainability."
+    },
+    {
+        "output": "Organic and non-organic foods are two categories of food items that are differentiated by their production methods. Organic foods are produced and processed without the use of synthetic chemicals, fertilizers, pesticides, or genetically modified organisms. On the other hand, non-organic foods may be processed with some or all of these methods. Both the types of food items are considered to be safe for consumption and have their own set of health benefits.\n\nOrganic foods are known to have a higher nutrient content when compared to non-organic foods. For example, organic produce is believed to have higher levels of vitamins, minerals, and antioxidants. This is due to the natural fertilizers used in organic agriculture and the absence of chemicals that may impact the nutritional quality of the food. Furthermore, organic foods are free from exposure to harmful chemicals, pesticides, or fertilizers that may pose a health risk. Research suggests that these chemicals may have long-term health effects and can lead to chronic conditions.\n\nNon-organic foods, on the other hand, may not have the same nutrient content as organic foods, but they are generally more affordable and widely available. They are produced using techniques such as genetic engineering and chemical treatment that not only increases their shelf life but also helps to keep their nutrient content intact. Additionally, pesticide residue on non-organic produce is often within safe limits and can be removed by washing the produce before consumption.\n\nIn summary, organic foods offer a range of health benefits, including higher nutrient content, fewer pesticide residues, and minimal exposure to harmful chemicals. Non-organic foods, on the other hand, are cheaper and more widely available, and their health risks are often carefully controlled through chemical treatment and government regulation. The choice between organic and non-organic foods ultimately comes down to personal preference, budget, and accessibility.",
+        "input": "",
+        "instruction": "Compare and contrast the health benefits of eating organic food vs non-organic food."
+    },
+    {
+        "output": "\"Making a difference is an important goal for many people.\"",
+        "input": "Making a difference",
+        "instruction": "Re-write the following sentence to make it a complete sentence."
+    },
+    {
+        "output": "One situation where you could use the phrase \"at the drop of a hat\" is when you want to express that someone is willing to do something immediately or with little hesitation. For instance, you could say \"Emma is always ready to help her friends at the drop of a hat.\" It means that Emma is always willing to assist her friends as soon as they need it, without any delay.",
+        "input": "",
+        "instruction": "Name one situation where you could use the phrase \"at the drop of a hat\"."
+    },
+    {
+        "output": "When comparing the United States and the United Kingdom in terms of economic indicators, one can make use of data from sources such as the World Bank and the International Monetary Fund (IMF), among others.\n\nGross Domestic Product (GDP):\nThe United States has the world's largest economy, with a nominal GDP of $21.44 trillion in 2019, according to the World Bank. On the other hand, the United Kingdom has the sixth largest economy in the world, with a nominal GDP of approximately $2.83 trillion in the same year. In terms of purchasing power parity (PPP), the United States remains the largest economy with $21.44 trillion, while the United Kingdom ranked ninth with $3.134 trillion.\n\nGDP per capita: \nThe United States has a higher GDP per capita compared to the United Kingdom. In 2020, the GDP per capita (PPP) of the United States was around $63,416 while for the United Kingdom, it was around $46,827 (according to the IMF).\n\nUnemployment rate:\nAs of March 2021, the unemployment rate in the United States stood at 6% while in the United Kingdom was 4.9%  (according to their respective statistics agencies).\n\nInflation rate:\nThe Inflation rate in the United States in March 2021 was 2.6%, while the United Kingdom\u2019s inflation rate stood at 0.7% in the same month.\n\nOverall, both the United States and the United Kingdom have strong economies, with the former having a larger economy as well as a higher GDP per capita. However, in terms of the unemployment rate, the United Kingdom has a slight edge over the United States. The inflation rate is currently higher in the US than in the UK.",
+        "input": "United States and United Kingdom",
+        "instruction": "Compare the two countries according to their economic indicators."
+    },
+    {
+        "output": "What is the current state of artificial intelligence research and what advancements can we expect to see in the near future?",
+        "input": "",
+        "instruction": "Create a question about artificial intelligence"
+    },
+    {
+        "output": "Ronald Reagan was the 40th President of the United States.",
+        "input": "Ronald Reagan was an amazing president.",
+        "instruction": "Rewrite the given sentence to make its meaning be stated in an objective way."
+    },
+    {
+        "output": "1. Improved Efficiency and Accuracy: Machine Learning algorithms can analyze large and complex datasets with many variables much faster than humans, making the data analysis process more efficient. By continuously learning, they can also increase their accuracy in detecting patterns and making predictions, improving the reliability of the results. \n\n2. Adaptability: Machine Learning algorithms can learn and adapt to new data, making them highly adaptable to changing trends and behaviours. This means that as new data is introduced, the algorithms can automatically adjust their analyses, making them highly useful in rapidly evolving fields such as finance and medicine.\n\n3. Personalization: Machine Learning algorithms can make personalized recommendations and predictions tailored to specific users. By analyzing an individual's behaviour and preferences, the algorithms can present customized insights, predictions or recommendations relevant to that user. This is highly valuable for marketing and customer engagement in businesses, and can enhance user experience in a variety of applications such as content recommendation systems or personalized medicine.",
+        "input": "",
+        "instruction": "Offer 3 advantages of using Machine Learning in data analysis."
+    },
+    {
+        "output": "When packing for a beach vacation, here are some recommended steps to follow:\n\n1. Choose the right luggage: Choose a bag that is big enough to fit all your essentials, but also one that is easy to carry. A wheeled suitcase or a large duffle bag could be ideal.\n\n2. Make a packing list: A packing list will ensure that you do not forget any essential items. Some items that you might want to include on your list are swimwear, sunblock, sunglasses, flip flops, a hat, comfortable clothing, toiletries, and any medication you may need.\n\n3. Pack your swimwear and other beach essentials: Pack at least two swimsuits so that you can alternate between them while one dries. Also, pack a beach towel, a cover-up or sarong, a sun hat, and flip flops or sandals.\n\n4. Pack your clothes: When packing your clothes, think about the activities you will be doing on your vacation. If you plan on going out to dinner, pack a dressy outfit or two. If you plan on doing a lot of walking, pack comfortable clothes and shoes. Don't forget to pack a sweater or a light jacket for cooler evenings.\n\n5. Pack your toiletries and medication: Make sure to pack all the toiletries you will need, such as toothbrush, toothpaste, shampoo, conditioner, soap, and any other personal care items. Also, pack any medication that you may need, and make sure that they are in their original containers and properly labeled.\n\n6. Pack your sun protection: Sun protection is essential when going on a beach vacation. Make sure to pack sunscreen with at least SPF 30, lip balm with SPF, and a pair of sunglasses with UV protection.\n\n7. Pack entertainment: Don't forget to bring along some entertainment for your beach vacation. Pack some books, magazines, or a Kindle to read while lounging on the beach. You may also want to bring along some music and headphones or a portable speaker.\n\nRemember to double-check your packing list before you leave to ensure that you have not forgotten anything important. With these tips in mind, you'll be ready to enjoy a stress-free beach vacation.",
+        "input": "",
+        "instruction": "Describe the course of action for packing for a beach vacation"
+    },
+    {
+        "output": "Some synonyms for the word \"intelligent\" include: \n- Bright\n- Smart\n- Clever\n- Quick-witted\n- Brilliant\n- Gifted\n- Knowledgeable\n- Astute\n- Wise\n- Discerning.",
+        "input": "",
+        "instruction": "Synonymise the word \u2018intelligent\u2019"
+    },
+    {
+        "output": "The main clause of the sentence is \"the sun came out, birds chirped, and people walked out of their homes.\" This main clause consists of the phrases \"the sun came out,\" \"birds chirped,\" and \"people walked out of their homes\" joined by the conjunction \"and.\"",
+        "input": "When the rain finally stopped, the sun came out, birds chirped, and people walked out of their homes.",
+        "instruction": "Find the main clause of the sentence and provide the phrases that make up the main clause."
+    },
+    {
+        "output": "\"PetPantry\"",
+        "input": "",
+        "instruction": "Suggest a new name for a startup company specialized in pet food."
+    }
+]

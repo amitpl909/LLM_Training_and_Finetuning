@@ -57,8 +57,14 @@ checkpoints/**/adapter_model.bin
 !checkpoints/**/*.md
 !checkpoints/.gitkeep
 
-# Large datasets (can regenerate)
-data_prep/**/*.json
+# Large datasets (tracked for reproducibility)
+# Exclude temporary/intermediate JSON files but track main training data
+data_prep/temp_*.json
+data_prep/intermediate_*.json
+!data_prep/alpaca_train.json
+!data_prep/alpaca_eval.json
+!data_prep/stage2_json_instruct_train.json
+!data_prep/stage2_json_instruct_eval.json
 !data_prep/*.py
 
 # SLURM outputs
